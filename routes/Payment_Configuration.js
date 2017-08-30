@@ -5,7 +5,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-        res.render('index', { title: 'Admin Server' });
+	    //request('http://localhost:3001/applicants', function(error, response, body) {
+       // let Applicants = JSON.parse(body);
+        res.render('Payment_Configuration', { title: '????' /*Applicants */});
 });
 
 
