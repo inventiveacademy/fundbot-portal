@@ -7,7 +7,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 	    //request('http://localhost:3001/applicants', function(error, response, body) {
        // let Applicants = JSON.parse(body);
-        res.render('General_Points', { title: '????' /*Applicants */});
+        res.render('General_Points', { title: 'General Points' /*Applicants */});
 });
 
 

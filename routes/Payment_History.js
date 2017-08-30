@@ -7,7 +7,7 @@ var router = express.Router();
 router.get('/Payment_History', function(req, res, next) {
 	    //request('http://localhost:3001/applicants', function(error, response, body) {
        // let Applicants = JSON.parse(body);
-        res.render('Payment_History', { title: '????'});
+        res.render('Payment_History', { title: 'Payment History'});
 });
 
 module.exports = router;
