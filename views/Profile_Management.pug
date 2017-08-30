@@ -1,3 +1,78 @@
 extends layout
 
 block content
+    // navbar here
+    .Pcontainer
+        .img-container
+            p.profileLable Profile
+            img.ProfileImage#ProfileImage(src="images/your-face-here.jpg" alt="")
+            a(href="#book-a") update photo 
+            //not fully implemented
+        .extra-info
+           H3.Eh3#Eh3 Drake Siemer
+           p.Ep#Ep joined in 2017
+           a(href="#book-a") update
+           .line
+           a(href="#book-a") Get Money 
+
+
+    .AOcontainer
+        H3.accountOp#accountOp Account options
+        .Account-Details#AccountDetails
+            p.Language#Language 
+            .line
+            // dropdown options here ⏫ and here ⏬
+            p.Time-Zone#Time-Zone 
+            .line
+            p.Nationality#Nationality Nationality USA
+            .line
+            p.SSN#SSN SSN xxx-xx-xxxx
+            .line
+            p.MerchantId#MerchantId MerchantId lasndllasjd
+            .line
+            a(href="#book-a") Upgrade to a Business account
+            .line
+            a(href="#book-a") Close your account
+
+
+
+    .ADcontainer
+        .edit
+            H3.address#address Address
+            P.editBtn#editBtn +
+        .details#details
+        .Address-Details#AddressDetails
+            p.Street#Street 975 fm 3000
+            p.State#State ELGIN, TX 78621
+            p.Primary#Primary Primary, Billing address
+            // didn't know what to class name bottom one 
+            a(href="#book-a") Update 
+
+
+    .Emailcontainer
+        .edit
+            H3.H3email#H3email Email
+            P.editBtn#editBtn +
+        .details#details
+        .Email-Details#EmailDetails
+            p.Email#Email dsiemer@gmail.com
+            p.Primary#Primary Primary
+            p.StateMent#StateMent To update an email address, you must have at least two email addresses on file. 
+
+
+    .Phonecontainer
+        .edit
+            H3.H3Phone#H3Phone Phone
+            P.editBtn#editBtn +
+        .details#details
+        .Phone-Details#PhoneDetails
+            p.Phone#Phone (6**) ***-2131
+            p.Primary#Primary Mobile, Primary
+            a(href="#book-a") Update | 
+            a.red(href="#book-a") Delete
+            .line
+        .Second-PhoneDetails
+            p.Phone#Phone does not exist 😐
+
+
+
