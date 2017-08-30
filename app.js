@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var Login = require('./routes/Login');
 var Account_Summary = require('./routes/Account_Summary');
 var Payment_History = require('./routes/Payment_History');
 var Application_Status = require('./routes/Application_Status');
@@ -27,6 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/Login', Login);
 app.use('/Account_Summary', Account_Summary);
 app.use('/Payment_History', Payment_History);
 app.use('/Application_Status', Application_Status);

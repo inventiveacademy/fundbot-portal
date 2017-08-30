@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    // navbar here
+
     .Pcontainer
         .img-container
             p.profileLable Profile
@@ -42,8 +42,10 @@ block content
             P.editBtn#editBtn +
         .details#details
         .Address-Details#AddressDetails
-            p.Street#Street 975 fm 3000
-            p.State#State ELGIN, TX 78621
+            - for(let i = 0; i < applications.length; i++)
+                p.Street#Street #{applications[i].zip}
+            - for(let i = 0; i < applications.length; i ++)
+                p.State#State #{applications[i].city} #{applications[i].state} 
             p.Primary#Primary Primary, Billing address
             // didn't know what to class name bottom one 
             a(href="#book-a") Update 
@@ -55,7 +57,8 @@ block content
             P.editBtn#editBtn +
         .details#details
         .Email-Details#EmailDetails
-            p.Email#Email dsiemer@gmail.com
+            - for(let i = 0; i < applications.length; i++)
+                p.Email#Email #{applications[i].email}
             p.Primary#Primary Primary
             p.StateMent#StateMent To update an email address, you must have at least two email addresses on file. 
 
@@ -66,7 +69,8 @@ block content
             P.editBtn#editBtn +
         .details#details
         .Phone-Details#PhoneDetails
-            p.Phone#Phone (6**) ***-2131
+            - for(let i = 0; i < applications.length; i++)
+                p.Phone#Phone #{applications[i].contactphone}
             p.Primary#Primary Mobile, Primary
             a(href="#book-a") Update | 
             a.red(href="#book-a") Delete
