@@ -1,4 +1,4 @@
-
+/*   -------------- General styles -------------- */
 
 a {
   color: #00B7FF;
@@ -96,7 +96,37 @@ p{
 	width:600px;
 	background-color:gray;
 }
+/*   -------------- Payment Configuration -------------- */
+
+.Payments{
+ width:90%;
+ background-color:gray;
+}
+.PayMethods{
+ background-color:lightgray;
+ margin-top:20px;
+}
+.sendMethods{
+ background-color:darkgray;
+
+}
+.Offers{
+ width:90%;
+ background-color:gray;
+ margin-top:20px;
+
+}
+.News{
+ width:90%;
+ background-color:gray;
+ margin-top:20px;
 
 
+}
+.Intrests{
+ width:90%;
+ background-color:gray;
+ margin-top:20px;
 
+}
 
