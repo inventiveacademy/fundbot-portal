@@ -1,4 +1,27 @@
 extends layout
 
 block content
+     .SendRecieve
+         .ProfileGreetings
+             .ProfileImage
+                 img.ProfileImage#ProfileImage(src="images/your-face-here.jpg" alt="")
+
+             .Greetings
+                 - for(let i = 0; i < applications.length -applications.length +1; i++)
+                     h2.greetMe Hi again , #{applications[i].firstname}
+         .MoneyCheck
+             .payUs
+                 img.ProfileImage#ProfileImage(src="images/Money-Trans.jpg" alt="")
+                 p pay here
+             .takeMoreTime
+                 img.ProfileImage#ProfileImage(src="images/more-time.jpg" alt="")
+                 p request more time
+     .Balance
+         .balanceDetails
+             p balance
+             a(href="/login") details
+         p send money
+     .PaymentsMade
+         h2 Completed
+
 
