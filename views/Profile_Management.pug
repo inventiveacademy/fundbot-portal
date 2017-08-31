@@ -9,22 +9,44 @@ block content
             a(href="#book-a") update photo 
             //not fully implemented
         .extra-info
-           H3.Eh3#Eh3 Drake Siemer
-           p.Ep#Ep joined in 2017
-           a(href="#book-a") update
-           .line
-           a(href="#book-a") Get Money 
+             - for(let i = 0; i < applications.length - applications.length +1 ; i++)
+                 H6.Eh6#Eh6 #{applications[i].firstname} #{applications[i].lastname}
+             .morecontroll
+                 p.Ep#Ep joined in 2017
+                 a(href="#book-a") update
+             .lineP
+             a.GetM(href="#book-a") Get Money 
+
+
+    .ADcontainer
+         .edit
+             H3.address#address Address
+             P.editBtn#editBtn +
+         .details#details
+         .Address-Details#AddressDetails
+             - for(let i = 0; i < applications.length - 2 ; i++)
+                 p.Street#Street #{applications[i].address}
+             - for(let i = 0; i < applications.length - 2; i++)
+                 p.State#State #{applications[i].city}  #{applications[i].state} #{applications[i].zip} 
+             p.Primary#Primary Primary, Billing address
+             // didn't know what to class name bottom one 
+         a(href="#book-a") Update 
 
 
     .AOcontainer
         H3.accountOp#accountOp Account options
         .Account-Details#AccountDetails
-            p.Language#Language 
+            p.Language#Options language 
+             select
+                 option(value="english") English
+                 option(value="spanish") Spanish
+                 option(value="french") French
             .line
-            // dropdown options here ⏫ and here ⏬
-            p.Time-Zone#Time-Zone 
+            p.Time-Zone#Options Time Zone
+             select
+                 option(value="(GMT-8:00) Pacific Time") (GMT-8:00) Pacific Time
             .line
-            p.Nationality#Nationality Nationality USA
+            p.Nationality#Nationality Nationality United States
             .line
             p.SSN#SSN SSN xxx-xx-xxxx
             .line
@@ -36,28 +58,13 @@ block content
 
 
 
-    .ADcontainer
-        .edit
-            H3.address#address Address
-            P.editBtn#editBtn +
-        .details#details
-        .Address-Details#AddressDetails
-            - for(let i = 0; i < applications.length; i++)
-                p.Street#Street #{applications[i].zip}
-            - for(let i = 0; i < applications.length; i ++)
-                p.State#State #{applications[i].city} #{applications[i].state} 
-            p.Primary#Primary Primary, Billing address
-            // didn't know what to class name bottom one 
-            a(href="#book-a") Update 
-
-
     .Emailcontainer
         .edit
             H3.H3email#H3email Email
             P.editBtn#editBtn +
         .details#details
         .Email-Details#EmailDetails
-            - for(let i = 0; i < applications.length; i++)
+            - for(let i = 0; i < applications.length -2; i++)
                 p.Email#Email #{applications[i].email}
             p.Primary#Primary Primary
             p.StateMent#StateMent To update an email address, you must have at least two email addresses on file. 
