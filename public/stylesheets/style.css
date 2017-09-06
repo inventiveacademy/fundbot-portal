@@ -8,15 +8,16 @@ body{
     font-family: Open Sans;
     background-color: #1b1917;
     opacity: .9;
-    height: 65px
+    height: 65px;
+    margin-bottom:20px;
 }
 
  .nav .logo {
     font-size: 36px;
     font-weight: 700;
     padding-left: 5.6%;
-    margin-right: 41%;
-    margin-top: 20px;
+    margin-right: 10%;
+    margin-top: 5px;
     margin-bottom: 20px;
     text-decoration: none;
     color: #fff
@@ -51,6 +52,9 @@ justify-content:flex-end;
 p{
 	color:black;
 }
+a{
+	text-decoration: none;
+}
 .edit{
 	display:flex;
 	width:500px;
@@ -66,6 +70,9 @@ p{
 	background-color:black;
 }
 /*   -------------- Profile Management -------------- */
+.rowOne{
+
+}
 .Pcontainer{
 	background-color:white;
 	width:500px;
@@ -132,8 +139,6 @@ select {
 	width:300px;
 }
 
-
-
 .ADcontainer{
 	background-color:white;
 	margin-top:20px;
@@ -176,6 +181,28 @@ select {
 	width:100%;
 	height:225px;
 	background:gray;
+}
+.ProfileGreetings{
+	display:flex;
+	justify-content:center;
+	vertical-align:center;
+}
+.ProfileImagC{
+
+}
+.Greetings{
+
+}
+.greetMe{
+
+}
+.MoneyCheck{
+ display:flex;
+}
+.payUs{
+
+}
+.takeMoreTime{
 
 }
 .Balance{
@@ -225,10 +252,10 @@ select {
 }
 /*   -------------- Login -------------- */
 .containerLogin{
-	position:relative;
+	position:absolute;
 	width:765px;
-	top:300px;
-	left:300px;
+	top:20%;
+	left:35%;
 }
 .display-4{
 	display:flex;
@@ -253,6 +280,7 @@ select {
 	padding-right:153px;
 	padding-top:5px;
 	height:38px;
+	text-decoration:none;
 	border-radius:5px;
 	color:black;
 	font-size:larger;
@@ -260,6 +288,60 @@ select {
 	background-color:lightgray;
 	
 }
+/*   -------------- General_Points -------------- */
+.CommonQuestions{
+	width:400px;
+}
+.SitesAnswers{
 
+}
+.HelpTopics{
+	width:400px;
+
+}
+.Topics{
+
+}
+.AskCommunity{
+	width:400px;
+
+}
+.Ask{
+
+}
+.searchBackground{
+	background-color:black;
+	width:100%;
+}
+.search {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid black;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color:gray;
+}
+
+.searchButton {
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
 
 

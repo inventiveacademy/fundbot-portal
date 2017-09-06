@@ -1,9 +1,13 @@
 extends layout
 
 block content
-
+     form.wrap(Method="GET")
+          .searchBackground
+             div.search
+                 input.searchTerm(type='text'  placeholder='How can we help' name='search')
+                 button.searchButton(type='submit') search  
      .CommonQuestions
-         .SitesAnswers
+            .SitesAnswers
              h2 Common Questions
              .line
 
@@ -16,4 +20,3 @@ block content
          .Ask
              .h2 Ask The Community
              .line
-             
