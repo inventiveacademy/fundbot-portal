@@ -1,14 +1,22 @@
-.BlockHolder{
-display:flex;
+.BlockHolder {
+    display: flex;
 }
+
 .rowOne {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+    margin-bottom: 200px;
 }
 
 .Pcontainer {
     background-color: white;
     width: 500px;
-    height:200px;
+    height: 200px;
     display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
     justify-content: space-between;
     border: 1px solid black;
 }
@@ -61,7 +69,8 @@ display:flex;
     background-color: white;
     margin-top: 20px;
     width: 500px;
-    height:350px;
+    height: 350px;
+    margin-left: 30px;
     border: 1px solid black;
 }
 
@@ -84,7 +93,7 @@ select {
     background-color: white;
     margin-top: 20px;
     width: 500px;
-    height:200px;
+    height: 200px;
     border: 1px solid black;
 }
 
@@ -103,7 +112,7 @@ select {
     background-color: white;
     margin-top: 20px;
     width: 500px;
-    height:175px;
+    height: 175px;
     border: 1px solid black;
 }
 
@@ -112,7 +121,7 @@ select {
 .Phonecontainer {
     background-color: white;
     margin-top: 20px;
-    height:153px;
+    height: 153px;
     border: 1px solid black;
     width: 500px;
 }
