@@ -17,6 +17,10 @@
 .rowOne {
     display: flex;
     margin: 15px 0 25px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+    margin-bottom: 200px;
 }
 
 .Pcontainer{

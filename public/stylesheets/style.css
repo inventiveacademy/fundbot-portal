@@ -132,9 +132,9 @@ a:hover {
 /*   -------------- Login -------------- */
 
 .containerLogin {
-    display: flex;
-    height: 600px;
-    justify-content: center;
+    display: flex; 
+    height: 600px; 
+    justify-content: center; 
     align-items: center;
 }
 
@@ -174,85 +174,6 @@ a:hover {
 }
 
 
-/*   -------------- Footer -------------- */
-
-.footerContainer {
-    padding-left: 4%;
-    padding-right: 4%;
-    margin: 0;
-    color: #a1a1a1;
-    background-color: #fff;
-    background-image: none;
-    background-position: 50% 50%;
-    background-attachment: scroll;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: left;
-    text-transform: none;
-    letter-spacing: normal;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 18px;
-    border-style: solid;
-    border-width: 1px 0 0 0;
-    border-color: rgba(224, 224, 224, 0.5);
-    border: 0;
-    outline: 0;
-    line-height: 1.6;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.footerContent {
-    color: #a1a1a1;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: none;
-    letter-spacing: normal;
-    text-align: left;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    border-color: rgba(224, 224, 224, 0.5);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-}
-
-.footerInner {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    text-transform: none;
-    letter-spacing: normal;
-    text-align: left;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #a1a1a1;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.blockContainer {
-    width: 21%;
-    margin: 20px;
-    padding-top: 0;
-    padding: 1.5em 0 0 0;
-    border-style: solid;
-    border-color: #ccc;
-    border: 0;
-    text-transform: none;
-    letter-spacing: normal;
-    font-style: normal;
-    font-weight: 300;
-}
-
 
 /*   -------------- Login -------------- */
 .containerLogin{
@@ -262,123 +183,6 @@ a:hover {
 	left:35%;
 }
 
-
-.blockContent {
-    padding: 0;
-    background: transparent;
-    font-size: 18px;
-    box-sizing: border-box;
-    border: 0;
-    outline: 0;
-    margin: 0;
-    text-transform: none;
-    letter-spacing: normal;
-    color: #a1a1a1;
-    text-align: left;
-    line-height: 1.6;
-    font-style: normal;
-    font-weight: 300;
-
-}
-
-.blockText {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 18px;
-    text-transform: none;
-    letter-spacing: normal;
-    color: #a1a1a1;
-    text-align: left;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.blockInnerContent {
-    text-align: left;
-    font-size: 18px;
-    color: #a1a1a1;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    text-transform: none;
-    letter-spacing: normal;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.contentTitle {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    text-align: left;
-    font-size: 18px;
-    color: #a1a1a1;
-    text-transform: none;
-    letter-spacing: normal;
-    font-style: normal;
-    font-weight: 300;
-    padding-left: .1em;
-}
-
-.blockImg {
-    padding-bottom: 1.5em;
-}
-
-.fbutton {
-    line-height: 1.6;
-    padding: .25em 1em;
-    text-decoration: none;
-    box-sizing: border-box;
-    color: #fff;
-    font-style: normal;
-    font-weight: 500;
-    border-radius: 6px;
-    background: #e48f2b;
-    font-size: 18px;
-    border-color: #fff;
-    border-width: 0;
-    border-style: solid;
-}
-
-.sbutton {
-    line-height: 1.6;
-    padding: .25em 1em;
-    margin-top: 20px;
-    text-decoration: none;
-    box-sizing: border-box;
-    color: #fff;
-    font-style: normal;
-    font-weight: 500;
-    border-radius: 6px;
-    background: #e48f2b;
-    font-size: 18px;
-    border-color: #fff;
-    border-width: 0;
-    border-style: solid;
-}
-
-.grayhref {
-    text-decoration: underline;
-    color: gray;
-}
-
-.signBtn{
-	padding-left:153px;
-	padding-right:153px;
-	padding-top:5px;
-	height:38px;
-	text-decoration:none;
-	border-radius:5px;
-	color:black;
-	font-size:larger;
-	display:inline;
-	background-color:lightgray;
-	
-}
 /*   -------------- General_Points -------------- */
 .CommonQuestions{
 	width:400px;
@@ -429,49 +233,10 @@ a:hover {
   font-size: 20px;
 }
 
-.grayhref:hover{
-	color:gray;
-}
-
-.grayhref:hover {
-    color: gray;
-}
-.grayhref2:hover{
-	color:gray;
-	text-decoration:none;
-}
-
 .iconGroup {
 display:flex;
 }
 
 .randomlink {
 	padding-left:0px;
-}
-
-.footer-text {
-	color:#a1a1a1;
-	line-height: 1.6;
-    padding: .25em 1em;
-    padding-left: 0px;
-    font-size: 16px;
-    margin-top: 15px;
-}
-.links-r {
-	margin-top:15px;
-}
-
-.fa {
-	color:gray;
-	font-size:28px;
-	padding-right:20px;
-}
-
-.scCredit {
-    clear: both;
-    padding-top: 27px;
-    width: 100%;
-    float: none;
-    font-size: 20px;
-    text-align: center;
 }
