@@ -1,9 +1,17 @@
 /*   -------------- General styles -------------- */
 
-.HelpLinks {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-top: 30px;
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #eee;
+}
+
+.HelpLinks{
+	padding-top:50px;
+	padding-bottom:20px;
+	margin-top:30px;
 }
 
 .bottomLineContent {
@@ -12,14 +20,16 @@
 }
 
 p {
-    color: black;
+    color: #333;
 }
 
 a {
-    text-decoration: none;
+	color: #0070BA;
+	transition: .5s;
 }
-ul{
-    list-style-type:none;
+
+a:hover {
+	color: #0070BA;
 }
 
 .edit {
@@ -30,6 +40,7 @@ ul{
     padding-right: 15px;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .line {
@@ -37,6 +48,7 @@ ul{
     height: 1px;
     background-color: black;
 }
+
 
 /*   -------------- Account Summary -------------- */
 
@@ -99,35 +111,23 @@ ul{
     margin-top: 20px;
 }
 
-
-
-.SendRecieve {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 225px;
-    background: gray;
+.SendRecieve{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	height:225px;
+	background:gray;
+}
+.ProfileGreetings{
+	display:flex;
+	justify-content:center;
+	vertical-align:center;
 }
 
-.ProfileGreetings {
-    display: flex;
-    justify-content: center;
-    vertical-align: center;
+.MoneyCheck{
+ display:flex;
 }
 
-.ProfileImagC {}
-
-.Greetings {}
-
-.greetMe {}
-
-.MoneyCheck {
-    display: flex;
-}
-
-.payUs {}
-
-.takeMoreTime {}
 
 /*   -------------- Login -------------- */
 
@@ -172,6 +172,7 @@ ul{
     display: inline;
     background-color: lightgray;
 }
+
 
 /*   -------------- Footer -------------- */
 
@@ -253,6 +254,15 @@ ul{
 }
 
 
+/*   -------------- Login -------------- */
+.containerLogin{
+	position:absolute;
+	width:765px;
+	top:20%;
+	left:35%;
+}
+
+
 .blockContent {
     padding: 0;
     background: transparent;
@@ -268,6 +278,7 @@ ul{
     line-height: 1.6;
     font-style: normal;
     font-weight: 300;
+
 }
 
 .blockText {
@@ -355,41 +366,36 @@ ul{
     color: gray;
 }
 
-.signBtn {
-    padding-left: 153px;
-    padding-right: 153px;
-    padding-top: 5px;
-    height: 38px;
-    text-decoration: none;
-    border-radius: 5px;
-    color: black;
-    font-size: larger;
-    display: inline;
-    background-color: lightgray;
+.signBtn{
+	padding-left:153px;
+	padding-right:153px;
+	padding-top:5px;
+	height:38px;
+	text-decoration:none;
+	border-radius:5px;
+	color:black;
+	font-size:larger;
+	display:inline;
+	background-color:lightgray;
+	
 }
 /*   -------------- General_Points -------------- */
-
-.CommonQuestions {
-    width: 400px;
+.CommonQuestions{
+	width:400px;
 }
 
-.SitesAnswers {}
+.HelpTopics{
+	width:400px;
 
-.HelpTopics {
-    width: 400px;
 }
 
-.Topics {}
-
-.AskCommunity {
-    width: 400px;
+.AskCommunity{
+	width:400px;
 }
 
-.Ask {}
-
-.searchBackground {
-    background-color: black;
-    width: 100%;
+.searchBackground{
+	background-color:black;
+	width:100%;
 }
 
 .search {
@@ -414,56 +420,51 @@ ul{
 }
 
 .searchButton {
-    border: 1px solid black;
-    background: red;
-    text-align: center;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.grayhref:hover{
+	color:gray;
 }
 
 .grayhref:hover {
     color: gray;
 }
-
-.grayhref2 {
-    color: gray;
-    text-decoration: none;
+.grayhref2:hover{
+	color:gray;
+	text-decoration:none;
 }
-
-.grayhref2:hover {
-    color: gray;
-    text-decoration: none;
-}
-
-.zocial {}
 
 .iconGroup {
-    display: flex;
+display:flex;
 }
 
 .randomlink {
-    padding-left: 0px;
+	padding-left:0px;
 }
 
 .footer-text {
-    color: #a1a1a1;
-    line-height: 1.6;
+	color:#a1a1a1;
+	line-height: 1.6;
     padding: .25em 1em;
     padding-left: 0px;
     font-size: 16px;
     margin-top: 15px;
 }
-
 .links-r {
-    margin-top: 15px;
+	margin-top:15px;
 }
 
 .fa {
-    color: gray;
-    font-size: 28px;
-    padding-right: 20px;
+	color:gray;
+	font-size:28px;
+	padding-right:20px;
 }
 
 .scCredit {

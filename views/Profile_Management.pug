@@ -1,21 +1,35 @@
 extends layout
 block content
-  .blockHolder
+    div.wrapper 
+     h1.profile-heading PROFILE
      .rowOne
-            .Pcontainer
-                .img-container
-                    p.profileLable Profile
-                    img.ProfileImage#ProfileImage(src="images/your-face-here.jpg" alt="")
-                    a(href="#book-a") update photo 
-                    //not fully implemented
-                .extra-info
-                     - for(let i = 0; i < applications.length - applications.length +1 ; i++)
-                         H6.Eh6#Eh6 #{applications[i].firstname} #{applications[i].lastname}
-                     .morecontroll
-                         p.Ep#Ep joined in 2017
-                         a(href="#book-a") update
-                     .lineP
-                     a.GetM(href="#book-a") Get Money 
+      .Pcontainer 
+       .img-container
+        div.photo-container
+         img.ProfileImage#ProfileImage(src="images/drake_siemer.jpg" alt="")
+        a(href="#book-a") update photo 
+        //not fully implemented
+       .extra-info
+         - for(let i = 0; i < applications.length - applications.length +1 ; i++)
+             H6.Eh6#Eh6 #{applications[i].firstname} #{applications[i].lastname}
+         .morecontroll
+             p.Ep#Ep Joined in 2017
+             a(href="#book-a") Update
+         .lineP
+         h3.GetM Account Active 
+      .ADcontainer
+         .edit
+             H3.address#address Address
+             P.editBtn#editBtn +
+         .details#details
+         .Address-Details#AddressDetails
+             - for(let i = 0; i < applications.length - 2 ; i++)
+                 p.Street#Street #{applications[i].address}
+             - for(let i = 0; i < applications.length - 2; i++)
+                 p.State#State #{applications[i].city}  #{applications[i].state} #{applications[i].zip} 
+             p.Primary#Primary Primary, Billing address
+             // didn't know what to class name bottom one 
+         a(href="#book-a") Update 
 
             .AOcontainer
                 H3.accountOp#accountOp Account options
@@ -40,31 +54,28 @@ block content
                     .line
                     a(href="#book-a") Close your account
 
-            .ADcontainer
-                 .edit
-                     H3.address#address Address
-                     P.editBtn#editBtn +
-                 .details#details
-                 .Address-Details#AddressDetails
-                     - for(let i = 0; i < applications.length - 2 ; i++)
-                         p.Street#Street #{applications[i].address}
-                     - for(let i = 0; i < applications.length - 2; i++)
-                         p.State#State #{applications[i].city}  #{applications[i].state} #{applications[i].zip} 
-                     p.Primary#Primary Primary, Billing address
-                     // didn't know what to class name bottom one 
-                 a(href="#book-a") Update 
-
-
-            .Emailcontainer
-                 .edit
-                     H3.H3email#H3email Email
-                     P.editBtn#editBtn +
-                 .details#details
-                 .Email-Details#EmailDetails
-                     - for(let i = 0; i < applications.length -2; i++)
-                         p.Email#Email #{applications[i].email}
-                     p.Primary#Primary Primary
-                     p.StateMent#StateMent To update an email address, you must have at least two email addresses on file. 
+     .AOcontainer
+        H3.accountOp#accountOp Account options
+        .Account-Details#AccountDetails
+            p.Language#Options language 
+             select
+                 option(value="english") English
+                 option(value="spanish") Spanish
+                 option(value="french") French
+            .line
+            p.Time-Zone#Options Time Zone
+             select
+                 option(value="(GMT-8:00) Pacific Time") (GMT-8:00) Pacific Time
+            .line
+            p.Nationality#Nationality Nationality United States
+            .line
+            p.SSN#SSN SSN xxx-xx-xxxx
+            .line
+            p.MerchantId#MerchantId MerchantId lasndllasjd
+            .line
+            a(href="#book-a") Upgrade to a Business account
+            .line
+            a(href="#book-a") Close your account
 
 
             .Phonecontainer
