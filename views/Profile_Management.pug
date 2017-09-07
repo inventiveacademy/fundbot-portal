@@ -1,5 +1,4 @@
 extends layout
-
 block content
     div.wrapper 
      h1.profile-heading PROFILE
@@ -32,6 +31,28 @@ block content
              // didn't know what to class name bottom one 
          a(href="#book-a") Update 
 
+            .AOcontainer
+                H3.accountOp#accountOp Account options
+                .Account-Details#AccountDetails
+                    p.Language#Options language 
+                     select
+                         option(value="english") English
+                         option(value="spanish") Spanish
+                         option(value="french") French
+                    .line
+                    p.Time-Zone#Options Time Zone
+                     select
+                         option(value="(GMT-8:00) Pacific Time") (GMT-8:00) Pacific Time
+                    .line
+                    p.Nationality#Nationality Nationality United States
+                    .line
+                    p.SSN#SSN SSN xxx-xx-xxxx
+                    .line
+                    p.MerchantId#MerchantId MerchantId lasndllasjd
+                    .line
+                    a(href="#book-a") Upgrade to a Business account
+                    .line
+                    a(href="#book-a") Close your account
 
      .AOcontainer
         H3.accountOp#accountOp Account options
@@ -57,30 +78,17 @@ block content
             a(href="#book-a") Close your account
 
 
-
-     .Emailcontainer
-        .edit
-            H3.H3email#H3email Email
-            P.editBtn#editBtn +
-        .details#details
-        .Email-Details#EmailDetails
-            - for(let i = 0; i < applications.length -2; i++)
-                p.Email#Email #{applications[i].email}
-            p.Primary#Primary Primary
-            p.StateMent#StateMent To update an email address, you must have at least two email addresses on file. 
-
-
-     .Phonecontainer
-        .edit
-            H3.H3Phone#H3Phone Phone
-            P.editBtn#editBtn +
-        .details#details
-        .Phone-Details#PhoneDetails
-            - for(let i = 0; i < applications.length -2; i++)
-                p.Phone#Phone #{applications[i].contactphone}
-            p.Primary#Primary Mobile, Primary
-            a(href="#book-a") Update | 
-            a.red(href="#book-a") Delete
+            .Phonecontainer
+                .edit
+                    H3.H3Phone#H3Phone Phone
+                    P.editBtn#editBtn +
+                .details#details
+                .Phone-Details#PhoneDetails
+                    - for(let i = 0; i < applications.length -2; i++)
+                        p.Phone#Phone #{applications[i].contactphone}
+                    p.Primary#Primary Mobile, Primary
+                    a(href="#book-a") Update | 
+                    a.red(href="#book-a") Delete
 
 
 

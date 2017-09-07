@@ -9,7 +9,9 @@ html
     link(rel='stylesheet', href='/stylesheets/profile-styles.css')
     link(href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet")
   body
-    include includes/header.pug
+    block navbar
+         include includes/header.pug
+
     block content
     block footer
          .footerContainer

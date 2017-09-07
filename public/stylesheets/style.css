@@ -132,10 +132,10 @@ a:hover {
 /*   -------------- Login -------------- */
 
 .containerLogin {
-    position: relative;
-    width: 765px;
-    top: 300px;
-    left: 300px;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
 .display-4 {
@@ -262,6 +262,7 @@ a:hover {
 	left:35%;
 }
 
+
 .blockContent {
     padding: 0;
     background: transparent;
@@ -342,10 +343,11 @@ a:hover {
     border-width: 0;
     border-style: solid;
 }
-.sbutton{
-	line-height: 1.6;
+
+.sbutton {
+    line-height: 1.6;
     padding: .25em 1em;
-    margin-top:20px;
+    margin-top: 20px;
     text-decoration: none;
     box-sizing: border-box;
     color: #fff;
@@ -358,10 +360,10 @@ a:hover {
     border-width: 0;
     border-style: solid;
 }
-.grayhref{
-	text-decoration: underline;
-	color:gray;
 
+.grayhref {
+    text-decoration: underline;
+    color: gray;
 }
 
 .signBtn{
@@ -397,24 +399,24 @@ a:hover {
 }
 
 .search {
-  width: 100%;
-  display:flex;
-  justify-content:center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid black;
-  padding: 5px;
-  height: 40px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
+    float: left;
+    width: 100%;
+    border: 3px solid black;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
 }
 
-.searchTerm:focus{
-  color:gray;
+.searchTerm:focus {
+    color: gray;
 }
 
 .searchButton {
@@ -430,10 +432,9 @@ a:hover {
 .grayhref:hover{
 	color:gray;
 }
-.grayhref2{
-	color:gray;
-	text-decoration:none;
 
+.grayhref:hover {
+    color: gray;
 }
 .grayhref2:hover{
 	color:gray;
@@ -453,8 +454,8 @@ display:flex;
 	line-height: 1.6;
     padding: .25em 1em;
     padding-left: 0px;
-    font-size:16px;
-    margin-top:15px;
+    font-size: 16px;
+    margin-top: 15px;
 }
 .links-r {
 	margin-top:15px;
@@ -465,6 +466,7 @@ display:flex;
 	font-size:28px;
 	padding-right:20px;
 }
+
 .scCredit {
     clear: both;
     padding-top: 27px;
