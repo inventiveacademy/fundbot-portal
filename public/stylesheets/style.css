@@ -1,61 +1,9 @@
 /*   -------------- General styles -------------- */
-<<<<<<< Updated upstream
-
-
-.HelpLinks{
-	padding-top:50px;
-	padding-bottom:20px;
-	margin-top:30px;
-=======
-
-body {
-    background-color: #f4f6f9;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.nav {
-    display: inline-block;
-    width: 100%;
-    font-family: Open Sans;
-    background-color: #1b1917;
-    opacity: .9;
-    height: 65px;
-    margin-bottom:20px;
-}
-
-.nav .logo {
-    font-size: 36px;
-    font-weight: 700;
-    padding-left: 5.6%;
-    margin-right: 10%;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #fff
-}
-
-.nav .logo:hover {
-    color: #696969
-}
-
-.nav .nav-link {
-    text-decoration: none;
-    color: #fff;
-    margin-left: 3.7%
-}
-
-.nav a {
-    display: inline-block;
-}
 
 .HelpLinks {
     padding-top: 50px;
     padding-bottom: 20px;
     margin-top: 30px;
->>>>>>> Stashed changes
 }
 
 .bottomLineContent {
@@ -66,19 +14,13 @@ ul {
 p {
     color: black;
 }
-<<<<<<< HEAD
-a{
-	text-decoration: none;
+
+a {
+    text-decoration: none;
 }
-.edit{
-	display:flex;
-	width:500px;
-	height:50px;
-	padding-left:15px;
-	padding-right:15px;
-	justify-content:space-between;
-	align-items:center;
-=======
+ul{
+    list-style-type:none;
+}
 
 .edit {
     display: flex;
@@ -88,7 +30,6 @@ a{
     padding-right: 15px;
     justify-content: space-between;
     align-items: center;
->>>>>>> develop
 }
 
 .line {
@@ -97,168 +38,7 @@ a{
     background-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*   -------------- Profile Management -------------- */
-<<<<<<< HEAD
-.rowOne{
-
-}
-.Pcontainer{
-	background-color:white;
-	width:500px;
-	display:flex;
-	justify-content:space-between;
-	border:1px solid black;
-=======
-
-.Pcontainer {
-    background-color: white;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
->>>>>>> develop
-}
-
-.img-container {
-    width: 102px;
-}
-
-.ProfileImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-}
-
-.profileLable {}
-
-.extra-info {
-    width: 400px;
-}
-
-.Eh6 {
-    margin-left: 35px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-.Ep {}
-
-.lineP {
-    width: 80%;
-    height: 1px;
-    margin-left: 35px;
-    margin-bottom: 15px;
-}
-
-.morecontroll {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 35px;
-    margin-right: 50px;
-}
-
-.GetM {
-    margin-left: 35px;
-}
-
-
-
-.AOcontainer {
-    background-color: white;
-    margin-top: 20px;
-    width: 500px;
-    border: 1px solid black;
-}
-
-.Account-Details {}
-
-#Options {
-    display: flex;
-    justify-content: space-between;
-}
-
-select {
-    background-color: white;
-    height: 50px;
-    width: 300px;
-}
-
-
-
-.ADcontainer {
-    background-color: white;
-    margin-top: 20px;
-    width: 500px;
-    border: 1px solid black;
-}
-
-.editBtn {
-    font-size: 45px;
-}
-
-.Address-Details {}
-
-.State {
-    display: inline;
-}
-
-
-.Emailcontainer {
-    background-color: white;
-    margin-top: 20px;
-    width: 500px;
-    border: 1px solid black;
-}
-
-.Email-Details {}
-
-.Phonecontainer {
-    background-color: white;
-    margin-top: 20px;
-    border: 1px solid black;
-    width: 500px;
-}
-
-<<<<<<< HEAD
-.ADcontainer{
-	background-color:white;
-	margin-top:20px;
-	width:500px;
-	border:1px solid black;
-=======
-.Phone-Details {}
-
-
-
-
-
-
-
-
->>>>>>> develop
-
-
-
-
-
-
-
 
 
 /*   -------------- Account Summary -------------- */
@@ -287,22 +67,6 @@ select {
     width: 600px;
     background-color: gray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*   -------------- Payment Configuration -------------- */
 
@@ -339,51 +103,34 @@ select {
 }
 
 
-<<<<<<< HEAD
-.SendRecieve{
-	display:flex;
-	justify-content:space-between;
-	width:100%;
-	height:225px;
-	background:gray;
+
+.SendRecieve {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 225px;
+    background: gray;
 }
-.ProfileGreetings{
-	display:flex;
-	justify-content:center;
-	vertical-align:center;
+
+.ProfileGreetings {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
 }
-.ProfileImagC{
 
+.ProfileImagC {}
+
+.Greetings {}
+
+.greetMe {}
+
+.MoneyCheck {
+    display: flex;
 }
-.Greetings{
 
-}
-.greetMe{
+.payUs {}
 
-}
-.MoneyCheck{
- display:flex;
-}
-.payUs{
-
-}
-.takeMoreTime{
-=======
->>>>>>> develop
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.takeMoreTime {}
 
 /*   -------------- Login -------------- */
 
@@ -428,22 +175,6 @@ select {
     display: inline;
     background-color: lightgray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*   -------------- Footer -------------- */
 
@@ -523,14 +254,7 @@ select {
     font-style: normal;
     font-weight: 300;
 }
-<<<<<<< HEAD
-/*   -------------- Login -------------- */
-.containerLogin{
-	position:absolute;
-	width:765px;
-	top:20%;
-	left:35%;
-=======
+
 
 .blockContent {
     padding: 0;
@@ -547,7 +271,6 @@ select {
     line-height: 1.6;
     font-style: normal;
     font-weight: 300;
->>>>>>> develop
 }
 
 .blockText {
@@ -612,10 +335,11 @@ select {
     border-width: 0;
     border-style: solid;
 }
-.sbutton{
-	line-height: 1.6;
+
+.sbutton {
+    line-height: 1.6;
     padding: .25em 1em;
-    margin-top:20px;
+    margin-top: 20px;
     text-decoration: none;
     box-sizing: border-box;
     color: #fff;
@@ -628,118 +352,123 @@ select {
     border-width: 0;
     border-style: solid;
 }
-.grayhref{
-	text-decoration: underline;
-	color:gray;
 
+.grayhref {
+    text-decoration: underline;
+    color: gray;
 }
-<<<<<<< HEAD
-.signBtn{
-	padding-left:153px;
-	padding-right:153px;
-	padding-top:5px;
-	height:38px;
-	text-decoration:none;
-	border-radius:5px;
-	color:black;
-	font-size:larger;
-	display:inline;
-	background-color:lightgray;
-	
+
+.signBtn {
+    padding-left: 153px;
+    padding-right: 153px;
+    padding-top: 5px;
+    height: 38px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    font-size: larger;
+    display: inline;
+    background-color: lightgray;
 }
 /*   -------------- General_Points -------------- */
-.CommonQuestions{
-	width:400px;
-}
-.SitesAnswers{
 
+.CommonQuestions {
+    width: 400px;
 }
-.HelpTopics{
-	width:400px;
 
-}
-.Topics{
+.SitesAnswers {}
 
+.HelpTopics {
+    width: 400px;
 }
-.AskCommunity{
-	width:400px;
 
-}
-.Ask{
+.Topics {}
 
+.AskCommunity {
+    width: 400px;
 }
-.searchBackground{
-	background-color:black;
-	width:100%;
+
+.Ask {}
+
+.searchBackground {
+    background-color: black;
+    width: 100%;
 }
+
 .search {
-  width: 100%;
-  display:flex;
-  justify-content:center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid black;
-  padding: 5px;
-  height: 40px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
+    float: left;
+    width: 100%;
+    border: 3px solid black;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
 }
 
-.searchTerm:focus{
-  color:gray;
+.searchTerm:focus {
+    color: gray;
 }
 
 .searchButton {
-  border: 1px solid black;
-  background: red;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-=======
-.grayhref:hover{
-	color:gray;
+    border: 1px solid black;
+    background: red;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
 }
-.grayhref2{
-	color:gray;
-	text-decoration:none;
 
+.grayhref:hover {
+    color: gray;
 }
-.grayhref2:hover{
-	color:gray;
-	text-decoration:none;
->>>>>>> develop
+
+.grayhref2 {
+    color: gray;
+    text-decoration: none;
+}
+
+.grayhref2:hover {
+    color: gray;
+    text-decoration: none;
 }
 
 .zocial {}
-.iconGroup{
-display:flex;
-}
-.randomlink{
-	padding-left:0px;
-}
-.footer-text{
-	color:#a1a1a1;
-	line-height: 1.6;
-    padding: .25em 1em;
-    padding-left: 0px;
-    font-size:16px;
-    margin-top:15px;
-}
-.links-r{
-	margin-top:15px;
+
+.iconGroup {
+    display: flex;
 }
 
-.fa{
-	color:gray;
-	font-size:28px;
-	padding-right:20px;
+.randomlink {
+    padding-left: 0px;
 }
+
+.footer-text {
+    color: #a1a1a1;
+    line-height: 1.6;
+    padding: .25em 1em;
+    padding-left: 0px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.links-r {
+    margin-top: 15px;
+}
+
+.fa {
+    color: gray;
+    font-size: 28px;
+    padding-right: 20px;
+}
+
 .scCredit {
     clear: both;
     padding-top: 27px;
