@@ -1,0 +1,56 @@
+.CommonQuestions{
+	width:400px;
+}
+
+.HelpTopics{
+	width:400px;
+
+}
+
+.AskCommunity{
+	width:400px;
+}
+
+.searchBackground{
+	background-color:black;
+	width:100%;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid black;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: gray;
+}
+
+.searchButton {
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.iconGroup {
+display:flex;
+}
+
+.randomlink {
+	padding-left:0px;
+}
