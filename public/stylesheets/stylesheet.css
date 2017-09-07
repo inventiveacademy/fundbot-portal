@@ -1,0 +1,63 @@
+body {
+	background: #eee;
+}
+
+header {
+	font-family: "Oswald", sans-serif;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	display: flex;
+	align-items: baseline;
+	padding: 12px 0 12px 25px;
+}
+
+header .bot-logo {
+	height: 30px;
+	padding-right: 8px;
+}
+
+header h1 {
+	font-size: 2em;
+	color: #333;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	padding: 10px 25px 0 0;
+}
+
+header ul li a {
+	color: #A0A0A0;
+	text-decoration: none;
+	padding-left: 25px;
+	transition: .3s;
+}
+
+header ul li a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+header ul .profile-photo {
+	width: 35px;
+	overflow: hidden;
+	border-radius: 100%;
+	margin-left: 25px;
+	transition: .3s;
+}
+
+header ul .profile-photo:hover {
+	transform: scale(1.1);
+	transition: .3s;
+}
+
+header ul li img {
+	height: 35px;
+}
