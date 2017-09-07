@@ -132,10 +132,10 @@ ul{
 /*   -------------- Login -------------- */
 
 .containerLogin {
-    position: relative;
-    width: 765px;
-    top: 300px;
-    left: 300px;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
 .display-4 {
