@@ -1,0 +1,27 @@
+.status-blocks {
+    background-color: lightgray;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.applicationList{
+	  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.Phone-Email-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Payment-block {}
+
+.Offers-block {}
+
+.News-block {}
+
+.Advertising-block {
+	 height:200px;
+}
+.advertising-pharagraph{
+	width:350px;
+}

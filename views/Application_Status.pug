@@ -1,4 +1,62 @@
 extends layout
 
 block content
+    .statuscontainer
+         .Phone-Email-block
+             div
+                 p Email
+                 p #{applications[0].email}
+             div
+                 p SMS
+                 p #{applications[0].contactphone}
+         .Payment-block.status-blocks
+             div
+                 p Payments
+             div
+                 p We'll let you know when you
+                 p.applicationList Send money 
+                     i.fa.fa-envelope
+                     i.fa.fa-mobile
+                 p.applicationList Request ??? 
+                     i.fa.fa-envelope
+                     i.fa.fa-mobile
+                 p.applicationList Recieve a payment 
+                     i.fa.fa-envelope
+                     i.fa.fa-mobile
+                 p Make a purchase in store 
+                     i.fa.fa-envelope
+                     i.fa.fa-mobile                     
+         .Offers-block.status-blocks
+             div
+                 p Offers
+             div
+                 p We'll let you know when 
+                 p.applicationList Offers are expiring 
+                     i.fa.fa-envelope
+                 p You recieve or send an offer 
+                     i.fa.fa-envelope
+         .News-block.status-blocks
+             div
+                 p News and updates
+             div
+                 p You're receiving 
+                  form(action='/')
+                    div
+                      input(type='checkbox' value="Update" name='Developer updates') 
+                      | Developer updates
+                    div
+                      input(type='checkbox' value="Update" name='Surveys')
+                      | Surveys
+                    div
+                      input(type='checkbox' value="Update" name='News')
+                      | News and promotions
+                    div
+                      input(type='checkbox' value="Update" name='Surveys' checked)
+                      | Updates when account info is changed
+         .Advertising-block.status-blocks
+             div
+                 p Interest-based-advertising
+             .advertising-pharagraph 
+                 p Aute commodo enim magna labore in eiusmod laborum non quis dolor mollit pariatur cupidatat nostrud veniam laborum dolore consequat esse qui excepteur fugiat qui sit adipisicing proident nulla fugiat sint labore aliqua.
+
 
