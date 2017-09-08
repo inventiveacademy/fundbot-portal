@@ -4,7 +4,12 @@
     flex-wrap: wrap;
     height:800px;
 }
-
+.cardrow{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.cardupdate{
+    margin-top:100px;
+}
 .ProfileImageControl{
     display:flex;
     justify-content: center;
@@ -19,6 +24,7 @@
     border-radius:50%;
 }
 .PaymentsMade {
+    border-radius:10px;
     margin-top:20px;
     width: 600px;
     background-color: white;
@@ -28,28 +34,39 @@
     justify-content: space-between;
 }
 .Balance {
+    border-radius:10px;
     background-color: white;
     width: 300px;
     height: 150px;
     margin-top: 20px;
+    margin-left:20px;
 }
 .CardList {
+    border-radius:10px;
     background-color: white;
     width: 300px;
     height: 250px;
     margin-top: 20px;
+    margin-left:20px;
+
 }
 .SellingTools {
+    border-radius:10px;
     background-color: white;
     width: 300px;
     height: 150px;
     margin-top: 20px;
+    margin-left:20px;
+
 }
 .MoreOnYourAccount {
+    border-radius:10px;
     background-color: white;
     width: 300px;
     height: 150px;
     margin-top: 20px;
+    margin-left:20px;
+
 }
 .SendRecieve {
     display: flex;

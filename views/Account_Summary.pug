@@ -18,46 +18,48 @@ block content
      .MethodGroup
              .Balance
                  .balanceDetails
-                     p balance
-                     a(href="/login") Details
+                     p Balance
+                     a.accountlink(href="/login") Details
                  p send money
-                 .cardRow
-                     a(href="/login") add
-                 .cardRow
-                     a(href="/login") transfer
+                 .Row
+                     a.accountlink(href="/login") add
+                 .Row
+                     a.accountlink(href="/login") transfer
              .CardList
                  .CardDetails
                      p Your Cards
-                 .cardRow
-                     a(href="/") card
-                 .cardRow               
-                     a(href="/") card
-                 .cardRow
-                     a(href="/") card
+                 .Row.cardrow
+                     a.accountlink(href="/") card
+                 .Row.cardrow           
+                     a.accountlink(href="/") card
+                 .Row.cardrow
+                     a.accountlink(href="/") card
                  .CardUpdate
-                     p You can update your cards 
+                     p.cardupdate You can update your cards 
                          a(href="/") here
 
 
              .SellingTools
                  .SellToolDetails
                      p selling tools
-                 .cardRow
+                 .Row
                      a(href="/") Manage invoices
-                 .cardRow
+                 .Row
                      a(href="/") MultiOrder shipping
-                 .cardRow
+                 .Row
                      a(href="/") Seller preferances
              .MoreOnYourAccount
                  .MoreAccountDetails
                      p More about your account
-                 .cardRow
-                     a(href="/") Upgrade to a Business account
-                 .cardRow
-                     a(href="/") Resolve a problem in our Resolution Center
-                 .cardRow
-                     a(href="/") See how much you send with ???
+                 .Row
+                     a.accountlink(href="/") Upgrade to a Business account
+                 .Row
+                     a.accountlink(href="/") Resolve a problem in our Resolution Center
+                 .Row
+                     a.accountlink(href="/") See how much you send with ???
              .PaymentsMade
                   h2 Completed
+                  div
+                     p need content here dsiemer
 
 

@@ -1,0 +1,39 @@
+.searchbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.dateofloan{
+	display:flex;
+	justify-content:space-around;
+	width: 200px;
+	height:50px;
+	border:1px solid black;
+}
+.searchYourActivity {
+    float: left;
+    width: 450px;
+    border: 1px solid black;
+    height: 37px;
+    outline: none;
+    color: #9DBFAF;
+}
+.searchbarButton{
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchYourActivity:focus {
+    color: gray;
+}
+.PaymentsMade-more-detail {
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom:300px;
+    width:100%;
+    background-color: white;
+}
