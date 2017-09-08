@@ -30,6 +30,7 @@ Utility Classes
 .primary-info {
     color: rgba(0, 0, 0, .4);
     font-style: italic;
+    margin-bottom: 15px;
 }
 
 /* modules for profile information */
@@ -43,6 +44,7 @@ Utility Classes
 
 .module-heading {
     font-size: 1.5em;
+    margin-bottom: 30px;
 }
 
 /* --------------------------------------
@@ -127,32 +129,51 @@ Main Styles
 
 /* Address info */
 
-.address-container .address p:last-child {
-    margin-bottom: 15px;
-}
-
-
 
 /* Account info */
 
-.account-options p {
-    padding-bottom: 10px;
-}
-
 .account-options .selection-container {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    padding-bottom: 25px;
-    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.account-heading {
+    font-weight: bold;
+    font-size: .8em;
+    color: #333;
+    margin: 0;
 }
 
 .account-options .selection-container select {
-    width: 100%;
+    width: 65%;
     height: 40px;
 }
 
+.account-details .selection-container:last-child {
+    border-bottom: none;
+}
 
+.account-options {
+    padding-bottom: 0;
+}
 
+/* Contact info */
 
+.phone-container .phone-details .primary-info {
+    margin-bottom: 15px;
+}
 
+.email-container div .primary-info {
+    margin-bottom: 15px;
+}
+
+.disclaimer {
+    color: rgba(0, 0, 0, .4);
+    font-style: italic;
+    font-size: .7em;
+}
 
 

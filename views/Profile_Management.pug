@@ -27,27 +27,42 @@ block content
         H3.module-heading Account Options
         .account-details
          div.selection-container
-          p.module-paragraph language 
+          p.account-heading language 
           select
            option(value="english") English
            option(value="spanish") Spanish
            option(value="french") French   
          div.selection-container
-          p.module-paragraph Time Zone
+          p.account-heading Time Zone
           select
            option(value="(GMT-8:00) Pacific Time") (GMT-8:00) Pacific Time
-         p.Nationality#Nationality #{applications[0].nationality}
-         p.SSN#SSN SSN xxx-xx-xxxx
-         p.MerchantId#MerchantId MerchantId lasndllasjd
-         a(href="#book-a") Upgrade to a Business account
-         a(href="#book-a") Close your account
+         div.selection-container  
+          p.account-heading Nationality
+          if applications[0].nationality
+            p #{applications[0].nationality}
+          else
+            p.module-paragraph No Value
+         div.selection-container  
+          p.account-heading SSN
+          if applications[0].ssn
+            p #{applications[0].ssn}
+          else
+            p.module-paragraph No Value
+       .email-container.profile-module
+        H3.module-heading Email
+        div
+         p.module-paragraph #{applications[0].email}
+         p.module-paragraph.primary-info Email, Primary
+         a.anchor-tag(href="#book-a") Update | 
+         a.anchor-tag(href="#book-a") Delete
+         p.module-paragraph.disclaimer *To update an email address you must have atlest two email addresses.     
        .phone-container.profile-module
-        H3.H3Phone#H3Phone.module-heading Phone
-         .Phone-Details#PhoneDetails
-          p.Phone#Phone #{applications[0].contactphone}
-          p.Primary#Primary Mobile, Primary
-          a(href="#book-a") Update | 
-          a.red(href="#book-a") Delete
+        H3.module-heading Phone
+        div
+         p.module-paragraph #{applications[0].contactphone}
+         p.module-paragraph.primary-info Mobile, Primary
+         a.anchor-tag(href="#book-a") Update | 
+         a.anchor-tag(href="#book-a") Delete
 
 
 
