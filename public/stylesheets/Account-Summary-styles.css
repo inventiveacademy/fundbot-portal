@@ -21,32 +21,32 @@
 .PaymentsMade {
     margin-top:20px;
     width: 600px;
-    background-color: gray;
+    background-color: white;
 }
 .balanceDetails {
     display: flex;
     justify-content: space-between;
 }
 .Balance {
-    background-color: gray;
+    background-color: white;
     width: 300px;
     height: 150px;
     margin-top: 20px;
 }
 .CardList {
-    background-color: gray;
+    background-color: white;
     width: 300px;
     height: 250px;
     margin-top: 20px;
 }
 .SellingTools {
-    background-color: gray;
+    background-color: white;
     width: 300px;
     height: 150px;
     margin-top: 20px;
 }
 .MoreOnYourAccount {
-    background-color: gray;
+    background-color: white;
     width: 300px;
     height: 150px;
     margin-top: 20px;
@@ -56,5 +56,5 @@
     justify-content: space-between;
     width: 100%;
     height: 225px;
-    background: gray;
+    background: white;
 }
