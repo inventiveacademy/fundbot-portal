@@ -1,5 +1,55 @@
 /* ---------- Profile Management ---------- */
 
+
+/* -------------------------------------
+Utility Classes
+--------------------------------------*/
+
+/* anchor tags */
+.anchor-tag {
+    font-size: .8em;
+    text-decoration: none;
+    transition: .5s;
+    color: #0070BA;
+}
+
+.anchor-tag a:hover {
+    color: initial;
+    text-decoration: underline;
+    color: #0070BA;
+}
+
+/* Paragraph text inside modules */
+
+.module-paragraph {
+    font-size: .8em;
+    color: #333;
+    margin: 0;
+}
+
+.primary-info {
+    color: rgba(0, 0, 0, .4);
+    font-style: italic;
+}
+
+/* modules for profile information */
+
+.profile-module {
+    background-color: #fff;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 25px;
+}
+
+.module-heading {
+    font-size: 1.5em;
+}
+
+/* --------------------------------------
+Main Styles 
+----------------------------------------*/
+
+
 .wrapper {
     width: 1025px;
     margin: auto;
@@ -14,21 +64,24 @@
     margin-top: 25px;
 }
 
-.rowOne {
+.profile-main {
     display: flex;
-    margin: 15px 0 25px 0;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 600px;
-    margin-bottom: 200px;
+    margin: 10px 0 100px 0;
+
 }
 
-.Pcontainer{
-	background-color: #fff;
-	width:500px;
-	display:flex;
-    padding: 25px;
+.column {
+    display: flex;
     margin-right: 25px;
+    flex-direction: column;
+    width: 500px;
+}
+
+/* basic profile info */
+
+.profile-container {
+	display:flex;
+    margin: 0 25px 25px 0;
     max-height: 200px;
 }
 
@@ -48,19 +101,6 @@
     margin-bottom: 10px;
 }
 
-.img-container a {
-    font-size: .8em;
-    text-decoration: none;
-    transition: .5s;
-    color: #0070BA;
-}
-
-.img-container a:hover {
-    color: initial;
-    text-decoration: underline;
-    color: #0070BA;
-}
-
 .ProfileImage {
     height: 110px;
 }
@@ -71,15 +111,7 @@
     flex-direction: column;
 }
 
-.extra-info .Eh6 {
-    font-size: 1.5em;
-}
-
 .extra-info .Ep {
-    font-size: .8em;
-}
-
-.extra-info .morecontroll a {
     font-size: .8em;
 }
 
@@ -93,49 +125,34 @@
     padding-bottom: 10px;
 }
 
-.ADcontainer {
-    background-color: white;
-    width: 500px;
-    padding: 25px;
-}
+/* Address info */
 
-.AOcontainer {
-    background-color: white;
-    width: 500px;
-}
-
-#Options {
-    display: flex;
-    justify-content: space-between;
-}
-
-select {
-    background-color: white;
-    height: 50px;
-    width: 300px;
-}
-
-.editBtn {
-    font-size: 45px;
-}
-
-.State {
-    display: inline;
+.address-container .address p:last-child {
+    margin-bottom: 15px;
 }
 
 
-.Emailcontainer {
-    background-color: white;
-    margin-top: 20px;
-    width: 500px;
-    border: 1px solid black;
+
+/* Account info */
+
+.account-options p {
+    padding-bottom: 10px;
+}
+
+.account-options .selection-container {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: 25px;
+    margin: 15px 0;
+}
+
+.account-options .selection-container select {
+    width: 100%;
+    height: 40px;
 }
 
 
-.Phonecontainer {
-    background-color: white;
-    margin-top: 20px;
-    border: 1px solid black;
-    width: 500px;
-}
+
+
+
+
 
