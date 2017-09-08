@@ -1,77 +1,137 @@
-.CommonQuestionsAndTopics{
+#help-body {
+  background: #fff;
+}
+
+.wrap {
+  margin: 50px 0 50px 0;
+}
+
+.CommonQuestionsAndTopics {
   display:flex;
   justify-content:space-between;
+  margin-bottom: 75px;
 }
+
 .HeaderStyle{
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 25px;
+    color: #333;
+    font-weight: lighter;
+    margin: 0;
 }
-.TopicList{
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-  
+
+.siteAnswerLinks{
+  display: flex;
+  flex-direction: column;
 }
-.SiteAnswerLinks{
-  width:115px;
+
+.siteAnswerLinks a {
+  color: #1BBCB1;
+  font-weight: lighter;
+  font-size: .9em;
+  padding: 5px 0 5px 0;
+}
+
+.siteAnswerLinks a:first-child {
+  padding: 10px 0 5px 0;
 }
 
 .CommonQuestions{
-	width:400px;
+	width: 480px;
 }
 
-.HelpTopics{
-	width:400px;
-
+.helpTopics{
+	width: 480px;
 }
+
+.helpTopics .topics .topicsAvailable p {
+  font-weight: lighter;
+  font-size: .9em;
+  color: #333;
+  margin: 0;
+}
+
+.helpTopics .topics .topicsAvailable ul {
+  padding: 0;
+}
+
+.helpTopics .topics .topicsAvailable li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 10px 0 10px 0;
+}
+
+.helpTopics .topics .topicsAvailable i {
+  font-size: .8em;
+}
+
 .searchHotLinkDiv{
-  height:70px;
-  display:flex;
-  justify-content:center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
 }
+
 .searchHotLinks{
   padding:20px;
-  color:white;
+  color: #333;
+  transition: .3s;
 }
-.searchHotLinks:hover{
-  color:white;
+
+.searchHotLinks:hover {
+  color: #ddd;
   text-decoration:none;
 }
-.AskCommunity{
-	width:600px;
+
+.AskCommunity {
+	width: 100%;
+  padding-bottom: 150px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.AskCommunity .Ask p {
+  margin-top: 25px;
+  font-weight: lighter;
+  color: #333;
+  font-size: .9em;
+}
+
+.AskCommunity .Ask p a {
+  color: #1BBCB1;
 }
 
 .searchBackground{
-	background-color:black;
 	width:100%;
 }
 
 .search {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .searchTerm {
-    float: left;
-    width: 100%;
-    border: 3px solid black;
-    padding: 5px;
+    width: 975px;
+    padding: 10px 0 10px 25px;
     height: 40px;
-    border-radius: 5px;
-    outline: none;
-    color: #9DBFAF;
+    border-radius: 100px;
+    border: 1px solid #1BBCB1;
+}
+
+.searchTerm::placeholder {
+  color: rgba(0, 0, 0, .3);
 }
 
 .searchTerm:focus {
-    color: gray;
+    outline: none;
 }
 
 .searchButton {
-  border: 1px solid black;
-  background: red;
-  text-align: center;
+  border: 1px solid #1BBCB1;
   color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
+  border-radius: 100px;
+  background: #1BBCB1;
+  width: 40px;
 }
 
 .iconGroup {
