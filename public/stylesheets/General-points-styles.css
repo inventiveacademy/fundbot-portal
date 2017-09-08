@@ -1,0 +1,83 @@
+.CommonQuestionsAndTopics{
+  display:flex;
+  justify-content:space-between;
+}
+.HeaderStyle{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.TopicList{
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+  
+}
+.SiteAnswerLinks{
+  width:115px;
+}
+
+.CommonQuestions{
+	width:400px;
+}
+
+.HelpTopics{
+	width:400px;
+
+}
+.searchHotLinkDiv{
+  height:70px;
+  display:flex;
+  justify-content:center;
+}
+.searchHotLinks{
+  padding:20px;
+  color:white;
+}
+.searchHotLinks:hover{
+  color:white;
+  text-decoration:none;
+}
+.AskCommunity{
+	width:600px;
+}
+
+.searchBackground{
+	background-color:black;
+	width:100%;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid black;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: gray;
+}
+
+.searchButton {
+  border: 1px solid black;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.iconGroup {
+display:flex;
+}
+
+.randomlink {
+	padding-left:0px;
+}
