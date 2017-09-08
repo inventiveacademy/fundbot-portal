@@ -19,14 +19,7 @@ body {
     justify-content: flex-end;
 }
 
-p {
-    color: #333;
-}
 
-a {
-	color: #0070BA;
-	transition: .5s;
-}
 
 a:hover {
 	color: #0070BA;
