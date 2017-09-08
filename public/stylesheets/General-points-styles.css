@@ -14,7 +14,19 @@
 	width:400px;
 
 }
-
+.searchHotLinkDiv{
+  height:70px;
+  display:flex;
+  justify-content:center;
+}
+.searchHotLinks{
+  padding:20px;
+  color:white;
+}
+.searchHotLinks:hover{
+  color:white;
+  text-decoration:none;
+}
 .AskCommunity{
 	width:600px;
 }

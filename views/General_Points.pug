@@ -4,9 +4,16 @@ block content
 
      form.wrap(Method="GET")
           .searchBackground
-             div.search
+             .search
                  input.searchTerm(type='text'  placeholder='How can we help' name='search')
                  button.searchButton(type='submit') search
+             .searchHotLinkDiv
+                 a.searchHotLinks(href="/") Ask the Community
+                 a.searchHotLinks(href="/") Resolution Center
+                 a.searchHotLinks(href="/") Message Center
+                 a.searchHotLinks(href="/") Call Customer Support
+
+
      .CommonQuestionsAndTopics  
          .CommonQuestions
                 .SitesAnswers
