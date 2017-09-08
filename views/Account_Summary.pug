@@ -4,24 +4,53 @@ block content
      .SendRecieve
          .ProfileGreetings
              .ProfileImageControl
-                 img.ProfileImage#ProfileImageS(src="images/your-face-here.jpg" alt="")
-
-             .Greetings
+                 img.profileImages(src="images/your-face-here.jpg" alt="")
                  - for(let i = 0; i < applications.length -applications.length +1; i++)
                      h2.greetMe Hi again , #{applications[i].firstname}
+                 a(href="/") get the most out of your money
          .MoneyCheck
              .payUs
-                 img.ProfileImage#ProfileImage(src="images/Money-Trans.jpg" alt="")
+                 img.profileImages(src="images/Money-Trans.jpg" alt="")
                  p pay here
              .takeMoreTime
-                 img.ProfileImage#ProfileImage(src="images/more-time.jpg" alt="")
+                 img.profileImages(src="images/more-time.jpg" alt="")
                  p request more time
-     .Balance
-         .balanceDetails
-             p balance
-             a(href="/login") details
-         p send money
-     .PaymentsMade
-         h2 Completed
+     .MethodGroup
+             .Balance
+                 .balanceDetails
+                     p balance
+                     a(href="/login") details
+                 p send money
+                 a(href="/login") add
+                 a(href="/login") transfer
+             .CardList
+                 .CardDetails
+                     p Your Cards
+                 a(href="/") card
+                 a(href="/login") card
+                 a(href="/login") card
+                 a(href="/login") card
+                 a(href="/login") card
+                 a(href="/login") card
+                 .CardUpdate
+                     p You can update your cards 
+                         a(href="/") here
+
+
+             .SellingTools
+                 .balanceDetails
+                     p selling tools
+                     a(href="/login") details
+                 a(href="/login") card
+                 a(href="/login") card
+                 a(href="/login") card
+             .MoreOnYourAccount
+                 .balanceDetails
+                     p More about your account
+                 a(href="/login") card
+                 a(href="/login") card
+                 a(href="/login") card
+             .PaymentsMade
+                  h2 Completed
 
 
