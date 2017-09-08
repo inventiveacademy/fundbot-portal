@@ -4,10 +4,10 @@ block content
      h1.profile-heading PROFILE
      .profile-main
       .column
-       .profile-container.profile-module 
+       .profile-container.portal-module 
         .img-container
          div.photo-container
-          img.ProfileImage#ProfileImage(src="images/drake_siemer.jpg" alt="")
+          img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
          a.anchor-tag(href="#book-a") update photo 
         .extra-info
          H6.Eh6.module-heading#Eh6 #{applications[0].firstname} #{applications[0].lastname}
@@ -15,7 +15,7 @@ block content
           p.Ep#Ep Joined in 2017
           a.anchor-tag(href="#book-a") Update
          h3.GetM Account Active
-       .address-container.profile-module
+       .address-container.portal-module
          H3.module-heading Address
          .address
           p.module-paragraph #{applications[0].address}
@@ -23,7 +23,7 @@ block content
           p.module-paragraph.primary-info Primary, Billing address
          a.anchor-tag(href="#book-a") Update 
       .column
-       .account-options.profile-module
+       .account-options.portal-module
         H3.module-heading Account Options
         .account-details
          div.selection-container
@@ -48,7 +48,7 @@ block content
             p #{applications[0].ssn}
           else
             p.module-paragraph No Value
-       .email-container.profile-module
+       .email-container.portal-module
         H3.module-heading Email
         div
          p.module-paragraph #{applications[0].email}
@@ -56,7 +56,7 @@ block content
          a.anchor-tag(href="#book-a") Update | 
          a.anchor-tag(href="#book-a") Delete
          p.module-paragraph.disclaimer *To update an email address you must have atlest two email addresses.     
-       .phone-container.profile-module
+       .phone-container.portal-module
         H3.module-heading Phone
         div
          p.module-paragraph #{applications[0].contactphone}

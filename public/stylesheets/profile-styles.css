@@ -35,11 +35,12 @@ Utility Classes
 
 /* modules for profile information */
 
-.profile-module {
+.portal-module {
     background-color: #fff;
     margin-bottom: 25px;
     width: 100%;
     padding: 25px;
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .module-heading {
@@ -50,14 +51,6 @@ Utility Classes
 /* --------------------------------------
 Main Styles 
 ----------------------------------------*/
-
-
-.wrapper {
-    width: 1025px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
 
 .profile-heading {
     font-family: "Oswald", sans-serif;

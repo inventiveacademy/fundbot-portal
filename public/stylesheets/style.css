@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #eee;
+	background: #efefef;
 }
 
 .HelpLinks{
@@ -21,4 +21,11 @@ body {
 
 a:hover {
 	color: #0070BA;
+}
+
+.wrapper {
+    width: 1025px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
