@@ -1,22 +1,23 @@
 extends layout
 block content
     div.wrapper 
-     h1.profile-heading PROFILE
      .profile-main
       .column
        .profile-container.portal-module 
-        .img-container
-         div.photo-container
-          img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
-         a.anchor-tag(href="#book-a") update photo 
-        .extra-info
-         H6.Eh6.module-heading#Eh6 #{applications[0].firstname} #{applications[0].lastname}
-         .morecontroll
-          p.Ep#Ep Joined in 2017
-          a.anchor-tag(href="#book-a") Update
+        h2.module-heading Profile
+        div.profile-info-container
+         .img-container
+          div.photo-container
+           img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
+          a.anchor-tag(href="#book-a") update photo 
+         .extra-info
+          H4.Eh6.module-heading#Eh6 #{applications[0].firstname} #{applications[0].lastname}
+          .morecontroll
+           p.Ep#Ep Joined in 2017
+           a.anchor-tag(href="#book-a") Update
          h3.GetM Account Active
        .address-container.portal-module
-         H3.module-heading Address
+         h2.module-heading Address
          .address
           p.module-paragraph #{applications[0].address}
           p.module-paragraph #{applications[0].city} #{applications[0].state} #{applications[0].zip} 
@@ -24,7 +25,7 @@ block content
          a.anchor-tag(href="#book-a") Update 
       .column
        .account-options.portal-module
-        H3.module-heading Account Options
+        h2.module-heading Account Options
         .account-details
          div.selection-container
           p.account-heading language 
@@ -49,7 +50,7 @@ block content
           else
             p.module-paragraph No Value
        .email-container.portal-module
-        H3.module-heading Email
+        h2.module-heading Email
         div
          p.module-paragraph #{applications[0].email}
          p.module-paragraph.primary-info Email, Primary
@@ -57,7 +58,7 @@ block content
          a.anchor-tag(href="#book-a") Delete
          p.module-paragraph.disclaimer *To update an email address you must have atlest two email addresses.     
        .phone-container.portal-module
-        H3.module-heading Phone
+        h2.module-heading Phone
         div
          p.module-paragraph #{applications[0].contactphone}
          p.module-paragraph.primary-info Mobile, Primary
