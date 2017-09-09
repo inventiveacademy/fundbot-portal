@@ -11,11 +11,11 @@ block content
            img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
           a.anchor-tag(href="#book-a") update photo 
          .extra-info
-          H4.Eh6.module-heading#Eh6 #{applications[0].firstname} #{applications[0].lastname}
+          h4.profile-name #{applications[0].firstname} #{applications[0].lastname}
           .morecontroll
-           p.Ep#Ep Joined in 2017
+           h3.GetM Account Active
+           p.module-paragraph.primary-info Joined in 2017
            a.anchor-tag(href="#book-a") Update
-         h3.GetM Account Active
        .address-container.portal-module
          h2.module-heading Address
          .address
@@ -51,7 +51,7 @@ block content
             p.module-paragraph No Value
        .email-container.portal-module
         h2.module-heading Email
-        div
+        div.email-info
          p.module-paragraph #{applications[0].email}
          p.module-paragraph.primary-info Email, Primary
          a.anchor-tag(href="#book-a") Update | 
@@ -59,7 +59,7 @@ block content
          p.module-paragraph.disclaimer *To update an email address you must have atlest two email addresses.     
        .phone-container.portal-module
         h2.module-heading Phone
-        div
+        div.phone-info
          p.module-paragraph #{applications[0].contactphone}
          p.module-paragraph.primary-info Mobile, Primary
          a.anchor-tag(href="#book-a") Update | 

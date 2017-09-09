@@ -86,7 +86,6 @@
 .AskCommunity {
 	width: 100%;
   padding-bottom: 150px;
-  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .AskCommunity .Ask p {
