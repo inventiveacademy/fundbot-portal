@@ -18,6 +18,7 @@ ul{
     display: block;
     width: 1025px;
     margin: auto;
+    border-top: 1px solid rgba(0, 0, 0, .2);
 }
 
 .footerInner {
