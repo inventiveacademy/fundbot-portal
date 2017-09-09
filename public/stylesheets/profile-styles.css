@@ -9,14 +9,13 @@ Utility Classes
 .anchor-tag {
     font-size: .8em;
     text-decoration: none;
-    transition: .5s;
-    color: #0070BA;
+    transition: .3s;
+    color: #1BBCB1;
 }
 
 .anchor-tag a:hover {
     color: initial;
     text-decoration: underline;
-    color: #0070BA;
 }
 
 /* Paragraph text inside modules */
@@ -39,13 +38,12 @@ Utility Classes
     background-color: #fff;
     margin-bottom: 25px;
     width: 100%;
-    padding: 25px;
-    border: 1px solid rgba(0, 0, 0, .1);
 }
 
 .module-heading {
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     margin-bottom: 30px;
+    font-weight: lighter;
 }
 
 /* --------------------------------------
@@ -78,6 +76,11 @@ Main Styles
 	display:flex;
     margin: 0 25px 25px 0;
     max-height: 200px;
+    flex-direction: column;
+}
+
+.profile-info-container {
+    display: flex;
 }
 
 .img-container {
@@ -123,7 +126,7 @@ Main Styles
 /* Address info */
 
 
-/* Account info */
+/* Account Options */
 
 .account-options .selection-container {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
@@ -134,7 +137,7 @@ Main Styles
 }
 
 .account-heading {
-    font-weight: bold;
+    font-weight: lighter;
     font-size: .8em;
     color: #333;
     margin: 0;
@@ -143,10 +146,9 @@ Main Styles
 .account-options .selection-container select {
     width: 65%;
     height: 40px;
-}
-
-.account-details .selection-container:last-child {
-    border-bottom: none;
+    background: #fff;
+    border: 1px solid #1BBCB1;
+    font-weight: lighter;
 }
 
 .account-options {
