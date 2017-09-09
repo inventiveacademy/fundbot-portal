@@ -73,14 +73,14 @@
 }
 
 .searchHotLinks{
-  padding:20px;
+  padding: 20px;
   color: #333;
   transition: .3s;
 }
 
 .searchHotLinks:hover {
   color: #ddd;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .AskCommunity {
