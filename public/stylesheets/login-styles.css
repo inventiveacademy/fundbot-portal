@@ -32,12 +32,12 @@ Header
     font-size: .8em;
     margin-left: 15px;
     transition: .5s;
-    color: #37b9e9;
+    color: #1BBCB1;
 }
 
 .sign-up-btn-header a:hover {
     background: #eee;
-    color: #37b9e9;
+    color: #1BBCB1;
 }
 
 
@@ -54,12 +54,6 @@ Main - form
     height: 600px;
 }
 
-/*.main-overlay {
-    background-color: rgba(0, 0, 0, .6);
-    height: 100%;
-    text-align: center;
-}*/
-
 .main-overlay {
     background: linear-gradient(to bottom right, rgba(27, 188, 177, .93), rgba(55, 185, 233, .93));
     height: 100%;
@@ -73,14 +67,6 @@ Main - form
     align-items: center;
     margin-top: 60px;
 }
-
-/*.form-container h1 {
-    color: #fff;
-    font-size: 3.8em;
-    font-weight: lighter;
-    text-shadow: 0 0 15px rgba(0, 0, 0, .8);
-    margin-bottom: 40px;
-}*/
 
 .form-container h1 {
     color: #fff;
@@ -111,7 +97,8 @@ Main - form
     font-size: .8em;
     font-weight: lighter;
     padding: 10px 0;
-    color: #37b9e9;
+    /*color: #37b9e9;*/
+    color: #1BBCB1;
     background: #fff;
     margin-bottom: 15px;
     border: 1px solid #fff;
@@ -122,9 +109,6 @@ Main - form
 .form-container .login-btn-main:hover {
     background: #eee;
     border: 1px solid #eee;
-
-    /*background: #14938b;*/
-    /*border-color: #14938b;*/
 } 
 
 .form-container a.login-support  {
@@ -133,11 +117,9 @@ Main - form
     font-weight: lighter;
     color: #fff;
     transition: .5s;
-    /*text-shadow: 0 0 15px rgba(0, 0, 0, .5);*/
 }
 
 .form-container a.login-support:hover  {
-    /*color: #1BBCB1;*/
     color: #fff;
 }
 
@@ -145,7 +127,6 @@ Main - form
     color: #fff;
     font-weight: lighter;
     font-size: .8em;
-    /*text-shadow: 0 0 15px rgba(0, 0, 0, .8)*/
 }
 
 .form-container p::before {
@@ -181,10 +162,8 @@ Main - form
     font-size: .8em;
     font-weight: lighter;
     padding: 10px 0;
-    /*color: #1BBCB1;*/
     color: #fff;
     margin-bottom: 15px;
-    /*border: 1px solid #1BBCB1;*/
     border: 1px solid #fff;
     text-decoration-style: none;
     transition: .5s;
@@ -192,10 +171,8 @@ Main - form
 }
 
 .form-container .sign-up-btn-main:hover {
-    /*background: #1BBCB1;
-    color: #fff;*/
     background: #fff;
-    color: #37b9e9;
+    color: #1BBCB1;
 } 
 
 
