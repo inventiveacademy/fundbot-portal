@@ -3,25 +3,42 @@ extends layout
 block content
      .SendRecieve
          .ProfileGreetings
-             .ProfileImageControl
-                 img.ProfileImage#ProfileImageS(src="images/your-face-here.jpg" alt="")
+             .profile-image-container
+                 img#user-image(src="images/sean-baier.jpeg" alt="")
 
-             .Greetings
+             .greetings
                  - for(let i = 0; i < applications.length -applications.length +1; i++)
-                     h2.greetMe Hi again , #{applications[i].firstname}
+                     h2.greetMe Hi again, #{applications[i].firstname}!
          .MoneyCheck
              .payUs
-                 img.ProfileImage#ProfileImage(src="images/Money-Trans.jpg" alt="")
-                 p pay here
+                 div.app-icon
+                    img(src="../images/payment-icon.svg")
+                 a.anchor-tag(href="") Make Payment
              .takeMoreTime
-                 img.ProfileImage#ProfileImage(src="images/more-time.jpg" alt="")
-                 p request more time
-     .Balance
-         .balanceDetails
-             p balance
-             a(href="/login") details
-         p send money
-     .PaymentsMade
-         h2 Completed
+                 div.app-icon
+                    img(src="../images/mobile-app-icon.svg")
+                 a.anchor-tag(href="") Get the FundBot app
+     .content-wrapper
+        .sidebar
+            .balance.portal-module
+                .balanceDetails
+                    h2.module-heading Total Balance
+                    // This will need to be changed to logic pulling user data
+                    div.balance-data
+                        .balance-data-container
+                            p $
+                            p 6,750.
+                            p 50
+                        .monthly-payment-container
+                            p.module-paragraph Amount due on 9/15/2017
+                            a.anchor-tag(href="") $150.00
+                        button Make a Payment
+                        a.anchor-tag(href="/login") Details
+            .banks-and-cards.portal-module
+                h2.module-heading Banks and Cards
+                a.account-item(href="") MasterCard x-5555
+                a.account-item(href="") Visa x-5555
+        .PaymentsMade.portal-module
+            h2.module-heading Completed Transactions
 
 
