@@ -92,7 +92,7 @@
     width: 300px;
 }
 
-.content-wrapper .PaymentsMade {
+.content-wrapper .transactions {
     width: 675px;
 }
 
@@ -155,4 +155,130 @@
     background: #1BBCB1;
     color: #fff;
 } 
+
+/* Banks and cards */
+
+.banks-and-cards
+.account-items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.banks-and-cards
+.account-items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.banks-and-cards
+.account-items-container
+.account-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 15px 0 15px 0;
+    display: flex;
+}
+
+.banks-and-cards
+.account-items-container
+.account-item img {
+    height: 15px;
+    padding-right: 15px;
+}
+
+.banks-and-cards
+.account-items-container
+.update-account-items {
+    padding-top: 15px;
+}
+
+/* Payment History */
+
+.content-wrapper
+.transactions
+.transaction-item {
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+    padding: 10px 0 10px 0;
+
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.date-info-container {
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.date-info-container
+.transaction-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+    color: #333;
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.date-info-container
+.transaction-date h4 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.date-info-container
+.transaction-info h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.date-info-container
+.transaction-info p {
+    color: rgba(0, 0, 0, .5);
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.transaction-amount h3 {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: lighter;
+}
+
+.content-wrapper
+.transactions
+.transaction-item
+.transaction-amount h3.credit {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: lighter;
+    color: green;
+}
+
+.content-wrapper
+.transactions
+.transaction-items-container
+.view-more{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
 

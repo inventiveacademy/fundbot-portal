@@ -27,7 +27,7 @@ block content
                     div.balance-data
                         .balance-data-container
                             p $
-                            p 6,750.
+                            p 12,262.
                             p 50
                         .monthly-payment-container
                             p.module-paragraph Amount due on 9/15/2017
@@ -36,9 +36,80 @@ block content
                         a.anchor-tag(href="/login") Details
             .banks-and-cards.portal-module
                 h2.module-heading Banks and Cards
-                a.account-item(href="") MasterCard x-5555
-                a.account-item(href="") Visa x-5555
-        .PaymentsMade.portal-module
-            h2.module-heading Completed Transactions
+                .account-items-container
+                    .account-item
+                        img(src="../images/master-card-icon.svg")
+                        a.anchor-tag(href="") MasterCard x-5555
+                    .account-item
+                        img(src="../images/visa-card-icon.png")
+                        a.anchor-tag(href="") Visa x-5555
+                    .update-account-items
+                        a.anchor-tag(href="") Manage your accounts
+        .transactions.portal-module
+            h2.module-heading Transactions
+            .transaction-items-container
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 02
+                        .transaction-info
+                            h3 Fundbot Bank LLC
+                            p.module-paragraph Loan Disbursement
+                    .transaction-amount
+                        h3.credit + $12,500
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 5
+                        .transaction-info
+                            h3 Inventive Group LLC
+                            p.module-paragraph Full Stack Developer Bootcamp
+                    .transaction-amount
+                        h3 - $12,500
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 18
+                        .transaction-info
+                            h3 Fundbot Bank LLC
+                            p.module-paragraph Monthly Accrued Interest
+                    .transaction-amount
+                        h3 - $31.26
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 20
+                        .transaction-info
+                            h3 Chase Bank account:xxxx0789
+                            p.module-paragraph Monthly Payment
+                    .transaction-amount.payment
+                        h3.credit + $150.00
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Oct
+                            h4 18
+                        .transaction-info
+                            h3 Fundbot Bank LLC
+                            p.module-paragraph Monthly Accrued Interest
+                    .transaction-amount
+                        h3 - $31.26
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Oct
+                            h4 20
+                        .transaction-info
+                            h3 Chase Bank account:xxxx0789
+                            p.module-paragraph Monthly Payment
+                    .transaction-amount
+                        h3.credit - $150.00
+                
+                .view-more
+                    a.anchor-tag(href="") View More
 
 
