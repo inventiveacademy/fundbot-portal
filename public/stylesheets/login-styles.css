@@ -73,8 +73,6 @@ Main - form
     font-size: 3.8em;
     font-weight: lighter;
     margin-bottom: 40px;
-    /*text-shadow: 0 0 15px rgba(0, 0, 0, .5);*/
-    /*text-shadow: 0 0 15px rgba(27, 188, 177, 1);*/
 }
 
 .form-container form div .login-input {
