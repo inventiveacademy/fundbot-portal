@@ -55,7 +55,7 @@ Main - form
 }
 
 .main-overlay {
-    background: linear-gradient(to bottom right, rgba(27, 188, 177, .8), rgba(55, 185, 233, .8));
+    background: linear-gradient(to bottom right, rgba(27, 188, 177, .9), rgba(55, 185, 233, .9));
     height: 100%;
     text-align: center;
 }
@@ -127,7 +127,7 @@ Main - form
     color: #fff;
     font-weight: lighter;
     font-size: .8em;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    /*text-shadow: 0 0 5px rgba(0, 0, 0, .5);*/
 }
 
 .form-container p::before {
