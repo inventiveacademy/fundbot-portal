@@ -1,3 +1,94 @@
 extends layout
 
 block content
+         .searchbar
+             .dateofloan
+                 div
+                     p start
+                     div
+                     p date
+                 div
+                     p end
+                     div
+                     p date
+     
+             form.wrap(Method="GET")
+              .searchActivities
+                 .searchActivity
+                     input.searchYourActivity(type='text'  placeholder='How can we help' name='search')
+                     button.searchbarButton(type='submit') search
+             p Advanced filters
+             div
+                 i.fa.fa-bars
+                 div
+                     p simple
+             div
+                 i.fa.fa-list
+                 div
+                     p complex
+         .transactions.portal-module
+             h2.module-heading Transactions
+             .transaction-items-container
+                 .transaction-item
+                     .date-info-container
+                         .transaction-date
+                             p.module-paragraph Sep
+                             h4 02
+                         .transaction-info
+                             h3 Fundbot Bank LLC
+                             p.module-paragraph Loan Disbursement
+                     .transaction-amount
+                         h3.credit + $12,500
+                 .transaction-item
+                     .date-info-container
+                         .transaction-date
+                             p.module-paragraph Sep
+                             h4 5
+                         .transaction-info
+                             h3 Inventive Group LLC
+                             p.module-paragraph Full Stack Developer Bootcamp
+                     .transaction-amount
+                         h3 - $12,500
+                 .transaction-item
+                     .date-info-container
+                         .transaction-date
+                             p.module-paragraph Sep
+                             h4 18
+                         .transaction-info
+                             h3 Fundbot Bank LLC
+                             p.module-paragraph Monthly Accrued Interest
+                     .transaction-amount
+                         h3 - $31.26
+                 .transaction-item
+                     .date-info-container
+                         .transaction-date
+                             p.module-paragraph Sep
+                             h4 20
+                         .transaction-info
+                             h3 Chase Bank account:xxxx0789
+                             p.module-paragraph Monthly Payment
+                     .transaction-amount.payment
+                         h3.credit + $150.00
+                 .transaction-item
+                     .date-info-container
+                         .transaction-date
+                             p.module-paragraph Oct
+                             h4 18
+                         .transaction-info
+                             h3 Fundbot Bank LLC
+                             p.module-paragraph Monthly Accrued Interest
+                     .transaction-amount
+                         h3 - $31.26
+                 .transaction-item
+                     .date-info-container
+                         .transaction-date
+                             p.module-paragraph Oct
+                             h4 20
+                         .transaction-info
+                             h3 Chase Bank account:xxxx0789
+                             p.module-paragraph Monthly Payment
+                     .transaction-amount
+                         h3.credit - $150.00
+                
+                 .view-more
+                     a.anchor-tag(href="") View More

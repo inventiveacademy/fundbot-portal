@@ -1,53 +1,69 @@
 extends layout
 block content
     div.wrapper 
-     h1.profile-heading PROFILE
      .profile-main
       .column
-       .profile-container.profile-module 
-        .img-container
-         div.photo-container
-          img.ProfileImage#ProfileImage(src="images/drake_siemer.jpg" alt="")
-         a.anchor-tag(href="#book-a") update photo 
-        .extra-info
-         H6.Eh6.module-heading#Eh6 #{applications[0].firstname} #{applications[0].lastname}
-         .morecontroll
-          p.Ep#Ep Joined in 2017
-          a.anchor-tag(href="#book-a") Update
-         h3.GetM Account Active
-       .address-container.profile-module
-         H3.module-heading Address
+       .profile-container.portal-module 
+        h2.module-heading Profile
+        div.profile-info-container
+         .img-container
+          div.photo-container
+           img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
+          a.anchor-tag(href="#book-a") update photo 
+         .extra-info
+          h4.profile-name #{applications[0].firstname} #{applications[0].lastname}
+          .morecontroll
+           h3.GetM Account Active
+           p.module-paragraph.primary-info Joined in 2017
+           a.anchor-tag(href="#book-a") Update
+       .address-container.portal-module
+         h2.module-heading Address
          .address
           p.module-paragraph #{applications[0].address}
           p.module-paragraph #{applications[0].city} #{applications[0].state} #{applications[0].zip} 
           p.module-paragraph.primary-info Primary, Billing address
          a.anchor-tag(href="#book-a") Update 
       .column
-       .account-options.profile-module
-        H3.module-heading Account Options
+       .account-options.portal-module
+        h2.module-heading Account Options
         .account-details
          div.selection-container
-          p.module-paragraph language 
+          p.account-heading language 
           select
            option(value="english") English
            option(value="spanish") Spanish
            option(value="french") French   
          div.selection-container
-          p.module-paragraph Time Zone
+          p.account-heading Time Zone
           select
            option(value="(GMT-8:00) Pacific Time") (GMT-8:00) Pacific Time
-         p.Nationality#Nationality #{applications[0].nationality}
-         p.SSN#SSN SSN xxx-xx-xxxx
-         p.MerchantId#MerchantId MerchantId lasndllasjd
-         a(href="#book-a") Upgrade to a Business account
-         a(href="#book-a") Close your account
-       .phone-container.profile-module
-        H3.H3Phone#H3Phone.module-heading Phone
-         .Phone-Details#PhoneDetails
-          p.Phone#Phone #{applications[0].contactphone}
-          p.Primary#Primary Mobile, Primary
-          a(href="#book-a") Update | 
-          a.red(href="#book-a") Delete
+         div.selection-container  
+          p.account-heading Nationality
+          if applications[0].nationality
+            p #{applications[0].nationality}
+          else
+            p.module-paragraph No Value
+         div.selection-container  
+          p.account-heading SSN
+          if applications[0].ssn
+            p #{applications[0].ssn}
+          else
+            p.module-paragraph No Value
+       .email-container.portal-module
+        h2.module-heading Email
+        div.email-info
+         p.module-paragraph #{applications[0].email}
+         p.module-paragraph.primary-info Email, Primary
+         a.anchor-tag(href="#book-a") Update | 
+         a.anchor-tag(href="#book-a") Delete
+         p.module-paragraph.disclaimer *To update an email address you must have atlest two email addresses.     
+       .phone-container.portal-module
+        h2.module-heading Phone
+        div.phone-info
+         p.module-paragraph #{applications[0].contactphone}
+         p.module-paragraph.primary-info Mobile, Primary
+         a.anchor-tag(href="#book-a") Update | 
+         a.anchor-tag(href="#book-a") Delete
 
 
 

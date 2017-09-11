@@ -1,21 +1,25 @@
 /* 
 // Inventive blue #68d1ff 
+// Inventive black/blue #00151A
+// linear-gradient #1BBCB1 , #, #37B9E9
 
 
 -*/
 
 header {
 	font-family: "Oswald", sans-serif;
-	background-color: #00151A;
+	background: linear-gradient(to bottom right, #1BBCB1, #37B9E9);
+	/*background: #00151A;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 header .logo {
 	display: flex;
 	align-items: baseline;
-	padding: 12px 0 12px 25px;
+	padding: 15px 0 12px 35px;
 }
 
 header .bot-logo {
@@ -32,14 +36,16 @@ header ul {
 	display: flex;
 	list-style: none;
 	align-items: center;
-	padding: 10px 25px 0 0;
+	padding: 15px 35px 0 0;
 }
 
 header ul li a {
-	color: #A0A0A0;
+	color: #fff;
 	text-decoration: none;
 	padding-left: 25px;
 	transition: .3s;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
 
 header ul li a:hover {

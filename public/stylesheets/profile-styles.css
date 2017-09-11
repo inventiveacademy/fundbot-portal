@@ -9,14 +9,13 @@ Utility Classes
 .anchor-tag {
     font-size: .8em;
     text-decoration: none;
-    transition: .5s;
-    color: #0070BA;
+    transition: .3s;
+    color: #1BBCB1;
 }
 
 .anchor-tag a:hover {
     color: initial;
     text-decoration: underline;
-    color: #0070BA;
 }
 
 /* Paragraph text inside modules */
@@ -30,43 +29,32 @@ Utility Classes
 .primary-info {
     color: rgba(0, 0, 0, .4);
     font-style: italic;
+    margin-bottom: 15px;
 }
 
 /* modules for profile information */
 
-.profile-module {
+.portal-module {
     background-color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
     width: 100%;
-    padding: 25px;
 }
 
 .module-heading {
-    font-size: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: 25px;
+    font-weight: lighter;
+    margin-bottom: 0;
 }
 
 /* --------------------------------------
 Main Styles 
 ----------------------------------------*/
 
-
-.wrapper {
-    width: 1025px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-heading {
-    font-family: "Oswald", sans-serif;
-    color: #ccc;
-    font-size: 2em;
-    margin-top: 25px;
-}
-
 .profile-main {
     display: flex;
-    margin: 10px 0 100px 0;
+    margin: 50px 0 100px 0;
+    justify-content: space-between;
 
 }
 
@@ -74,15 +62,20 @@ Main Styles
     display: flex;
     margin-right: 25px;
     flex-direction: column;
-    width: 500px;
+    width: 480px;
 }
 
 /* basic profile info */
 
 .profile-container {
 	display:flex;
-    margin: 0 25px 25px 0;
-    max-height: 200px;
+    margin: 0 25px 75px 0;
+    flex-direction: column;
+}
+
+.profile-info-container {
+    display: flex;
+    margin-top: 25px;
 }
 
 .img-container {
@@ -111,47 +104,81 @@ Main Styles
     flex-direction: column;
 }
 
-.extra-info .Ep {
-    font-size: .8em;
+.profile-name {
+    margin: 0;
+    color: #333;
+    font-size: 1.2em;
 }
 
 .extra-info .GetM {
     font-size: .9em;
     padding: 10px 0 0 0;
+    font-weight: lighter;
 }
 
 .morecontroll {
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
     padding-bottom: 10px;
 }
 
 /* Address info */
 
-.address-container .address p:last-child {
-    margin-bottom: 15px;
+.address {
+    margin-top: 25px;
 }
 
-
-
-/* Account info */
-
-.account-options p {
-    padding-bottom: 10px;
-}
+/* Account Options */
 
 .account-options .selection-container {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    padding-bottom: 25px;
-    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.account-heading {
+    font-weight: lighter;
+    font-size: .8em;
+    color: #333;
+    margin: 0;
 }
 
 .account-options .selection-container select {
-    width: 100%;
+    width: 65%;
     height: 40px;
+    background: #fff;
+    border: 1px solid #1BBCB1;
+    font-weight: lighter;
+    font-size: .8em;
 }
 
+.account-options {
+    padding-bottom: 0;
+}
 
+/* Contact info */
 
+.phone-container .phone-details .primary-info {
+    margin-bottom: 15px;
+}
+
+.phone-info {
+    margin-top: 25px;
+}
+
+.email-container div .primary-info {
+    margin-bottom: 15px;
+}
+
+.email-info {
+    margin-top: 25px;
+}
+
+.disclaimer {
+    color: rgba(0, 0, 0, .4);
+    font-style: italic;
+    font-size: .7em;
+}
 
 
 

@@ -1,0 +1,104 @@
+.searchbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.dateofloan{
+	display:flex;
+	justify-content:space-around;
+	width: 200px;
+	height:50px;
+	border:1px solid black;
+}
+.searchYourActivity {
+    float: left;
+    width: 450px;
+    padding: 10px 0 10px 25px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #1BBCB1;
+}
+.searchbarButton{
+  cursor: pointer;
+  border: 1px solid #1BBCB1;
+  color: #fff;
+  border-radius: 100px;
+  background: #1BBCB1;
+  width: 80px;
+}
+
+.searchYourActivity:focus {
+    color: gray;
+}
+.PaymentsMade-more-detail {
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom:300px;
+    width:100%;
+    background-color: white;
+}
+
+
+
+.transaction-item {
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+    padding: 10px 0 10px 0;
+
+}
+
+
+.date-info-container {
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+}
+
+.transaction-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+    color: #333;
+}
+
+
+.transaction-date h4 {
+    font-size: 1em;
+    margin: 0;
+}
+
+
+.transaction-info h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.transaction-info p {
+    color: rgba(0, 0, 0, .5);
+}
+
+
+.transaction-amount h3 {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: lighter;
+}
+
+
+.transaction-amount h3.credit {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: lighter;
+    color: green;
+}
+
+.view-more{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}

@@ -1,0 +1,48 @@
+.status-blocks {
+    background-color: lightgray;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.applicationList{
+	  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.fa-envelope{
+	margin:0px;
+	padding:0px;
+}
+.statuscontainer{
+	display:flex;
+	justify-content:center;
+}
+.statusBlock{
+	width:900px;
+}
+.rightsideMethods{
+	width:60%;
+}
+.leftsideMethod{
+	width:28%;
+}
+.checkBox{
+	margin-bottom:10px;
+}
+.intrests{
+	margin-right:20px;
+}
+.sendRecievemethod{
+	display:flex;
+	justify-content:space-between;
+}
+
+.Phone-Email-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Payment-block {}
+
+.Offers-block {}
+
+.News-block {}
+

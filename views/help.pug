@@ -1,0 +1,66 @@
+extends layout
+
+block content
+    div#help-body
+        div.wrapper
+         form.wrap(Method="GET")
+              .searchBackground
+                 .search
+                     input.searchTerm(type='text'  placeholder='How can we help?' name='search')
+                     button.searchButton(type='submit') Go
+                 .searchHotLinkDiv
+                     a.searchHotLinks(href="/") Ask the Community
+                     a.searchHotLinks(href="/") Resolution Center
+                     a.searchHotLinks(href="/") Message Center
+                     a.searchHotLinks(href="/") Call Customer Support
+
+
+         .CommonQuestionsAndTopics  
+             .CommonQuestions
+                    .SitesAnswers
+                         h2.HeaderStyle Common Questions
+                         .siteAnswerLinks
+                             a.questionLinks(href="/") Can I cancel my loan?
+                             a.questionLinks(href="/") How do I update my address?
+                             a.questionLinks(href="/") Can I appeal my loan decision?
+                             a.questionLinks(href="/") How do I change my password?
+                             a.questionLinks(href="/") What is the resolution center?
+                             a.questionLinks(href="/") where can I find my interest rate?
+                             a.questionLinks(href="/") Can I set up automatic payments?
+                             a.questionLinks(href="/") What happens if I don't finish the school?
+             .helpTopics
+                 .topics
+                     h2.HeaderStyle Help Topics
+                     .topicsAvailable
+                         ul
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList FundBot Basics
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList Payments
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList My Payments
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList My Money
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList My Account
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList Problems
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList Products & Services
+                          li
+                           i(class="fa fa-angle-down")
+                           p.TopicList FundBot Credit
+
+
+         .AskCommunity
+             .Ask
+                 h2.HeaderStyle Ask The Community
+                 p Find answers or join the conversation in the 
+                     a.questionLinks(href="/") Community Help Forum

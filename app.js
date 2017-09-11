@@ -11,7 +11,7 @@ var Payment_History = require('./routes/Payment_History');
 var Application_Status = require('./routes/Application_Status');
 var Profile_Management = require('./routes/Profile_Management');
 var Payment_Configuration = require('./routes/Payment_Configuration');
-var General_Points = require('./routes/General_Points');
+var help = require('./routes/help');
 
 // Don't forget to make sure that both express and the API are running before you start express \\
 
@@ -35,7 +35,7 @@ app.use('/Payment_History', Payment_History);
 app.use('/Application_Status', Application_Status);
 app.use('/Profile_Management', Profile_Management);
 app.use('/Payment_Configuration', Payment_Configuration);
-app.use('/General_Points', General_Points);
+app.use('/help', help);
 
 
 // catch 404 and forward to error handler
