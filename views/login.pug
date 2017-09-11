@@ -1,19 +1,31 @@
-extends layout
-block navbar
+include includes/head.pug
+div.login-wrapper
+  div.main
+    div.main-overlay  
+      header#login-header
+        div.logo
+          img.bot-logo(src="../images/robot-icon-white.svg")
+          h1 FUNDBOT
+        ul
+          li.login-btn-header
+            a(href="Login") Login
+          li.sign-up-btn-header
+            a(href="Login") Sign Up
+      div.form-container
+            h1 Change your life, get funded.
+            form(action='/Profile_Management')
+              div
+                input.login-input(type='text' id='email' placeholder='email' name='email')
+              div
+                input.login-input(type='password' id='password' placeholder='password' name='password')
+              button.login-btn-main(type='submit') Log in
+              a.login-support(href="") Having trouble loggin in?
+            div.or-container
+              p or
+            button.sign-up-btn-main(href="/Login") Sign Up
+  div.secondary-content
+    div
+      h2 Aliqua exercitation veniam
+      p Proident exercitation nulla dolor anim eiusmod ea nostrud quis mollit culpa dolor anim sint qui non est dolore quis sint incididunt sunt dolor pariatur dolor sed ut eu. Lorem ipsum nisi deserunt labore in cupidatat elit sed nulla nulla ut dolor veniam laborum cillum in aute dolore culpa ad voluptate aliquip labore occaecat ut adipisicing laborum sed eu aliqua esse.
 
-block content
-    .containerLogin
-      .row
-        .list
-          h1.display-4.m-b-2 Log In
-          form(action='/Profile_Management')
-            div.form-group
-              input.form-control(type='text' id='email' placeholder='email' name='email')
-            div.form-group
-              input.form-control(type='password' id='password' placeholder='password' name='password')
-            button.btn.btn-primary(type='submit') Log in  
-
-            p.or or
-            .sign-up
-             a.signBtn(href="/Login") sign&nbsp;up
-block footer
+  include includes/footer.pug

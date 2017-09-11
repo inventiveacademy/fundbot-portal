@@ -3,40 +3,114 @@ extends layout
 block content
      .SendRecieve
          .ProfileGreetings
-             .ProfileImageControl
-                 img.profileImages(src="images/your-face-here.jpg" alt="")
+             .profile-image-container
+                 img#user-image(src="images/sean-baier.jpeg" alt="")
+
+             .greetings
                  - for(let i = 0; i < applications.length -applications.length +1; i++)
-                     h2.greetMe Hi again , #{applications[i].firstname}
-                 a(href="/") get the most out of your money
+                     h2.greetMe Hi again, #{applications[i].firstname}!
          .MoneyCheck
              .payUs
-                 img.profileImages(src="images/Money-Trans.jpg" alt="")
-                 p pay here
+                 div.app-icon
+                    img(src="../images/payment-icon.svg")
+                 a.anchor-tag(href="") Make Payment
              .takeMoreTime
-                 img.profileImages(src="images/more-time.jpg" alt="")
-                 p request more time
-     .MethodGroup
-             .Balance
-                 .balanceDetails
-                     p Balance
-                     a.accountlink(href="/login") Details
-                 p send money
-                 .Row
-                     a.accountlink(href="/login") add
-                 .Row
-                     a.accountlink(href="/login") transfer
-             .CardList
-                 .CardDetails
-                     p Your Cards
-                 .Row.cardrow
-                     a.accountlink(href="/") card
-                 .Row.cardrow           
-                     a.accountlink(href="/") card
-                 .Row.cardrow
-                     a.accountlink(href="/") card
-                 .CardUpdate
-                     p.cardupdate You can update your cards 
-                         a(href="/") here
+                 div.app-icon
+                    img(src="../images/mobile-app-icon.svg")
+                 a.anchor-tag(href="") Get the FundBot app
+     .content-wrapper
+        .sidebar
+            .balance.portal-module
+                .balanceDetails
+                    h2.module-heading Total Balance
+                    // This will need to be changed to logic pulling user data
+                    div.balance-data
+                        .balance-data-container
+                            p $
+                            p 12,262.
+                            p 50
+                        .monthly-payment-container
+                            p.module-paragraph Amount due on 9/15/2017
+                            a.anchor-tag(href="") $150.00
+                        button Make a Payment
+                        a.anchor-tag(href="/login") Details
+            .banks-and-cards.portal-module
+                h2.module-heading Banks and Cards
+                .account-items-container
+                    .account-item
+                        img(src="../images/master-card-icon.svg")
+                        a.anchor-tag(href="") MasterCard x-5555
+                    .account-item
+                        img(src="../images/visa-card-icon.png")
+                        a.anchor-tag(href="") Visa x-5555
+                    .update-account-items
+                        a.anchor-tag(href="") Manage your accounts
+        .transactions.portal-module
+            h2.module-heading Transactions
+            .transaction-items-container
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 02
+                        .transaction-info
+                            h3 Fundbot Bank LLC
+                            p.module-paragraph Loan Disbursement
+                    .transaction-amount
+                        h3.credit + $12,500
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 5
+                        .transaction-info
+                            h3 Inventive Group LLC
+                            p.module-paragraph Full Stack Developer Bootcamp
+                    .transaction-amount
+                        h3 - $12,500
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 18
+                        .transaction-info
+                            h3 Fundbot Bank LLC
+                            p.module-paragraph Monthly Accrued Interest
+                    .transaction-amount
+                        h3 - $31.26
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Sep
+                            h4 20
+                        .transaction-info
+                            h3 Chase Bank account:xxxx0789
+                            p.module-paragraph Monthly Payment
+                    .transaction-amount.payment
+                        h3.credit + $150.00
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Oct
+                            h4 18
+                        .transaction-info
+                            h3 Fundbot Bank LLC
+                            p.module-paragraph Monthly Accrued Interest
+                    .transaction-amount
+                        h3 - $31.26
+                .transaction-item
+                    .date-info-container
+                        .transaction-date
+                            p.module-paragraph Oct
+                            h4 20
+                        .transaction-info
+                            h3 Chase Bank account:xxxx0789
+                            p.module-paragraph Monthly Payment
+                    .transaction-amount
+                        h3.credit - $150.00
+                
+                .view-more
+                    a.anchor-tag(href="") View More
 
 
              .SellingTools
