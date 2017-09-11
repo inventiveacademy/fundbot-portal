@@ -3,8 +3,9 @@ html
   include includes/head.pug
   
   body
-    include includes/header.pug
+    block navbar
+         include includes/header.pug
     
     block content
-
-    include includes/footer.pug
+    block footer
+         include includes/footer.pug
