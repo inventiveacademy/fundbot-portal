@@ -6,6 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var Login = require('./routes/Login');
+var users_home = require('./routes/users_home');
+var user_details = require('./routes/user_details');
+var users_list = require('./routes/users_list');
 var Account_Summary = require('./routes/Account_Summary');
 var Payment_History = require('./routes/Payment_History');
 var Application_Status = require('./routes/Application_Status');
@@ -30,6 +33,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/Login', Login);
+app.use('/users_home', users_home);
+app.use('/user_details', user_details);
+app.use('/users_list', users_list);
 app.use('/Account_Summary', Account_Summary);
 app.use('/Payment_History', Payment_History);
 app.use('/Application_Status', Application_Status);
@@ -57,4 +63,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-// Scott's push test
+// Test
