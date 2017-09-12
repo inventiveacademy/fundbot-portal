@@ -1,4 +1,4 @@
-extends users-layout
+extends layout
 
 block content
      h1 Users
@@ -13,7 +13,9 @@ block content
          h2 Admins
          li Admin 
              a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+
      ul
          h2 Applicants
          li Applicant  
              a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+         p delete here
