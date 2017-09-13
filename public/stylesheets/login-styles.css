@@ -47,7 +47,7 @@ Main - form
 -------------------------*/
 
 .main {
-    background-image: url("../images/people-smiling.jpg");
+    background-image: url("../images/people-smiling-low-sat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,7 +55,7 @@ Main - form
 }
 
 .main-overlay {
-    background: linear-gradient(to bottom right, rgba(27, 188, 177, .93), rgba(55, 185, 233, .93));
+    background: linear-gradient(to bottom right, rgba(27, 188, 177, .9), rgba(55, 185, 233, .9));
     height: 100%;
     text-align: center;
 }
@@ -91,35 +91,40 @@ Main - form
     font-weight: lighter;
 }
 
-.form-container .login-btn-main  {
+.form-container
+.login-btn-main  {
     border-radius: 100px;
     width: 300px;
     font-size: .8em;
     font-weight: lighter;
     padding: 10px 0;
-    /*color: #37b9e9;*/
     color: #1BBCB1;
     background: #fff;
     margin-bottom: 15px;
     border: 1px solid #fff;
     transition: .5s;
     margin-bottom: 15px;
+    outline: none;
 }
 
-.form-container .login-btn-main:hover {
+.form-container
+.login-btn-main:hover {
     background: #eee;
     border: 1px solid #eee;
 } 
 
-.form-container a.login-support  {
+.form-container
+a.login-support  {
     display: block;
     font-size: .8em;
     font-weight: lighter;
     color: #fff;
+    text-shadow: 0 0 15px rgba(27, 188, 177, 1);
     transition: .5s;
 }
 
-.form-container a.login-support:hover  {
+.form-container
+a.login-support:hover  {
     color: #fff;
 }
 
@@ -127,6 +132,7 @@ Main - form
     color: #fff;
     font-weight: lighter;
     font-size: .8em;
+    /*text-shadow: 0 0 5px rgba(0, 0, 0, .5);*/
 }
 
 .form-container p::before {
@@ -156,7 +162,8 @@ Main - form
     align-items: center;
 }
 
-.form-container .sign-up-btn-main  {
+.form-container
+.sign-up-btn-main  {
     border-radius: 100px;
     width: 300px;
     font-size: .8em;
@@ -168,9 +175,11 @@ Main - form
     text-decoration-style: none;
     transition: .5s;
     background: none;
+    outline: none;
 }
 
-.form-container .sign-up-btn-main:hover {
+.form-container
+.sign-up-btn-main:hover {
     background: #fff;
     color: #1BBCB1;
 } 
