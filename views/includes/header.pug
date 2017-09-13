@@ -19,14 +19,14 @@ header
     a(href="/applicant_create") CREATE APP
    li.profile-photo
     div.dropdown
-      img.dropbtn#imgDropDown(src="../images/sean-baier.jpeg")
-      div(id="myDropdown" class="dropdown-content")
-       ul
+      li.dropdown.btn.btn-default
+       img.profile-photo(src="../images/sean-baier.jpeg")
+       ul.dropdown-menu.dropdown-toggle(data-toggle="dropdown")
         li
-         a(href="/Login") LOGOUT
+         a(class="droplinks" href="/Login") LOGOUT
         li
-         a(href="/Profile_Management") PROFILE
+         a(class="droplinks" href="/Profile_Management") PROFILE
         li
-         a(href="/Account_Summary") ACCOUNT
+         a(class="droplinks" href="/Account_Summary") ACCOUNT
         li
-         a(href="/help") HELP
+         a(class="droplinks" href="/help") HELP
