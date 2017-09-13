@@ -12,7 +12,7 @@ var Application_Status = require('./routes/Application_Status');
 var Profile_Management = require('./routes/Profile_Management');
 var Payment_Configuration = require('./routes/Payment_Configuration');
 var help = require('./routes/help');
-var register = require('./routes/register');
+
 
 // Don't forget to make sure that both express and the API are running before you start express \\
 /*
@@ -78,8 +78,8 @@ app.use('/Application_Status', Application_Status);
 app.use('/Profile_Management', Profile_Management);
 app.use('/Payment_Configuration', Payment_Configuration);
 app.use('/help', help);
-// adding register route
-app.use('/register', register);
+
+
 
 
 // catch 404 and forward to error handler
