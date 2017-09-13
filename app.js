@@ -12,10 +12,52 @@ var Application_Status = require('./routes/Application_Status');
 var Profile_Management = require('./routes/Profile_Management');
 var Payment_Configuration = require('./routes/Payment_Configuration');
 var help = require('./routes/help');
+var register = require('./routes/register');
 
 // Don't forget to make sure that both express and the API are running before you start express \\
-
+/*
+SESSION MANAGEMENT CODE 👊
+Requiring express-session and connect-mongo for storing the sessions in DB
+*/
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
+var mongoose = require('mongoose');
 var app = express();
+//mongodb connection
+// var mongodbUri='mongodb://localhost:27017/fundbot'
+var mongodbUri = 'mongodb://team2:inventive@ds161443.mlab.com:61443/fundbot';
+mongoose.Promise = global.Promise;
+mongoose.connect(mongodbUri, { useMongoClient: true });
+let db = mongoose.connection;
+//mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
+
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: 'Scottie loves you',
+    store: new MongoStore({
+        mongooseConnection: db,
+        collection: 'sessions' // default
+    })
+}));
+
+// Session management middleware goes here
+function loggedOut(req, res, next) {
+  if (req.session && req.session.userId) {
+    return res.redirect('/profile');
+  }
+  return next();
+}
+function requiresLogin(req, res, next) {
+  if (req.session && req.session.userId) {
+    return next();
+  } else {
+    var err = new Error('You must be logged in to view this page.');
+    err.status = 401;
+    return next(err);
+  }
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -36,6 +78,8 @@ app.use('/Application_Status', Application_Status);
 app.use('/Profile_Management', Profile_Management);
 app.use('/Payment_Configuration', Payment_Configuration);
 app.use('/help', help);
+// adding register route
+app.use('/register', register);
 
 
 // catch 404 and forward to error handler
