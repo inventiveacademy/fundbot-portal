@@ -16,5 +16,18 @@ header
     a(href="/Payment_Configuration") PAY CONFIGURATION
    li
     a(href="/help") HELP
-   li.profile-photo 
-    img(src="../images/sean-baier.jpeg")
+   li
+    a(href="/user_details") DETAILS
+   li
+    a(href="/user_list") SEARCH
+   li
+    a(href="user_update") UPDATE
+   li.profile-photo
+    div.dropdown
+      img(onclick="myFunction2()" class="dropbtn" src="../images/sean-baier.jpeg")
+      div(id="myDropdown" class="dropdown-content")
+       a(href="/Login") Logout
+   script(src="javascripts/scripts.js")
+
+   
+  //if this is an applicant you can see these NO DIVS!!
