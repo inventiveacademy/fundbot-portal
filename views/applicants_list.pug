@@ -1,3 +1,16 @@
 extends layout
 
 block content
+     h1 Applications
+     p search for Application
+     form.wrap(Method="GET")
+      .searchApplications
+         .searchApplication
+             input.searchForapplication(type='text'  placeholder='What is there username')
+             button.searchApplicantBtn(type='submit') search
+     a(href="/applicant_create") create
+     ul
+         h2 Applicants
+         li Applicants  
+             a(href="/applicant_details") #{applications[0].firstname} #{applications[0].lastname}
+         p delete here
