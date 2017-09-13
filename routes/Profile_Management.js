@@ -8,6 +8,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     request('http://localhost:3008/applications', function(error, response, body) {
         let applications = JSON.parse(body);
+    
+
+
+
         res.render('Profile_Management', { title: 'Profile Management', applications });
     });
 });

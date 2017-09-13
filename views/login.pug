@@ -13,7 +13,7 @@ div.login-wrapper
             a(href="Login") Sign Up
       div.form-container
             h1 Change your life, get funded.
-            form(action='/Profile_Management')
+            form(action="/Login" method="POST")
               div
                 input.login-input(type='text' id='email' placeholder='email' name='email')
               div
@@ -22,7 +22,7 @@ div.login-wrapper
               a.login-support(href="") Having trouble logging in?
             div.or-container
               p or
-            button.sign-up-btn-main(href="/Login") Sign Up
+            button.sign-up-btn-main(type="submit") Sign Up
   div.secondary-content
     div
       h2 Aliqua exercitation veniam
