@@ -1,3 +1,4 @@
+script(src="javascripts/scripts.js")
 header
   a(href="/Login")
    div.logo
@@ -5,29 +6,27 @@ header
     h1 FUNDBOT
   ul
    li
-    a(href="/Profile_Management") PROFILE
-   li
-    a(href="/Account_Summary") ACCOUNT
-   li
     a(href="/Payment_History") PAY HISTORY
    li
     a(href="Application_Status") APP STATUS
    li
     a(href="/Payment_Configuration") PAY CONFIGURATION
    li
-    a(href="/help") HELP
-   li
-    a(href="/user_details") DETAILS
-   li
     a(href="/users_list") SEARCH
    li
-    a(href="user_update") UPDATE
+    a(href="/applicants_list") APP SEARCH
+   li
+    a(href="/applicants_create") CREATE APP
    li.profile-photo
     div.dropdown
-      img(onclick="myFunction2()" class="dropbtn" src="../images/sean-baier.jpeg")
+      img.dropbtn#imgDropDown(src="../images/sean-baier.jpeg")
       div(id="myDropdown" class="dropdown-content")
-       a(href="/Login") Logout
-   script(src="javascripts/scripts.js")
-
-   
-  //if this is an applicant you can see these NO DIVS!!
+       ul
+        li
+         a(href="/Login") LOGOUT
+        li
+         a(href="/Profile_Management") PROFILE
+        li
+         a(href="/Account_Summary") ACCOUNT
+        li
+         a(href="/help") HELP
