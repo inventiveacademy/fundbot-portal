@@ -70,7 +70,7 @@ header ul li img{
 	height: 35px;
 }
 
-a {color: black;margin: 5px; text-decoration: none;}
+a {color: black;margin: 2px; text-decoration: none;}
 
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
@@ -82,11 +82,15 @@ a {color: black;margin: 5px; text-decoration: none;}
 }
 
 .dropdown-menu .sub-menu {
-    left: 100%;
     position: absolute;
     top: 0;
     visibility: hidden;
     margin-top: -1px;
+}
+
+.dropdown-menu .droplinks{
+	background-color:#333;
+	max-width:30px;
 }
 .droplinks{
 	color:black;
