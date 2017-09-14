@@ -17,16 +17,10 @@ header
     a(href="/applicants_list") APP SEARCH
    li
     a(href="/applicant_create") CREATE APP
-   li
     div.dropdown
-      li.dropdown.btn.btn-default
-       img.profile-photo(src="../images/sean-baier.jpeg")
-       ul.dropdown-menu.dropdown-toggle(data-toggle="dropdown")
-        li
-         a(class="droplinks" href="/Login") LOGOUT
-        li
-         a(class="droplinks" href="/Profile_Management") PROFILE
-        li
-         a(class="droplinks" href="/Account_Summary") ACCOUNT
-        li
-         a(class="droplinks" href="/help") HELP
+       img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
+       div.dropdown-content
+         a(href="/Login") LOGOUT
+         a(href="/Profile_Management") PROFILE
+         a(href="/Account_Summary") ACCOUNT
+         a(href="/help") HELP
