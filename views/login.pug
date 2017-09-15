@@ -13,9 +13,9 @@ div.login-wrapper
             a(href="Login") Sign Up
       div.form-container
             h1 Change your life, get funded.
-            form(action='/Profile_Management')
+            form(action="/Login" method="POST")
               div
-                input.login-input(type='text' id='email' placeholder='email' name='email')
+                input.login-input(type='text' id='email' placeholder='email' name='email' value='sean@seanmail.com')
               div
                 input.login-input(type='password' id='password' placeholder='password' name='password')
               div    
@@ -24,7 +24,7 @@ div.login-wrapper
               a.login-support(href="/password_reset") Having trouble logging in?
             div.or-container
               p or
-            button.sign-up-btn-main(href="/Login") Sign Up
+            button.sign-up-btn-main(type="submit") Sign Up
   div.secondary-content
     div
       h2 Aliqua exercitation veniam
