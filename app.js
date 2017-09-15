@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('client-session');
+var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
@@ -26,8 +26,15 @@ let db = mongoose.connection;
 //mongo error
 db.on('error', console.error.bind(console, 'connection error:'));
 
+// Once the DB opens, event listener fires a success message so we don't go crazy
+db.once("open", function(){
+	console.log('The database connection is successful! 💩');
+});
+
 app.use(session({
   cookieNamie: 'session',
+  resave: true,
+  saveUninitialized: false,
   secret: 'random secret',
   duration: 30 * 60 * 1000,
   activeDuration: 5 * 60 * 1000
