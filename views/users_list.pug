@@ -1,4 +1,19 @@
-extends users-layout
+extends layout
 
 block content
-    p.l green
+     h1 Users
+     p search for user
+     form.wrap(Method="GET")
+      .searchUsers
+         .searchUser
+             input.searchForUser(type='text'  placeholder='What is there username')
+             button.searchUserBtn(type='submit') search
+     -var user = { applicant: '', user: '', admin: 'drake' }  
+         if user.admin      
+             a(href="/users_create") create
+     ul
+         h2 Users
+         li User  
+             a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+             if user.admin
+                 p delete here
