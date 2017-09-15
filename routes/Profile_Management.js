@@ -6,13 +6,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    request('http://localhost:3008/applications', function(error, response, body) {
-        let applications = JSON.parse(body);
-    
+    console.log('💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩')
+    console.log(req.session);
+    console.log('💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩')
+    request(`http://localhost:3008/applications/${req.session.applicantId}`, function(error, response, body) {
+        let appl = JSON.parse(body)[0];
+        console.log(appl._id);
 
 
-
-        res.render('Profile_Management', { title: 'Profile Management', applications });
+        res.render('Profile_Management', { title: 'Profile Management', appl});
     });
 });
 
