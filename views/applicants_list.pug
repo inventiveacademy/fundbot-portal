@@ -8,9 +8,12 @@ block content
          .searchApplication
              input.searchForapplication(type='text'  placeholder='What is there username')
              button.searchApplicantBtn(type='submit') search
-     a(href="/applicant_create") create
+     -var user = { applicant: '', user: '', admin: 'drake' }  
+         if user.admin      
+             a(href="/applicant_create") create
      ul
          h2 Applicants
          li Applicants  
-             a(href="/applicant_details") #{applications[0].firstname} #{applications[0].lastname}
-         p delete here
+             a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+             if user.admin
+                 p delete here
