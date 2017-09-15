@@ -74,12 +74,10 @@ header ul li img{
     border: none;
     cursor: pointer;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -88,16 +86,17 @@ header ul li img{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {background: linear-gradient(to bottom right, #1BBCB1, #37B9E9); color:black;}
-
 .dropdown:hover .dropdown-content {
     display: block;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 64149642dd2443f6dec60f7e4e991bf3c9e51623
