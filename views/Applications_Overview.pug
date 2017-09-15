@@ -3,5 +3,7 @@ extends layout
 block content
     .over-all-container
         .applications-accepted-block
-               
-        .applications-pending-block    	            	
+             - for (i =0; i < applications.length; ++i)
+                li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}       
+        .applications-pending-block     
+            p This is a test paragraph              
