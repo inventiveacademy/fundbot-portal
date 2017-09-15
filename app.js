@@ -17,6 +17,14 @@ var Payment_Configuration = require('./routes/Payment_Configuration');
 var help = require('./routes/help');
 
 var app = express();
+//mongodb connection
+// var mongodbUri='mongodb://localhost:27017/fundbot'
+var mongodbUri = 'mongodb://team2:inventive@ds161443.mlab.com:61443/fundbot';
+mongoose.Promise = global.Promise;
+mongoose.connect(mongodbUri, { useMongoClient: true });
+let db = mongoose.connection;
+//mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
 
 app.use(session({
   cookieNamie: 'session',
@@ -45,6 +53,8 @@ app.use('/Application_Status', Application_Status);
 app.use('/Profile_Management', Profile_Management);
 app.use('/Payment_Configuration', Payment_Configuration);
 app.use('/help', help);
+
+
 
 
 // catch 404 and forward to error handler
