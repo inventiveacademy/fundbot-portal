@@ -9,6 +9,7 @@ var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
 var Login = require('./routes/Login');
+var loginError = require('./routes/login-error');
 var password_reset = require('./routes/password_reset');
 var password_sent = require('./routes/password_sent');
 var users_create = require('./routes/users_create');
@@ -66,6 +67,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/Login', Login);
+app.use('/login-error', loginError);
 app.use('/password_reset', password_reset);
 app.use('/password_sent' , password_sent);
 app.use('/users_create', users_create);
@@ -76,7 +78,6 @@ app.use('/applicant_create', applicant_create);
 app.use('/applicant_update', applicant_update);
 app.use('/applicant_details', applicant_details);
 app.use('/applicants_list', applicants_list);
-app.use('/login-error', loginError);
 app.use('/Account_Summary', Account_Summary);
 app.use('/Payment_History', Payment_History);
 app.use('/Application_Status', Application_Status);
