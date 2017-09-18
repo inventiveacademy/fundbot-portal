@@ -6,9 +6,7 @@ block content
              .profile-image-container
                  img#user-image(src="images/sean-baier.jpeg" alt="")
 
-             .greetings
-                 - for(let i = 0; i < applications.length -applications.length +1; i++)
-                     h2.greetMe Hi again, #{applications[i].firstname}!
+             .greetings #{appl.firstname}
          .MoneyCheck
              .payUs
                  div.app-icon
