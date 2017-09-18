@@ -9,6 +9,7 @@ var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
 var Login = require('./routes/Login');
+var loginError = require('./routes/login-error');
 var password_reset = require('./routes/password_reset');
 var users_create = require('./routes/users_create');
 var user_update = require('./routes/user_update');
@@ -64,6 +65,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/Login', Login);
+app.use('/login-error', loginError);
 app.use('/password_reset', password_reset);
 app.use('/users_create', users_create);
 app.use('/user_update', user_update);
