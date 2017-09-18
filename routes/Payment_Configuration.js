@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
     } else {
         request('http://localhost:3008/applications', function(error, response, body) {
             let appl = JSON.parse(body)[0];
+            req.session.applicantId = appl._id;
             res.render('Payment_Configuration', { title: 'Payment Configuration', appl });
         });
     }
