@@ -1,12 +1,26 @@
-$(document).ready(function(){
-    $(".rejectedlist li").hover(function(){
-        $(this).toggleClass("hover");
-    });
-    $(".acceptedList li").hover(function(){
-        $(this).toggleClass("hover");
-    });
-    $(".pendinglist li").hover(function(){
-        $(this).toggleClass("hover");
-    });
-
+$(document).ready(function() {
+    $(".rejectedlist li").hover(function() {
+            $(this).toggleClass("hover");
+            $("a", this).show();
+        },
+        function() {
+            $(this).toggleClass("hover");
+            $("a", this).hide();
+        });
+    $(".acceptedList li").hover(function() {
+            $(this).toggleClass("hover");
+            $("a", this).show();
+        },
+        function() {
+            $(this).toggleClass("hover");
+            $("a", this).hide();
+        });
+    $(".pendinglist li").hover(function() {
+            $(this).toggleClass("hover");
+            $("a", this).show();
+        },
+        function() {
+            $(this).toggleClass("hover");
+            $("a", this).hide();
+        });
 });

@@ -5,23 +5,27 @@ block content
     script(src="javascripts/application-overview.js")
     .titlehead
     h1.title APPLICATION STATUS OVERVIEW
-    .over-all-container
-        .applications-accepted-block
-            h2 APPROVED
-            ul.acceptedList
-                 - for (i =0; i < applications.length; ++i)
-                    if (applications[i].applicationstate == "approved") 
-                        li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename} 
+    .master-container
+        .over-all-container
+            .applications-accepted-block
+                h2 APPROVED
+                ul.acceptedList
+                     - for (i =0; i < applications.length; ++i)
+                        if (applications[i].applicationstate == "approved") 
+                            li.anchor #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}  
+                                a.viewDetails(href="user_details") View Details
 
-        .applications-pending-block  
-            h2 PENDING     
-            ul.pendinglist
-                 - for (i =0; i < applications.length; ++i)
-                    if (applications[i].applicationstate == "application") 
-                        li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
-        .applications-rejected-block
-            h2 NOT APPROVED
-            ul.rejectedlist
-                 - for (i =0; i < applications.length; ++i)
-                    if (applications[i].applicationstate == "rejected") 
-                        li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
+            .applications-pending-block  
+                h2 PENDING     
+                ul.pendinglist
+                     - for (i =0; i < applications.length; ++i)
+                        if (applications[i].applicationstate == "application") 
+                            li.anchor(href="user_details") #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
+                                a.viewDetails(href="user_details") View Details
+            .applications-rejected-block
+                h2 NOT APPROVED
+                ul.rejectedlist
+                     - for (i =0; i < applications.length; ++i)
+                        if (applications[i].applicationstate == "rejected") 
+                            li.anchor #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
+                                a.viewDetails(href="user_details") View Details
