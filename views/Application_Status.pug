@@ -4,26 +4,27 @@ block content
     .statuscontainer
          .statusBlock
              .Phone-Email-block
-                 i.fa.fa-envelope
-                 div
-                     p Email
-                     p #{applications[0].email}
-                 i.fa.fa-mobile
-                 div
-                     p SMS
-                     p #{applications[0].contactphone}
+                 i.fa.fa-envelope.Email
+                 div.emailSection
+                     p.primary-info.module-paragraph  Email
+                     p.module-paragraph #{applications[0].email}
+
+                 i.fa.fa-mobile.Phone
+                 div.phoneSection
+                     p.primary-info.module-paragraph  SMS
+                     p.module-paragraph  #{applications[0].contactphone}
              .Payment-block.status-blocks
                  .leftsideMethod
-                     p Payments
+                     p.module-heading Payments
                  .rightsideMethods
-                     p We'll let you know when you
+                     p.primary-info We'll let you know when you
                      p.applicationList.sendRecievemethod Send money 
                          i.fa.fa-envelope.envelopeOne
                          i.fa.fa-mobile
-                     p.applicationList.sendRecievemethod Request ??? 
+                     p.applicationList.sendRecievemethod Request money?  
                          i.fa.fa-envelope.envelopeTwo
                          i.fa.fa-mobile
-                     p.applicationList.sendRecievemethod Recieve a payment 
+                     p.applicationList.sendRecievemethod Receive a payment 
                          i.fa.fa-envelope.envelopeThree
                          i.fa.fa-mobile
                      div
@@ -32,35 +33,35 @@ block content
                              i.fa.fa-mobile                     
              .Offers-block.status-blocks
                  .leftsideMethod
-                     p Offers
+                     p.module-heading Offers
                  .rightsideMethods
-                     p We'll let you know when 
+                     p.primary-info We'll let you know when 
                      p.applicationList.sendRecievemethod Offers are expiring 
-                         i.fa.fa-envelope
-                     p.sendRecievemethod You recieve or send an offer 
-                         i.fa.fa-envelope
+                         i.fa.fa-envelope.envelopeFive
+                     p.sendRecievemethod You receive or send an offer 
+                         i.fa.fa-envelope.envelopeSix
              .News-block.status-blocks
                  .leftsideMethod
-                     p News and updates
+                     p.module-heading News and updates
                  .rightsideMethods
-                     p You're receiving 
+                     p.primary-info You're receiving 
                       form(action='/')
                         .checkBox
                           input(type='checkbox' value="Update" name='Developer updates') 
-                          | Developer updates
+                          |  Developer updates
                         .checkBox
                           input(type='checkbox' value="Update" name='Surveys')
-                          | Surveys
+                          |  Surveys
                         .checkBox
                           input(type='checkbox' value="Update" name='News')
-                          | News and promotions
+                          |  News and Promotions
                         .checkBox
                           input(type='checkbox' value="Update" name='Surveys' )
-                          | Updates when account info is changed
+                          |  Updates when account info is changed
              .Advertising-block.status-blocks
                  .leftsideMethod
-                     p.intrests Interest-based-advertising
+                     p.intrests.module-heading Interest-based advertising
                  .rightsideMethods 
-                     p Aute commodo enim magna labore in eiusmod laborum non quis dolor mollit pariatur cupidatat nostrud veniam laborum dolore consequat esse qui excepteur fugiat qui sit adipisicing proident nulla fugiat sint labore aliqua.
+                     p.module-paragraph.unfinished Aute commodo enim magna labore in eiusmod laborum non quis dolor mollit pariatur cupidatat nostrud veniam laborum dolore consequat esse qui excepteur fugiat qui sit adipisicing proident nulla fugiat sint labore aliqua.
 
 

@@ -1,5 +1,7 @@
+.unfinished{
+	color:red;
+}
 .status-blocks {
-    background-color: lightgray;
     margin: 20px;
     display: flex;
     justify-content: space-between;
@@ -9,7 +11,39 @@
 }
 .fa-envelope{
 	margin:0px;
-	padding:0px;
+	padding-right:10px;
+	}
+.envelopeOne{
+	margin-left:66.3%;
+}
+.envelopeTwo{
+	margin-left:60.3%;
+}
+.envelopeThree{
+	margin-left:57%;
+}
+.envelopeFour{
+	margin-left:48%;
+}
+.envelopeFive{
+	margin-left:64.5%;
+}
+.envelopeSix{
+	margin-left:50.9%;
+}
+.emailSection{
+	flex:1;
+	align-content:center;
+}
+.Email{
+	font-size:40px;
+	margin:1%;
+}
+.phoneSection{
+	flex:1;
+}
+.Phone{
+	font-size:60px;
 }
 .statuscontainer{
 	display:flex;
@@ -18,11 +52,11 @@
 .statusBlock{
 	width:900px;
 }
+.leftsideMethod{
+	width:30%;
+}
 .rightsideMethods{
 	width:60%;
-}
-.leftsideMethod{
-	width:28%;
 }
 .checkBox{
 	margin-bottom:10px;
@@ -32,17 +66,35 @@
 }
 .sendRecievemethod{
 	display:flex;
-	justify-content:space-between;
+
+}
+/* Paragraph text inside modules */
+
+.module-paragraph {
+    font-size: .8em;
+    margin: 0;
 }
 
-.Phone-Email-block {
-    display: flex;
-    justify-content: space-around;
+.primary-info {
+    color: rgba(0, 0, 0, .4);
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
-.Payment-block {}
+/* modules for profile information */
 
-.Offers-block {}
+.portal-module {
+    background-color: #fff;
+    margin-bottom: 75px;
+    width: 100%;
+}
 
-.News-block {}
+.module-heading {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: 25px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.Phone-Email-block { display: flex; margin:2.4%;}
 
