@@ -10,13 +10,18 @@ body {
     margin-top: 5%;
 }
 
+.master-container{
+	display: flex;
+	justify-content: center;
+}
 .over-all-container {
     padding: 5% 5% 5% 5%;
     display: flex;
     flex-direction: row;
-    align-content: top;
-    align-items: top;
     flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0px;
+    flex: 1;
 }
 
 .applications-accepted-block {
@@ -25,11 +30,12 @@ body {
     width: 300px;
     align-self: center;
     margin: 2% 5% 2% 2%;
+    max-width: 480px;
 }
 
 .acceptedList {
+	border-top: 1px solid rgba(0, 0, 0, .1);
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
     padding: 10px 0px 10px 20px
 }
@@ -40,11 +46,12 @@ body {
     width: 300px;
     align-self: center;
     padding: 1%;
+    max-width: 480px;
 }
 
 .pendinglist {
+	border-top: 1px solid rgba(0, 0, 0, .1);
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
     padding: 10px 0px 10px 20px
 }
@@ -55,14 +62,25 @@ body {
     width: 300px;
     align-self: center;
     margin: 2% 5% 2% 2%;
+    max-width: 480px;
 }
 
 .rejectedlist {
+	border-top: 1px solid rgba(0, 0, 0, .1);
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
-    padding: 10px 0px 10px 20px
+    padding: 10px 0px 10px 20px;
+    max-width: 480px;
 }
-.hover{
-	color: #68d1ff;
+
+.hover {
+    color: #68d1ff;
+}
+.viewDetails {
+	display: none;
+	float: right;
+	padding-right: 10px;
+}
+.anchor {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
