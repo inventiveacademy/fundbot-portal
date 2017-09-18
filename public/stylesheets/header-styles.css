@@ -2,74 +2,60 @@
 // Inventive blue #68d1ff 
 // Inventive black/blue #00151A
 // linear-gradient #1BBCB1 , #, #37B9E9
-
-
 -*/
-
 header {
-	font-family: "Oswald", sans-serif;
-	background: linear-gradient(to bottom right, #1BBCB1, #37B9E9);
-	/*background: #00151A;*/
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(to bottom right, #1BBCB1, #37B9E9);
+    /*background: #00151A;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
-
 header .logo {
-	display: flex;
-	align-items: baseline;
-	padding: 15px 0 12px 35px;
+    display: flex;
+    align-items: baseline;
+    padding: 15px 0 12px 35px;
 }
-
 header .bot-logo {
-	height: 30px;
-	padding-right: 8px;
+    height: 30px;
+    padding-right: 8px;
 }
-
 header h1 {
-	font-size: 2em;
-	color: #fff;
+    font-size: 2em;
+    color: #fff;
 }
-
 header ul {
-	display: flex;
-	list-style: none;
-	align-items: center;
-	padding: 15px 35px 0 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 15px 35px 0 0;
 }
-
 header ul li a {
-	color: #fff;
-	text-decoration: none;
-	padding-left: 25px;
-	transition: .3s;
-	font-weight: lighter;
-	letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 25px;
+    transition: .3s;
+    font-weight: lighter;
+    letter-spacing: 1px;
 }
-
 header ul li a:hover {
-	color: #eee;
-	text-decoration: none;
+    color: #eee;
+    text-decoration: none;
 }
-
 header ul .profile-photo {
-	width: 35px;
-	overflow: hidden;
-	border-radius: 100%;
-	margin-left: 25px;
-	transition: .3s;
+    width: 35px;
+    border-radius: 100%;
+    margin-left: 25px;
+    transition: .3s;
 }
-
 header ul .profile-photo:hover {
-	transform: scale(1.1);
-	transition: .3s;
+    transform: scale(1.1);
+    transition: .3s;
 }
-
 header ul li img{
-	height: 35px;
+    height: 35px;
 }
-
 .dropbtn {
     border: none;
     cursor: pointer;
@@ -88,6 +74,7 @@ header ul li img{
 }
 .dropdown-content a {
     color: black;
+    font-weight:lighter;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -96,3 +83,4 @@ header ul li img{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+

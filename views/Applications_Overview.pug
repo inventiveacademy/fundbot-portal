@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src="javascripts/application-overview.js")
+    .titlehead
+    h1.title APPLICATION STATUS OVERVIEW
+    .over-all-container
+        .applications-accepted-block
+            h2 APPROVED
+            ul.acceptedList
+                 - for (i =0; i < applications.length; ++i)
+                    if (applications[i].applicationstate == "approved") 
+                        li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename} 
+
+        .applications-pending-block  
+            h2 PENDING     
+            ul.pendinglist
+                 - for (i =0; i < applications.length; ++i)
+                    if (applications[i].applicationstate == "application") 
+                        li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
+        .applications-rejected-block
+            h2 NOT APPROVED
+            ul.rejectedlist
+                 - for (i =0; i < applications.length; ++i)
+                    if (applications[i].applicationstate == "rejected") 
+                        li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
