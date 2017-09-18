@@ -1,3 +1,6 @@
+input, a, button:focus{
+    outline:none;
+}
 .searchbar{
 	display:flex;
 	justify-content:space-between;
@@ -14,9 +17,13 @@
     float: left;
     width: 450px;
     padding: 10px 0 10px 25px;
+    margin-right:3px;
     height: 40px;
     border-radius: 100px;
     border: 1px solid #1BBCB1;
+}
+.searchYourActivity:focus{
+    outline: none;
 }
 .searchbarButton{
   cursor: pointer;
