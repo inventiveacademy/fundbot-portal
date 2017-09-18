@@ -5,14 +5,17 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    if (!req.session.userId) {
+    console.log(req.session);
+    console.log("session userId", req.session.applicantId);
+    if (!req.session.applicantId) {
         var err = new Error('You are not authorized to view this page.');
         err.status = 403;
         return next(err);
     } else {
         request('http://localhost:3008/applications', function(error, response, body) {
-            let applications = JSON.parse(body);
-            res.render('Account_Summary', { title: 'Account Summary', applications });
+            let appl = JSON.parse(body)[0];
+            req.session.applicantId = appl._id;
+            res.render('Account_Summary', { title: 'Account Summary', appl });
         });
     }
 });
