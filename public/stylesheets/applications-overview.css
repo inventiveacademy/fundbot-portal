@@ -1,0 +1,80 @@
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.master-container{
+	display: flex;
+	justify-content: center;
+}
+.over-all-container {
+    padding: 5% 5% 5% 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0px;
+    flex: 1;
+}
+
+.applications-accepted-block {
+    flex: 1;
+    flex-basis: 300px;
+    width: 300px;
+    align-self: center;
+    margin: 2% 5% 2% 2%;
+    max-width: 480px;
+}
+
+.acceptedList {
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 0px 10px 20px
+}
+
+.applications-pending-block {
+    flex: 1;
+    flex-basis: 300px;
+    width: 300px;
+    align-self: center;
+    padding: 1%;
+    max-width: 480px;
+}
+
+.pendinglist {
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 0px 10px 20px
+}
+
+.applications-rejected-block {
+    flex: 1;
+    flex-basis: 300px;
+    width: 300px;
+    align-self: center;
+    margin: 2% 5% 2% 2%;
+    max-width: 480px;
+}
+
+.rejectedlist {
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 0px 10px 20px;
+    max-width: 480px;
+}
+
+.hover {
+    color: #68d1ff;
+}
+.viewDetails {
+	display: none;
+	float: right;
+	padding-right: 10px;
+}

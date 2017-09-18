@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var Login = require('./routes/Login');
 var password_reset = require('./routes/password_reset');
+var password_sent = require('./routes/password_sent');
 var users_create = require('./routes/users_create');
 var user_update = require('./routes/user_update');
 var user_details = require('./routes/user_details');
@@ -20,6 +21,7 @@ var Payment_History = require('./routes/Payment_History');
 var Application_Status = require('./routes/Application_Status');
 var Profile_Management = require('./routes/Profile_Management');
 var Payment_Configuration = require('./routes/Payment_Configuration');
+var Applications_Overview = require('./routes/Applications_Overview');
 var help = require('./routes/help');
 
 // Don't forget to make sure that both express and the API are running before you start express \\
@@ -40,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/Login', Login);
 app.use('/password_reset', password_reset);
+app.use('/password_sent' , password_sent);
 app.use('/users_create', users_create);
 app.use('/user_update', user_update);
 app.use('/user_details', user_details);
@@ -53,6 +56,7 @@ app.use('/Payment_History', Payment_History);
 app.use('/Application_Status', Application_Status);
 app.use('/Profile_Management', Profile_Management);
 app.use('/Payment_Configuration', Payment_Configuration);
+app.use('/Applications_Overview', Applications_Overview)
 app.use('/help', help);
 
 
