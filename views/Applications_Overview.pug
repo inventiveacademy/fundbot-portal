@@ -12,7 +12,7 @@ block content
                 ul.acceptedList
                      - for (i =0; i < applications.length; ++i)
                         if (applications[i].applicationstate == "approved") 
-                            li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}  
+                            li.anchor #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}  
                                 a.viewDetails(href="user_details") View Details
 
             .applications-pending-block  
@@ -27,5 +27,5 @@ block content
                 ul.rejectedlist
                      - for (i =0; i < applications.length; ++i)
                         if (applications[i].applicationstate == "rejected") 
-                            li #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
+                            li.anchor #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
                                 a.viewDetails(href="user_details") View Details
