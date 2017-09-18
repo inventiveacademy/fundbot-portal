@@ -35,7 +35,6 @@ body {
 
 .acceptedList {
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
     padding: 10px 0px 10px 20px
 }
@@ -51,7 +50,6 @@ body {
 
 .pendinglist {
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
     padding: 10px 0px 10px 20px
 }
@@ -67,7 +65,6 @@ body {
 
 .rejectedlist {
     align-items: center;
-    background-color: rgba(0, 0, 0, .1);
     border-radius: 5px;
     padding: 10px 0px 10px 20px;
     max-width: 480px;
@@ -78,4 +75,6 @@ body {
 }
 .viewDetails {
 	display: none;
+	float: right;
+	padding-right: 10px;
 }
