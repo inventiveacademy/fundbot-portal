@@ -9,7 +9,15 @@ body {
     font-weight: bold;
     margin-top: 5%;
 }
-
+.top-master-container{
+	max-width: 1024px;
+}
+.search-container{
+	display: flex;
+}
+.searchbar{
+	flex: 1;
+}
 .master-container{
 	display: flex;
 	justify-content: center;
