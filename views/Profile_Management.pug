@@ -9,9 +9,9 @@ block content
          .img-container
           div.photo-container
            img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
-          a.anchor-tag(href="#book-a") update photo 
+          a.anchor-tag(href="#book-a") Update Photo 
          .extra-info
-          h4.profile-name #{applications[0].firstname} #{applications[0].lastname}
+          h4.profile-name #{appl.firstname} #{appl.lastname}
           .morecontroll
            h3.GetM Account Active
            p.module-paragraph.primary-info Joined in 2017
@@ -19,8 +19,8 @@ block content
        .address-container.portal-module
          h2.module-heading Address
          .address
-          p.module-paragraph #{applications[0].address}
-          p.module-paragraph #{applications[0].city} #{applications[0].state} #{applications[0].zip} 
+          p.module-paragraph #{appl.address}
+          p.module-paragraph #{appl.city} #{appl.state} #{appl.zip} 
           p.module-paragraph.primary-info Primary, Billing address
          a.anchor-tag(href="#book-a") Update 
       .column
@@ -28,7 +28,7 @@ block content
         h2.module-heading Account Options
         .account-details
          div.selection-container
-          p.account-heading language 
+          p.account-heading Language 
           select
            option(value="english") English
            option(value="spanish") Spanish
@@ -39,20 +39,20 @@ block content
            option(value="(GMT-8:00) Pacific Time") (GMT-8:00) Pacific Time
          div.selection-container  
           p.account-heading Nationality
-          if applications[0].nationality
-            p #{applications[0].nationality}
+          if appl.nationality
+            p #{appl.nationality}
           else
             p.module-paragraph No Value
          div.selection-container  
           p.account-heading SSN
-          if applications[0].ssn
-            p #{applications[0].ssn}
+          if appl.ssn
+            p #{appl.ssn}
           else
             p.module-paragraph No Value
        .email-container.portal-module
         h2.module-heading Email
         div.email-info
-         p.module-paragraph #{applications[0].email}
+         p.module-paragraph #{appl.email}
          p.module-paragraph.primary-info Email, Primary
          a.anchor-tag(href="#book-a") Update | 
          a.anchor-tag(href="#book-a") Delete
@@ -60,11 +60,7 @@ block content
        .phone-container.portal-module
         h2.module-heading Phone
         div.phone-info
-         p.module-paragraph #{applications[0].contactphone}
+         p.module-paragraph #{appl.contactphone}
          p.module-paragraph.primary-info Mobile, Primary
          a.anchor-tag(href="#book-a") Update | 
          a.anchor-tag(href="#book-a") Delete
-
-
-
-
