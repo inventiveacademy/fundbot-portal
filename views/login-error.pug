@@ -1,0 +1,32 @@
+include includes/head.pug
+div.login-wrapper
+  div.main
+    div.main-overlay  
+      header#login-header
+        div.logo
+          img.bot-logo(src="../images/robot-icon-white.svg")
+          h1 FUNDBOT
+        ul
+          li.login-btn-header
+            a(href="Login") Login
+          li.sign-up-btn-header
+            a(href="Login") Sign Up
+      div.form-container
+            h1 Change your life, get funded.
+            form(action="/Login" method="POST")
+              h2.user-not-found ⚠️ &nbsp User Not Found!
+              div
+                input.login-input(type='text' id='email' placeholder='email' name='email' value='sean@seanmail.com')
+              div
+                input.login-input(type='password' id='password' placeholder='password' name='password' value='Trevor')
+              button.login-btn-main(type='submit') Log in
+              a.login-support(href="") Having trouble logging in?
+            div.or-container
+              p or
+            button.sign-up-btn-main(type="submit") Sign Up
+  div.secondary-content
+    div
+      h2 Aliqua exercitation veniam
+      p Proident exercitation nulla dolor anim eiusmod ea nostrud quis mollit culpa dolor anim sint qui non est dolore quis sint incididunt sunt dolor pariatur dolor sed ut eu. Lorem ipsum nisi deserunt labore in cupidatat elit sed nulla nulla ut dolor veniam laborum cillum in aute dolore culpa ad voluptate aliquip labore occaecat ut adipisicing laborum sed eu aliqua esse.
+
+  include includes/footer.pug
