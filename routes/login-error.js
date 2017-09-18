@@ -9,7 +9,7 @@ var mid = require('../middleware');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('Login', { title: 'Login' });
+    res.render('login-error', { title: 'FundBot Login' });
 });
 
 /* POST login page. */
@@ -34,7 +34,6 @@ router.post('/', function(req, res, next) {
                     var err = new Error('User not found.')
                     err.status = 401;
                     //return callback(err);
-                    res.redirect('/login-error');
                 }
             })
     }
