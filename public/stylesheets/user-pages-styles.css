@@ -1,5 +1,6 @@
 /* --------------- user list page --------------- */
 .User-Admin-h1{
+	margin-top:20px;
 	margin-left:38%;
 
 }
@@ -19,6 +20,7 @@
 .searchButtonUA {
   border: 1px solid #1BBCB1;
   color: #fff;
+  margin-left:10px;
   border-radius: 100px;
   background: #1BBCB1;
   width: 100px;

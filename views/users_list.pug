@@ -25,5 +25,7 @@ block content
          .second-column
              .column-content
                  h3 Admins
-                 p admin  
-                     a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+                 - for(let i = 0; i < applications.length; i++)
+                     p admin  
+                         a(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                     hr
