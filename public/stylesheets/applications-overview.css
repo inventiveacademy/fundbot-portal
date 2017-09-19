@@ -11,6 +11,7 @@ body {
 }
 .top-master-container{
 	max-width: 1024px;
+	margin: auto;
 }
 .search-container{
 	display: flex;
