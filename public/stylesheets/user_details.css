@@ -1,3 +1,23 @@
-.d{
-	color:red;
+.user-details-layout{
+	display:flex;
+	flex-wrap:wrap; 
+	margin:auto;
+}
+.user-details{
+	width:300px;
+	margin-left:10%;
+}
+.detail-image{
+    width:320px;
+}
+.short-story{
+	width:300px;
+	margin-left:15%;
+}
+.user-details-photo{
+	width:100px;
+	border-radius:50px;
+	margin-left:70%;
+	margin-bottom:20px;
+
 }
