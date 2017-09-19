@@ -20,7 +20,8 @@ block content
                          - for (i =0; i < applications.length; ++i)
                             if (applications[i].applicationstate == "approved") 
                                 li.anchor #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}  
-                                    a.viewDetails(href="user_details") View Details
+                                    a.viewDetails(href='applicant_details/'+applications[i]._id) View Details
+
 
                 .applications-pending-block  
                     h2 PENDING     

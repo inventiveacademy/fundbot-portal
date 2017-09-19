@@ -2,14 +2,15 @@ extends layout
 
 block content
 
-  ul
-     p User Name #{applications[0].email}
-     p First Name #{applications[0].firstname}
-     p Last Name #{applications[0].lastname}
-     p phone number #{applications[0].contactphone}
-     p address #{applications[0].address}
-     p zip #{applications[0].zip}
-     p state #{applications[0].state}
-     p city #{applications[0].city}
-     a(href="/user_update") update applicant
-     button.aproveButton(type='submit') aprove
+     ul
+          p User Name #{application.email}
+          p First Name #{application.firstname}
+          p Last Name #{application.lastname}
+          p phone number #{application.contactphone}
+          p address #{application.address}
+          p zip #{application.zip}
+          p state #{application.state}
+          p city #{application.city}
+          p id #{application._id}
+          a(href="/user_update") update applicant
+          button.aproveButton(type='submit') aprove
