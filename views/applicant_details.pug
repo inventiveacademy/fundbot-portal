@@ -1,16 +1,20 @@
 extends layout
 
 block content
+     .top-master-container
+          h1.userDetailHead #{application[0].firstname} #{application[0].lastname}'s Details
 
-     ul
-          p User Name #{application.email}
-          p First Name #{application.firstname}
-          p Last Name #{application.lastname}
-          p phone number #{application.contactphone}
-          p address #{application.address}
-          p zip #{application.zip}
-          p state #{application.state}
-          p city #{application.city}
-          p id #{application._id}
-          a(href="/user_update") update applicant
-          button.aproveButton(type='submit') aprove
+          ul.userDetailHead
+               li User Name: #{application[0].email}
+               li First Name: #{application[0].firstname}
+               li Last Name: #{application[0].lastname}
+               li phone number: #{application[0].contactphone}
+               li address: #{application[0].address}
+               li ZIP: #{application[0].zip}
+               li State: #{application[0].state}
+               li City: #{application[0].city}
+               li ID: #{application[0]._id}
+               li  
+                    a(href="/user_update") Update Applicant
+               li.approvalButton 
+                    button.aproveButton(type='submit') Approve
