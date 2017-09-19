@@ -13,7 +13,10 @@ router.get('/', function(req, res, next) {
         return next(err);
     } else {
         request('http://localhost:3008/applications', function(error, response, body) {
-            let appl = JSON.parse(body)[0];
+            let applications = JSON.parse(body);
+            console.log(applications)
+
+            //let appl = JSON.parse(body)[0];
             req.session.applicantId = appl._id;
             res.render('Applications_Overview', { title: 'Applications Overview', appl });
         });
