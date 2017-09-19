@@ -19,7 +19,9 @@ router.post('/', function(req, res, next) {
         request({ url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`, method: "POST" }, function(error, response, body) {
                 let success = JSON.parse(body);
                 let applicant;
+                console.log(body);
                 console.log(success);
+                console.log(success.user,req.body.email);
 
                 if (success.user === req.body.email) {
                     request({ url: `http://localhost:3008/applications-search?email=${req.body.email}`, method: "GET" }, function(err, resp, application) {
