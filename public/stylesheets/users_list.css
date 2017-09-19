@@ -1,3 +1,42 @@
-.l{
-	color:green;
+.User-Admin-h1{
+	margin-left:38%;
+
+}
+.search-containers{
+	margin-left:25%;
+}
+
+.searchallUsers{
+}
+.searchallUsersbtn {
+    width:500px;
+    padding: 10px 0 10px 25px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #1BBCB1;
+}
+.searchButtonUA {
+  border: 1px solid #1BBCB1;
+  color: #fff;
+  border-radius: 100px;
+  background: #1BBCB1;
+  width: 100px;
+}
+
+.two-column-list {
+    display: flex;
+}
+.first-column {
+	display:flex;
+	justify-content:center;
+    width: 50%;
+}
+
+.second-column {
+    display:flex;
+	justify-content:center;
+    width: 50%;
+}
+.column-content{
+
 }
