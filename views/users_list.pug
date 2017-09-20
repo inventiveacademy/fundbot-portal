@@ -13,14 +13,19 @@ block content
      .two-column-list
          .first-column
              .column-content
+                 
                  h3 Users
-                 a(href="/users_create") create User
-                 p User  
-                     a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
-                     if user.admin
-                         p delete here
+                 a.userCreateLink(href="/users_create") Create User
+                 - for(let i = 0; i < applications.length; i++)
+                     p User  
+                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                         if user.admin
+                             p delete here
+                     hr
          .second-column
              .column-content
                  h3 Admins
-                 p admin  
-                     a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+                 - for(let i = 0; i < applications.length; i++)
+                     p admin  
+                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                     hr

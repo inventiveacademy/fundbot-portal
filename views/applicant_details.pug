@@ -11,6 +11,6 @@ block content
      p zip #{application.zip}
      p state #{application.state}
      p city #{application.city}
-     p Id #{application.Id}
+     p(hidden='') Id #{application.Id}
      a(href="/user_update") update applicant
      button.approveButton(type='submit') approve
