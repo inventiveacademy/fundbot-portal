@@ -12,13 +12,17 @@ router.get('/', function(req, res, next) {
         err.status = 403;
         return next(err);
     } else {
-        request('http://localhost:3008/applications', function(error, response, body) {
-            let appl = JSON.parse(body)[0];
-            req.session.applicantId = appl._id;
-            res.render('Payment_History', { title: 'Payment_History', appl });
+        request(`http://localhost:3008/applications/${req.session.applicantId}`, function(error, response, body) {
+            let appl = JSON.parse(body);
+            // req.session.applicantId = appl._id;
+            // console.log("req.query", req.query);
+            // console.log("appl ", appl)
+            res.render('Payment_History', { title: 'Payment_History', appl, user });
         });
     }
 });
+
+
 
 
 

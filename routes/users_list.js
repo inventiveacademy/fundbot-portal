@@ -6,18 +6,20 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    request('http://localhost:3008/applications', function(error, response, body) {
-        let applications = JSON.parse(body);
-        res.render('users_list', { title: 'admins list', applications });
-    });
+    console.log(req.session);
+    console.log("session userId", typeof(req.session.applicantId));
+    if (!req.session.applicantId) {
+        var err = new Error('You are not authorized to view this page.');
+        err.status = 403;
+        return next(err);
+    } else {
+        request(`http://localhost:3008/applications/`, function(error, response, body) {
+            let applications = JSON.parse(body);
+
+            res.render('users_list', { title: 'admins list', session: req.session, applications  });
+        });
+    }
 });
-/*
-router.get('/', function(req, res, next) {
-    request('http://localhost:3009/admins', function(error, response, body) {
-        let applications = JSON.parse(body);
-        res.render('users_list', { title: 'admins list', applications });
-    });
-});
-*/
+
 
 module.exports = router;

@@ -12,36 +12,28 @@ const url = require('url');
 router.get('/', function(req, res, next) {
     res.render('Login', { title: 'Login' });
 });
-
 /* POST login page. */
 
 router.post('/', function(req, res, next) {
             if (req.body.email && req.body.password) {
                 request({ url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`, method: "POST" }, function(error, response, body) {
-                    let success = JSON.parse(body);
+                    let user = JSON.parse(body);
                     let applicant;
-                    console.log(success);
+                    console.log("User Login", user);
+                    req.session.isadmin = user.isadmin;
+                    req.session.isuser = user.isuser;
+                    req.session.isapplicant = user.isapplicant;
+                    req.session.applicantId = user._id;
 
-                    if (success.isadmin) {
-                        let appl = success;
-                        console.log("Inside success.isadmin", appl);
-                        console.log(`This is the id! ${appl._id}`);
-                        req.session.applicantId = appl._id;
-                        res.redirect('/Applications_Overview');
-                    } else if (success.user === req.body.email) {
+                    if (user.isadmin || user.isuser) {
+                        res.redirect("/Applications_Overview");
+                    } else if (user.user === req.body.email) {
                         request({ url: `http://localhost:3008/applications-search?email=${req.body.email}`, method: "GET" }, function(err, resp, application) {
                             applicant = JSON.parse(application);
-                            console.log(applicant);
                             let appl = applicant[0];
-                            console.log(`This is the id! ${appl._id}`);
-                            req.session.applicantId = appl._id;
-                            
-                            // This is not working need to finish vvvvvvvvv
-                            res.redirect(url.format({
-                                    pathname: "/Profile_Management",
-                                    query: req.query
-                                }));
-                            });
+                            console.log("appl ", appl)
+                            res.redirect("/Profile_Management");
+                        });
                     }
                     else {
                         var err = new Error('User not found.')
