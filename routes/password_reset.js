@@ -11,5 +11,8 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.get('/', function(req, res, next) {
+    res.render('password_reset', { title: 'password_reset' });
+});
 
 module.exports = router;

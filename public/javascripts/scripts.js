@@ -19,7 +19,6 @@ function myFunction() {
     }
 }
 
-
 function myFunction2() {
     document.getElementById("myDropdown").classList.toggle("show");
     documetn.getElementById("imgDropDown").onclick(alert("Hello!"));
@@ -39,10 +38,33 @@ function myFunction2() {
         }
     }
 }
-$(function) {
-    $('.approvebutton').on('click', function() {
-         $.ajax({url:"http://localhost:3008/approveApplicationById/", success: function(result){
-            $("").html(result);
-         }});
+
+
+    var data = {
+        from: 'Shalay<smashford12@gmail.com>',
+        to: req.email,
+        subject: 'Hello! Is this working?',
+        text: 'You is Beautiful, You is Smart, You is Important'
+     };
+
+
+
+$(function() {
+    $("#reset_password").on("click", function(e) {
+        e.preventDefault();
+        console.log("hello");
+        var email = $("#email").val();
+        $.ajax({
+            url: "http://localhost:3008/sendemail",
+            type: "POST",
+            data: email
+        });
+        console.log("Hello, Are you there?");
+
+        if ($success) {
+            window.location.replace("/password_sent.pug");
+         };
+         else if 
+            alert(Your password does not exist!);
     });
-}
+});
