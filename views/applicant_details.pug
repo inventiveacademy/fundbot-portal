@@ -2,27 +2,27 @@ extends layout
 
 block content
      .applicant-details-master-container
-          h1.title #{application[0].firstname} #{application[0].lastname}'s Details
+          h1.title #{application.firstname} #{application.lastname}'s Details
 
           ul
                li.item-detail 
-                    p User Name: #{application[0].email}
+                    p User Name: #{application.email}
                li.item-detail 
-                    p First Name: #{application[0].firstname}
+                    p First Name: #{application.firstname}
                li.item-detail 
-                    p Last Name: #{application[0].lastname}
+                    p Last Name: #{application.lastname}
                li.item-detail 
-                    p Phone Number: #{application[0].contactphone}
+                    p Phone Number: #{application.contactphone}
                li.item-detail 
-                    p Address: #{application[0].address}
+                    p Address: #{application.address}
                li.item-detail 
-                    p ZIP: #{application[0].zip}
+                    p ZIP: #{application.zip}
                li.item-detail 
-                    p State: #{application[0].state}
+                    p State: #{application.state}
                li.item-detail 
-                    p City: #{application[0].city}
+                    p City: #{application.city}
                li.item-detail 
-                    p ID: #{application[0]._id}
+                    p ID: #{application._id}
                li.item-detail  
                     a(href="/user_update") Update Applicant
                li.approvalButton 
