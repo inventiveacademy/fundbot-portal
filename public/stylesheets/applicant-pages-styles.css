@@ -1,7 +1,13 @@
-
 .approveButton {
 	display: flex;
 	justify-content: center;
+}
+.applicant-details-master-container {
+    max-width: 900px;
+    margin: auto;
+}
+>>>>>>> applicationoverview:public/stylesheets/applicant-details.css
+.approveButton {
     cursor: pointer;
     border: 1px solid #1BBCB1;
     color: #fff;
@@ -9,4 +15,22 @@
     background: #1BBCB1;
     width: 80px;
     margin-top: 30px;
+}
+.applicant-details-master-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.approveButton {
+    cursor: pointer;
+    border: 1px solid #1BBCB1;
+    color: #fff;
+    border-radius: 100px;
+    background: #1BBCB1;
+    width: 80px;
+    margin-top: 30px;
+}
+
+.item-detail {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
