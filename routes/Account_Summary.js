@@ -12,11 +12,12 @@ router.get('/', function(req, res, next) {
         err.status = 403;
         return next(err);
     } else {
-        request(`http://localhost:3008/applications/${req.session.applicantId}`, function(error, response, body) {
-            let appl = JSON.parse(body);
-            console.log(appl);
-            req.session.applicantId = appl._id;
-            res.render('Account_Summary', { title: 'Account Summary', appl });
+        request(`http://localhost:3008/applications-search?email=${req.session.email}`, function(error, response, body) {
+            let appl = JSON.parse(body)[0];
+            console.log("appl ", appl);
+            console.log("req.session.user", req.session.email)
+
+            res.render('Account_Summary', { title: 'Account Summary', session: req.session, appl });
         });
     }
 });
