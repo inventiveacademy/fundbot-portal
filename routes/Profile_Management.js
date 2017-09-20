@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var router = express.Router();
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     if (!req.session.applicantId) {
@@ -11,10 +12,12 @@ router.get('/', function(req, res, next) {
         err.status = 403;
         return next(err);
     } else {
-        request('http://localhost:3008/applications', function(error, response, body) {
+        request(`http://localhost:3008/applications-search?email=${req.session.email}`, function(error, response, body) {
             let appl = JSON.parse(body)[0];
-            req.session.applicantId = appl._id;
-            res.render('Profile_Management', { title: 'Profile_Management', appl });
+            console.log("appl ", appl);
+            console.log("req.session.user", req.session.email)
+
+            res.render('Profile_Management', { title: 'Profile_Management', session: req.session, appl });
         });
     }
 });
