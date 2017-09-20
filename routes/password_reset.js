@@ -4,12 +4,14 @@ var app = express();
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    request('http://localhost:3008/applications', function(error, response, body) {
-        let applications = JSON.parse(body);
-        res.render('password_reset', { title: 'Password Reset', applications });
+router.post('/', function(req, res, next) {
+    request('/sendemail', function(error, response, body) {
+        console.log('Howdy, Partner!!');
     });
 });
 
+router.get('/', function(req, res, next) {
+    res.render('password_reset', { title: 'password_reset' });
+});
 
 module.exports = router;
