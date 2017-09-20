@@ -15,10 +15,10 @@ block content
              .column-content
                  
                  h3 Users
-                 a(href="/users_create") create User
+                 a.userCreateLink(href="/users_create") Create User
                  - for(let i = 0; i < applications.length; i++)
                      p User  
-                         a(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
                          if user.admin
                              p delete here
                      hr
@@ -27,5 +27,5 @@ block content
                  h3 Admins
                  - for(let i = 0; i < applications.length; i++)
                      p admin  
-                         a(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
                      hr
