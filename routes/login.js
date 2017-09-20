@@ -42,9 +42,16 @@ router.post('/', function(req, res, next) {
             else {
                 var err = new Error("Email and password are required.");
                 err.status = 401;
-                return next(err);
+                //return callback(err);
+                res.redirect('/login-error');
             }
-                });
+        })
+    } else {
+        var err = new Error("Email and password are required.");
+        err.status = 401;
+        return next(err);
+    }
+});
 
 
-                module.exports = router;
+module.exports = router;
