@@ -15,14 +15,6 @@ body {
     margin: auto;
 }
 
-.userDetailHead {
-    text-align: center;
-}
-
-.approvalButton {
-	float: ;
-}
-
 .search-container {
     display: flex;
 }
@@ -34,6 +26,7 @@ body {
 .master-container {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .over-all-container {
@@ -44,6 +37,7 @@ body {
     max-width: 1024px;
     margin: 0px;
     flex: 1;
+    align-items: flex-start;
 }
 
 .applications-accepted-block {
