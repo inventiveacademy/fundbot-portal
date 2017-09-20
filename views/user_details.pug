@@ -1,15 +1,20 @@
 extends layout
 
 block content
-
-  ul
-     p User Name #{applications[0].email}
-     p First Name #{applications[0].firstname}
-     p Last Name #{applications[0].lastname}
-     p phone number #{applications[0].contactphone}
-     p address #{applications[0].address}
-     p zip #{applications[0].zip}
-     p state #{applications[0].state}
-     p city #{applications[0].city}
-  a(href="/user_update") update user
+    .user-details-layout
+        .user-details
+             h3 #{applications.firstname} #{applications.lastname}
+             p User Name   | #{applications.email}
+             p First Name  | #{applications.firstname}
+             p Last Name   | #{applications.lastname}
+             p phone number| #{applications.contactphone}
+             p address     | #{applications.address}
+             p zip         | #{applications.zip}
+             p state       | #{applications.state}
+             p city        | #{applications.city}
+             a(href="/user_update") update user
+        .detail-image
+             img.user-details-photo.dropbtn(src="../images/your-face-here.jpg")
+             p needs data from V.E.F
+             p Aliquip aliqua occaecat dolor deserunt proident culpa sit irure dolore exercitation ex sint in adipisicing duis ullamco aliqua consectetur velit in culpa qui ut aliquip enim sunt sit nostrud sed occaecat culpa velit.
 
