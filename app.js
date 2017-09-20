@@ -8,7 +8,7 @@ var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
-var Login = require('./routes/login');
+var login = require('./routes/login');
 var logout = require('./routes/logout');
 var loginError = require('./routes/login-error');
 var password_reset = require('./routes/password_reset');
@@ -67,7 +67,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/Login', Login);
+app.use('/login', login);
 app.use('/logout', logout);
 app.use('/login-error', loginError);
 app.use('/password_reset', password_reset);
