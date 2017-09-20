@@ -1,19 +1,31 @@
 extends layout
 
 block content
-     h1 Users
-     p search for user
-     form.wrap(Method="GET")
-      .searchUsers
-         .searchUser
-             input.searchForUser(type='text'  placeholder='What is there username')
-             button.searchUserBtn(type='submit') search
+     h1.User-Admin-h1 Users/Admin
+     .search-containers
+         form.wrap.searchbar(Method="GET")
+               .searchallUsers
+                  .search
+                      input.searchallUsersbtn(type='text'  placeholder='Search for users' name='search')
+                      button.searchButtonUA(type='submit') Search
      -var user = { applicant: '', user: '', admin: 'drake' }  
          if user.admin      
-             a(href="/users_create") create
-     ul
-         h2 Users
-         li User  
-             a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
-             if user.admin
-                 p delete here
+     .two-column-list
+         .first-column
+             .column-content
+                 
+                 h3 Users
+                 a.userCreateLink(href="/users_create") Create User
+                 - for(let i = 0; i < applications.length; i++)
+                     p User  
+                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                         if user.admin
+                             p delete here
+                     hr
+         .second-column
+             .column-content
+                 h3 Admins
+                 - for(let i = 0; i < applications.length; i++)
+                     p admin  
+                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                     hr

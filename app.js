@@ -8,7 +8,8 @@ var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
-var Login = require('./routes/Login');
+var Login = require('./routes/login');
+var logout = require('./routes/logout');
 var loginError = require('./routes/login-error');
 var password_reset = require('./routes/password_reset');
 var password_sent = require('./routes/password_sent');
@@ -67,12 +68,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/Login', Login);
+app.use('/logout', logout);
 app.use('/login-error', loginError);
 app.use('/password_reset', password_reset);
 app.use('/password_sent' , password_sent);
 app.use('/users_create', users_create);
 app.use('/user_update', user_update);
-app.use('/user_details', user_details);
+app.use('/user_details/:_id', user_details);
 app.use('/users_list', users_list);
 app.use('/applicant_create', applicant_create);
 app.use('/applicant_update', applicant_update);

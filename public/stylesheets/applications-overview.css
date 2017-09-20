@@ -1,4 +1,3 @@
-
 .title {
     text-align: center;
     padding: 20px;
@@ -6,20 +5,26 @@
     font-weight: bold;
     margin-top: 5%;
 }
-.top-master-container{
-	max-width: 1024px;
-	margin: auto;
+
+.top-master-container {
+    max-width: 1024px;
+    margin: auto;
 }
-.search-container{
-	display: flex;
+
+.search-container {
+    display: flex;
 }
-.searchbar{
-	flex: 1;
+
+.searchbar {
+    flex: 1;
 }
-.master-container{
-	display: flex;
-	justify-content: center;
+
+.master-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
+
 .over-all-container {
     padding: 5% 5% 5% 5%;
     display: flex;
@@ -28,6 +33,7 @@
     max-width: 1024px;
     margin: 0px;
     flex: 1;
+    align-items: flex-start;
 }
 
 .applications-accepted-block {
@@ -40,7 +46,7 @@
 }
 
 .acceptedList {
-	border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     align-items: center;
     border-radius: 5px;
     padding: 10px 0px 10px 20px
@@ -56,7 +62,7 @@
 }
 
 .pendinglist {
-	border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     align-items: center;
     border-radius: 5px;
     padding: 10px 0px 10px 20px
@@ -72,7 +78,7 @@
 }
 
 .rejectedlist {
-	border-top: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     align-items: center;
     border-radius: 5px;
     padding: 10px 0px 10px 20px;
@@ -82,11 +88,13 @@
 .hover {
     color: #68d1ff;
 }
+
 .viewDetails {
-	display: none;
-	float: right;
-	padding-right: 10px;
+    display: none;
+    float: right;
+    padding-right: 10px;
 }
+
 .anchor {
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }

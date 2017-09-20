@@ -39,9 +39,9 @@ function myFunction2() {
         }
     }
 }
-$(function) {
+$(function() {
     $('.approvebutton').on('click', function() {
-         $.ajax({url:http:"//localhost:3008/aproveApplicationById/", success: function(result){
+         $.ajax({url:"http://localhost:3008/approveApplicationById/", success: function(result){
             $("").html(result);
          }});
     });
