@@ -4,7 +4,7 @@ header
      div.logo
       img.bot-logo(src="../images/robot-icon-white.svg")
       h1 FUNDBOT
-     - var user = { applicant: 'asdf', user: 'user', admin: 'admin' }
+     - var user = { applicant: '', user: 'user', admin: 'admin' }
      - var authorised = false
       ul#user
         if user.applicant || user.user
@@ -25,7 +25,7 @@ header
           div.dropdown
              img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
              div.dropdown-content
-                a( onclick="logout()" class="droplinks" href="/Login") LOGOUT
+                a(class="droplinks" href="/Logout") LOGOUT
                 a(class="droplinks" href="/Profile_Management") PROFILE
                 a(class="droplinks" href="/Account_Summary") ACCOUNT
                 a(class="droplinks" href="/help") HELP

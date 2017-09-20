@@ -1,0 +1,119 @@
+/* --------------- user list page --------------- */
+.User-Admin-h1{
+	margin-left:38%;
+
+}
+.search-containers{
+	margin-left:25%;
+}
+
+.searchallUsers{
+}
+.searchallUsersbtn {
+    width:500px;
+    padding: 10px 0 10px 25px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #1BBCB1;
+}
+.searchButtonUA {
+  border: 1px solid #1BBCB1;
+  color: #fff;
+  border-radius: 100px;
+  background: #1BBCB1;
+  width: 100px;
+}
+
+.two-column-list {
+    display: flex;
+}
+.first-column {
+	display:flex;
+	justify-content:center;
+    width: 50%;
+}
+
+.second-column {
+    display:flex;
+	justify-content:center;
+    width: 50%;
+}
+.column-content{
+
+}
+/* --------------- user details page --------------- */
+.user-details-layout{
+	display:flex;
+	flex-wrap:wrap; 
+	margin:auto;
+}
+.lorem-ipsum{
+	color:red;
+}
+.user-details{
+	width:300px;
+	margin-left:10%;
+}
+.detail-image{
+    width:320px;
+}
+.short-story{
+	width:300px;
+	margin-left:15%;
+}
+.user-details-photo{
+	width:100px;
+	border-radius:50px;
+	margin-left:70%;
+	margin-bottom:20px;
+
+}
+/* --------------- user update page --------------- */
+.updateUser{
+	margin:auto;
+	width:300px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.formContainer{
+	border:1px solid #27bbc8;
+	border-radius:20px;
+}
+.UserFormHeader{
+	display:flex;
+	justify-content:center;
+	width:100%;
+	color:white;
+	border-radius:20px 20px 0px 0px;
+	background: linear-gradient(to bottom right, #1BBCB1, #37B9E9);
+}
+.UserForm{
+	display:flex;
+	justify-content:center;
+	width:300px;
+	margin-bottom:20px;
+
+}
+.formInput{
+	margin-top:20px;
+	margin-bottom:20px;
+	border:1px solid #27bbc8;
+	border-radius:70px;
+}
+#input{
+	color:#27bbc8;
+	border:1px solid white;
+	border-radius:70px;
+}
+.UserUbtn{
+	width:172px;
+	border:1px solid #27bbc8;
+	color:#757575;
+	background-color:white;
+	transition:.8s;
+}
+.UserUbtn:hover{
+	background-color:#27bbc8;
+	color:white;
+}
+/* --------------- user create page --------------- */
