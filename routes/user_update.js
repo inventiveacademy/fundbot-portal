@@ -6,7 +6,7 @@ var router = express.Router();
 router.get('/:id', function(req, res, next){
 	request(`http://localhost:3008/applications/${req.params.id}`, function(error, response, body){
 		let applications = JSON.parse(body);
-		res.render('user_update', { title: 'Users Update', applications});
+		res.render('user_update', { title: 'Users Update', applications, session:req.session});
 		console.log("Rendering Users Update Page!!!>!@");
 	});
 });
