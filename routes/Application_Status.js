@@ -10,8 +10,8 @@ router.get('/', function(req, res, next) {
         err.status = 403;
         return next(err);
     } else {
-        request('http://localhost:3008/applications', function(error, response, body) {
-            let appl = JSON.parse(body)[0];
+        request(`http://localhost:3008/applications/${req.session.applicantId}`, function(error, response, body) {
+            let appl = JSON.parse(body);
             req.session.applicantId = appl._id;
             res.render('Application_Status', { title: 'Applitcation Status', appl });
         });
