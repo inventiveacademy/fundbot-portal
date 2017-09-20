@@ -1,16 +1,9 @@
-<<<<<<< HEAD:public/stylesheets/applicant-pages-styles.css
-
-.approveButton {
-	display: flex;
-	justify-content: center;
-=======
 .applicant-details-master-container {
     max-width: 900px;
     margin: auto;
 }
 
 .approveButton {
->>>>>>> applicationoverview:public/stylesheets/applicant-details.css
     cursor: pointer;
     border: 1px solid #1BBCB1;
     color: #fff;
