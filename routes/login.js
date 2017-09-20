@@ -24,16 +24,12 @@ router.post('/', function(req, res, next) {
                     req.session.isuser = user.isuser;
                     req.session.isapplicant = user.isapplicant;
                     req.session.applicantId = user._id;
+                    req.session.email = user.user;
 
                     if (user.isadmin || user.isuser) {
                         res.redirect("/Applications_Overview");
                     } else if (user.user === req.body.email) {
-                        request({ url: `http://localhost:3008/applications-search?email=${req.body.email}`, method: "GET" }, function(err, resp, application) {
-                            applicant = JSON.parse(application);
-                            let appl = applicant[0];
-                            console.log("appl ", appl)
-                            res.redirect("/Profile_Management");
-                        });
+                        res.redirect("/Profile_Management");
                     }
                     else {
                         var err = new Error('User not found.')
