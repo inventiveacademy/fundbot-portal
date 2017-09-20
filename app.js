@@ -74,7 +74,7 @@ app.use('/password_reset', password_reset);
 app.use('/password_sent' , password_sent);
 app.use('/users_create', users_create);
 app.use('/user_update', user_update);
-app.use('/user_details', user_details);
+app.use('/user_details/:_id', user_details);
 app.use('/users_list', users_list);
 app.use('/applicant_create', applicant_create);
 app.use('/applicant_update', applicant_update);
