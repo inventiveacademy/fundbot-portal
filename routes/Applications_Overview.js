@@ -7,6 +7,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
     request('http://localhost:3008/applications', function(error, response, body) {
         let applications = JSON.parse(body);
+        applications.sort();
         res.render('Applications_Overview', { title: 'Applications Overview', applications });
     });
 });
