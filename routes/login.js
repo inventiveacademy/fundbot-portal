@@ -15,9 +15,18 @@ router.get('/', function(req, res, next) {
 /* POST login page. */
 
 router.post('/', function(req, res, next) {
+            console.log(req.body.email);
             if (req.body.email && req.body.password) {
-                request({ url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`, method: "POST" }, function(error, response, body) {
-                    let user = JSON.parse(body);
+                request({ 
+                    url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`,
+                    method: "POST",
+                    json: {
+                        user: req.body.email,
+                        pwd: req.body.password
+                    }
+                },
+                function(error, response, body) {
+                    let user = body;
                     let applicant;
                     console.log("User Login", user);
                     req.session.isadmin = user.isadmin;
