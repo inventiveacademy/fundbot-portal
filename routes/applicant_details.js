@@ -7,7 +7,6 @@ var router = express.Router();
 router.get('/:id', function(req, res, next) {
     request(`http://localhost:3008/applications/${req.params.id}`, function(error, response, body) {
         let application = JSON.parse(body);
-        console.log(application)
         res.render('applicant_details', { title: 'applicants details', application});
     });
 });
