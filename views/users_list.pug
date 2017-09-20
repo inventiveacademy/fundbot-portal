@@ -18,7 +18,7 @@ block content
                  a.userCreateLink(href="/users_create") Create User
                  - for(let i = 0; i < applications.length; i++)
                      p User  
-                         a.userListLink(href="/user_details") #{applications[i].firstname} #{applications[i].lastname}
+                         a.userListLink(href='user_details/'+applications[i]._id) #{applications[i].firstname} #{applications[i].lastname}
                          if user.admin
                              p delete here
                      hr

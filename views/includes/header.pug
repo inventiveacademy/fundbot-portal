@@ -4,31 +4,36 @@ header
      div.logo
       img.bot-logo(src="../images/robot-icon-white.svg")
       h1 FUNDBOT
-     - var user = { applicant: '', user: 'user', admin: 'admin' }
-     - var authorised = false
-      ul#user
-        if user.applicant || user.user
-          li
-           a(href="/Payment_History") PAY HISTORY
-          li
-           a(href="Application_Status") APP STATUS
-          li
-           a(href="/Payment_Configuration") PAY CONFIGURATION
-        if user.admin
-          li
-           a(href="/Applications_Overview") APPLICATIONS LIST
-          li
-           a(href="/users_list") SEARCH
-          li
-           a(href="/applicants_list") APP SEARCH
-          li
-          div.dropdown
-             img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
-             div.dropdown-content
-                a(class="droplinks" href="/Logout") LOGOUT
-                a(class="droplinks" href="/Profile_Management") PROFILE
-                a(class="droplinks" href="/Account_Summary") ACCOUNT
-                a(class="droplinks" href="/help") HELP
+    ul#user
+      if session.isapplicant
+        li
+         a(href="/Payment_History") PAY HISTORY
+        li
+         a(href="Application_Status") APP STATUS
+        li
+         a(href="/Payment_Configuration") PAY CONFIGURATION
+        div.dropdown
+           img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
+           div.dropdown-content
+              a( onclick="logout()" class="droplinks" href="/Login") LOGOUT
+              a(class="droplinks" href="/Profile_Management") PROFILE
+              a(class="droplinks" href="/Account_Summary") ACCOUNT
+              a(class="droplinks" href="/help") HELP
+      else if session.isuser || session.isadmin
+        li
+         a(href="/Applications_Overview") APPLICATIONS LIST
+        li
+         a(href="/users_list") SEARCH
+        li
+         a(href="/applicants_list") APP SEARCH
+        li
+        div.dropdown
+           img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
+           div.dropdown-content
+              a( onclick="logout()" class="droplinks" href="/Login") LOGOUT
+              a(class="droplinks" href="/Profile_Management") PROFILE
+              a(class="droplinks" href="/Account_Summary") ACCOUNT
+              a(class="droplinks" href="/help") HELP
 
 
 
