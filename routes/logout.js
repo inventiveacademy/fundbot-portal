@@ -14,6 +14,6 @@ router.get('/', function(req, res, next) {
     console.log("Logout was called!!"); 
     console.log(req.session); 
     req.session.applicantId = undefined; 
-    res.redirect("/login"); 
+   res.redirect("/login"); 
 }); 
 module.exports = router; 
