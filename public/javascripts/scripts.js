@@ -18,37 +18,47 @@ function myFunction() {
         }
     }
 }
+    var email = $("#email").val();
+    var data = {
+        from: 'Shalay<smashford12@gmail.com>',
+        to:email,
+        subject: 'Hello! Is this working?',
+        text: 'You is Beautiful, You is Smart, You is Important'
+     };
 
 
-function myFunction2() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    documetn.getElementById("imgDropDown").onclick(alert("Hello!"));
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
 $(function() {
-    $('.approveButton').on('click', function(e) {
-        console.log("approve button clicked");
+    $("#reset_password").on("click", function(e) {
         e.preventDefault();
-        var id = $("#id").val();
+        console.log("hello");
+        var email = $("#email").val();
         $.ajax({
-            method: "POST"
-            url: "http://localhost:3008/approveApplicationById/?id=" + id,
-            data: "approved",
-            success: function(result) {
-                console.log("success");
+            url: "http://localhost:3008/sendemail",
+            type: "POST",
+            data: email
+        });
+        console.log("Hello, Are you there?");
+
+        if ($success) {
+            window.location.replace("/password_sent.pug");
+         }
+         else{
+            alert("Your password does not exist!");
+        }
+    });
+});
+
+$(function(){
+    $('.approveButton').on('click', function(e){
+        console.log("Approve button clicked!!!");
+        e.preventDefault();
+        $.ajax({
+            url: "http://localhost:3008/applicant_details", 
+            type: "POST",
+            data:"approved",
+            success: function(result){
+                console.log("Success!!");
             }
         });
     });

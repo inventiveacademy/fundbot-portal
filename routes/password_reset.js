@@ -5,11 +5,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    request('http://localhost:3008/applications', function(error, response, body) {
+    request('/sendemail', function(error, response, body) {
         let applications = JSON.parse(body);
-        res.render('password_reset', { title: 'Password Reset', applications });
+        console.log("Is this working???")
     });
 });
 
+router.get('/', function(req, res, next) {
+    res.render('password_reset', { title: 'password_reset' });
+});
 
 module.exports = router;
