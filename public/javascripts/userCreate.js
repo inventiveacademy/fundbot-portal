@@ -1,5 +1,5 @@
 $(function() {
-    $('.UserUbtn').on('click', function() {
+    $('.UserCbtn').on('click', function() {
         var firstname = $('.firstname').val();
         var lastname = $('.lastname').val();
         var email = $('.email').val();

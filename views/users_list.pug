@@ -32,5 +32,5 @@ block content
                                  if (applications[i].isuser = true) 
                                      p #{applications[i].firstname} #{applications[i].lastname} 
                                          a.userListLink(href='user_details/'+applications[i]._id) View Details
-                                         if user.admin
-                                             p delete here
+                                         if session.isadmin
+                                                 p delete here
