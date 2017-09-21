@@ -38,15 +38,17 @@ function myFunction2() {
             }
         }
     }
-$(function) {
-    $('.approveButton').on('click', function() {
-         $.ajax({url:"http://localhost:3008/approveApplicationById/", success: function(result){
-            $("").html(result);
-         }});
+$(function() {
+    $('.approveButton').on('click', function(e) {
+        console.log("approve button clicked");
+        e.preventDefault();
+        var id = $("#id").val();
+        $.ajax({
+            method: "POST"
+            url: "http://localhost:3008/approveApplicationById/?id=" + id,
+            success: function(result) {
+                console.log("success");
+            }
+        });
     });
-<<<<<<< HEAD
-}
-=======
-}
-
->>>>>>> develop
+});
