@@ -1,0 +1,33 @@
+extends layout
+block content
+    div.wrapper 
+     .profile-main
+      .column
+       .profile-container.portal-module 
+        div.profile-info-container-admin
+         .img-container
+          div.photo-container
+           img.ProfileImage#ProfileImage(src="images/sean-baier.jpeg" alt="")
+          a.anchor-tag(href="#book-a") Update Photo 
+         .extra-info
+          h4.profile-name #{session.firstname} #{session.lastname}
+          .morecontroll
+           h3.GetM Account Active
+           p.module-paragraph.primary-info Joined in 2017
+           a.anchor-tag(href="#book-a") Update
+      .column
+       .email-container.portal-module
+        h2.module-heading Email
+        div.email-info
+         p.module-paragraph #{session.email}
+         p.module-paragraph.primary-info Email, Primary
+         a.anchor-tag(href="#book-a") Update | 
+         a.anchor-tag(href="#book-a") Delete
+         p.module-paragraph.disclaimer *To update an email address you must have atlest two email addresses.     
+       .phone-container.portal-module
+        h2.module-heading Phone
+        div.phone-info
+         p.module-paragraph #{session.contactphone}
+         p.module-paragraph.primary-info Mobile, Primary
+         a.anchor-tag(href="#book-a") Update | 
+         a.anchor-tag(href="#book-a") Delete

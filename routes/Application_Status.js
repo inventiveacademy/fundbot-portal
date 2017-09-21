@@ -10,10 +10,12 @@ router.get('/', function(req, res, next) {
         err.status = 403;
         return next(err);
     } else {
-        request('http://localhost:3008/applications', function(error, response, body) {
+        request(`http://localhost:3008/applications-search?email=${req.session.email}`, function(error, response, body) {
             let appl = JSON.parse(body)[0];
-            req.session.applicantId = appl._id;
-            res.render('Application_Status', { title: 'Applitcation Status', appl });
+            console.log("appl ", appl);
+            console.log("req.session.user", req.session.email)
+
+            res.render('Application_Status', { title: 'Application Status', session: req.session, appl });
         });
     }
 });
