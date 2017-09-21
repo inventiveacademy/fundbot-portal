@@ -83,7 +83,7 @@ $(function(){
         console.log("Approve button clicked!!!");
         e.preventDefault();
         $.ajax({
-            url: "http://localhost:3008/applicant_details", 
+            url: "http://localhost:3008/applicant_details/id", 
             type: "POST",
             data:"approved",
             success: function(result){
