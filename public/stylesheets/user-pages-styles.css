@@ -1,148 +1,190 @@
 /* --------------- user list page --------------- */
-.User-Admin-h1{
-	margin-top:20px;
-	margin-left:38%;
 
-}
-.search-containers{
-	margin-left:25%;
+.User-Admin-h1 {
+    margin-top: 20px;
+    margin-left: 38%;
 }
 
-.searchallUsers{
+.search-containers {
+    margin-left: 28%;
 }
-.searchallUsersbtn {
+.user-tab-links{
+     width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.searchTermUser{
     width:500px;
     padding: 10px 0 10px 25px;
     height: 40px;
     border-radius: 100px;
     border: 1px solid #1BBCB1;
 }
-.searchButtonUA {
-  border: 1px solid #1BBCB1;
-  color: #fff;
-  margin-left:10px;
-  border-radius: 100px;
-  background: #1BBCB1;
-  width: 100px;
+.listUsersHere{
+    display:flex;
+    justify-content:center;
+    border: 1px solid #1BBCB1;
+    border-radius:50px;
+    color: #fff;
+    margin-left: 10px;
+    background: #1BBCB1;
+    width: 100px;
+    transition:0.5s;
+}
+.listUsersHere:hover{
+    border: 1px solid #1BBCB1;
+    color: #1BBCB1;
+    background: white;
+    width: 110px;
+}
+.listlink{
+    color:white;
+    font-size:20px;
+    transition:0.5s;
+}
+.listlink:hover{
+    text-decoration:none;
+    color: #1BBCB1;
 }
 
 .two-column-list {
     display: flex;
 }
+
 .first-column {
-	display:flex;
-	justify-content:center;
-    width: 50%;
+    margin: auto;
+    width: 500px;
 }
 
-.second-column {
-    display:flex;
-	justify-content:center;
-    width: 50%;
+.column-content {}
+
+.userListLink {
+    color: #1BBCB1;
+    transition: 0.5s;
 }
-.column-content{
+
+.userListLink:hover {
+    color: #29ad99;
+    font-size: 17px;
+}
+
+.userCreateLink {
+    color: #1BBCB1;
+    padding: 6px;
+    background-color: white;
+    border: 1px solid #1BBCB1;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.userCreateLink:hover {
+    color: white;
+    background-color: #1BBCB1;
+    text-decoration: none;
 
 }
-.userListLink{
-	color:#1BBCB1;
-	transition:0.5s;
+.userCreateLinkDiv {
+   margin:auto;
+   margin-bottom:20px;
+   width:150px;
+
 }
-.userListLink:hover{
-	color:#29ad99;
-	font-size:17px;
-}
-.userCreateLink{
-	color:#1BBCB1;
-	padding:6px;
-	background-color:white;
-	border:1px solid #1BBCB1;
-	border-radius:50px;
-	transition:0.5s;
-	margin-bottom:20px;
-}
-.userCreateLink:hover{
-	color:white;
-	background-color:#1BBCB1;
-	text-decoration:none;
-}
+
+
 /* --------------- user details page --------------- */
-.user-details-layout{
-	display:flex;
-	flex-wrap:wrap; 
-	margin:auto;
-}
-.lorem-ipsum{
-	color:red;
-}
-.user-details{
-	width:300px;
-	margin-left:10%;
-}
-.detail-image{
-    width:320px;
-}
-.short-story{
-	width:300px;
-	margin-left:15%;
-}
-.user-details-photo{
-	width:100px;
-	border-radius:50px;
-	margin-left:70%;
-	margin-bottom:20px;
 
+.user-details-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
+
+.lorem-ipsum {
+    color: red;
+}
+
+.user-details {
+    width: 300px;
+    margin-left: 10%;
+}
+
+.detail-image {
+    width: 320px;
+}
+
+.short-story {
+    width: 300px;
+    margin-left: 15%;
+}
+
+.user-details-photo {
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 70%;
+    margin-bottom: 20px;
+}
+
+
 /* --------------- user update page --------------- */
-.updateUser{
-	margin:auto;
-	width:300px;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.formContainer{
-	border:1px solid #27bbc8;
-	border-radius:20px;
-}
-.UserFormHeader{
-	display:flex;
-	justify-content:center;
-	width:100%;
-	color:white;
-	border-radius:20px 20px 0px 0px;
-	background: linear-gradient(to bottom right, #1BBCB1, #37B9E9);
-}
-.UserForm{
-	display:flex;
-	justify-content:center;
-	width:300px;
-	margin-bottom:20px;
 
+.updateUser {
+    margin: auto;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.formInput{
-	margin-top:20px;
-	margin-bottom:20px;
-	border:1px solid #27bbc8;
-	border-radius:70px;
+
+.formContainer {
+    border: 1px solid #27bbc8;
+    border-radius: 20px;
 }
-#input{
-	color:#27bbc8;
-	border:1px solid white;
-	border-radius:70px;
+
+.UserFormHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(to bottom right, #1BBCB1, #37B9E9);
 }
-.UserUbtn{
-	width:172px;
-	border:1px solid #27bbc8;
-	border-radius:5px;
-	color:white;
-	background-color:#27bbc8;
-	transition:.8s;
+
+.UserForm {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-bottom: 20px;
 }
-.UserCbtn{
-	width:172px;
-	border:1px solid #27bbc8;
-	border-radius:5px;
-	color:white;
-	background-color:#27bbc8;
-	transition:.8s;
+
+.formInput {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #27bbc8;
+    border-radius: 70px;
 }
+
+#input {
+    color: #27bbc8;
+    border: 1px solid white;
+    border-radius: 70px;
+}
+
+.UserUbtn {
+    width: 172px;
+    border: 1px solid #27bbc8;
+    border-radius: 5px;
+    color: white;
+    background-color: #27bbc8;
+    transition: .8s;
+}
+
+.UserCbtn {
+    width: 172px;
+    border: 1px solid #27bbc8;
+    border-radius: 5px;
+    color: white;
+    background-color: #27bbc8;
+    transition: .8s;
+}
+
+
 /* --------------- user create page --------------- */
