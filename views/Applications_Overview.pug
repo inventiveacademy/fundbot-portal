@@ -21,6 +21,7 @@ block content
                             a(href='#pending-tab') PENDING
                         li
                             a(href='#not-approved-tab') NOT APPROVED
+                            
                     .tab-content
                         #approved-tab
                             ul.acceptedList
@@ -35,7 +36,7 @@ block content
                                     li.anchor(href="user_details") #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}
                                         a.viewDetails(href='applicant_details/'+applications[i]._id) View Details
                         #not-approved-tab
-                            l.rejectedlist
+                            ul.rejectedlist
                              - for (i =0; i < applications.length; ++i)
                                 if (applications[i].applicationstate == "rejected") 
                                     li.anchor #{applications[i].lastname}, #{applications[i].firstname}, #{applications[i].middlename}

@@ -17,6 +17,12 @@ router.put('/', function(req, res, next){
 	});
 })
 
+router.put('/', function(req, res, next){
+	request('/applications/:id', function(error, response, body) {
+	    let applications = JSON.parse(body);
+	    console.log("Happy Update!!!")
+	});
+});
 
 
 

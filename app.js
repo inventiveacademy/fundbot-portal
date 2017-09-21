@@ -8,7 +8,7 @@ var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
-var Login = require('./routes/login');
+var login = require('./routes/login');
 var logout = require('./routes/logout');
 var loginError = require('./routes/login-error');
 var password_reset = require('./routes/password_reset');
@@ -20,7 +20,6 @@ var users_list = require('./routes/users_list');
 var applicant_create = require('./routes/applicant_create');
 var applicant_update = require('./routes/applicant_update');
 var applicant_details = require('./routes/applicant_details');
-var applicants_list = require('./routes/applicants_list')
 var loginError = require('./routes/login-error');
 var Account_Summary = require('./routes/Account_Summary');
 var Payment_History = require('./routes/Payment_History');
@@ -69,7 +68,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/Login', Login);
+app.use('/login', login);
 app.use('/logout', logout);
 app.use('/login-error', loginError);
 app.use('/password_reset', password_reset);
@@ -81,7 +80,6 @@ app.use('/users_list', users_list);
 app.use('/applicant_create', applicant_create);
 app.use('/applicant_update', applicant_update);
 app.use('/applicant_details', applicant_details);
-app.use('/applicants_list', applicants_list);
 app.use('/Account_Summary', Account_Summary);
 app.use('/Payment_History', Payment_History);
 app.use('/Application_Status', Application_Status);

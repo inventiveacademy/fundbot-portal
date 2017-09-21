@@ -17,37 +17,16 @@ function myFunction() {
             }
         }
     }
-
-    function myFunction2() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        documetn.getElementById("imgDropDown").onclick(alert("Hello!"));
-        console.log("test");
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    }
-    $(function() {
-            $('.approvebutton').on('click', function() {
-                $.ajax({
-                    url: "http://localhost:3008/approveApplicationById/",
-                    success: function(result) {
-                        $("").html(result);
-                    }
-                });
-            });
-    })
 }
+    var email = $("#email").val();
+    var data = {
+        from: 'Shalay<smashford12@gmail.com>',
+        to:email,
+        subject: 'Hello! Is this working?',
+        text: 'You is Beautiful, You is Smart, You is Important'
+     };
+
+
 
 
 $(function() {
