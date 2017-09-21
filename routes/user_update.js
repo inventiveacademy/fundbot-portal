@@ -10,6 +10,12 @@ router.get('/:id', function(req, res, next) {
         res.render('user_update', { title: 'user update', applications, session: req.session});
     });
 });
+router.put('/', function(req, res, next){
+	request('/applications/:id', function(error, response, body) {
+	    let applications = JSON.parse(body);
+	    console.log("Happy Update!!!")
+	});
+})
 
 
 
