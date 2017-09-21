@@ -12,7 +12,7 @@ block content
              p zip         | #{applications.zip}
              p state       | #{applications.state}
              p city        | #{applications.city}
-             a(href="/user_update") update user
+             a(href='http://localhost:3000/user_update/'+applications._id) update #{applications.firstname}
         .detail-image
              img.user-details-photo.dropbtn(src="../images/your-face-here.jpg")
              p needs data from V.E.F
