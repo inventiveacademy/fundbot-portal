@@ -1,59 +1,13 @@
 /* ---------- Profile Management ---------- */
 
 
-/* -------------------------------------
-Utility Classes
---------------------------------------*/
-
-/* anchor tags */
-.anchor-tag {
-    font-size: .8em;
-    text-decoration: none;
-    transition: .3s;
-    color: #1BBCB1;
-}
-
-.anchor-tag a:hover {
-    color: initial;
-    text-decoration: underline;
-}
-
-/* Paragraph text inside modules */
-
-.module-paragraph {
-    font-size: .8em;
-    color: #333;
-    margin: 0;
-}
-
-.primary-info {
-    color: rgba(0, 0, 0, .4);
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-/* modules for profile information */
-
-.portal-module {
-    background-color: #fff;
-    margin-bottom: 75px;
-    width: 100%;
-}
-
-.module-heading {
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-    padding-bottom: 25px;
-    font-weight: lighter;
-    margin-bottom: 0;
-}
-
 /* --------------------------------------
 Main Styles 
 ----------------------------------------*/
 
 .profile-main {
     display: flex;
-    margin: 50px 0 100px 0;
+    margin: 0 0 100px 0;
     justify-content: space-between;
 
 }
@@ -76,6 +30,10 @@ Main Styles
 .profile-info-container {
     display: flex;
     margin-top: 25px;
+}
+
+.profile-info-container-admin {
+    display: flex;
 }
 
 .img-container {

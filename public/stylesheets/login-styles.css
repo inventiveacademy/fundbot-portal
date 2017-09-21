@@ -85,6 +85,8 @@ Main - form
     background: rgba(0, 0, 0, .3);
     margin-bottom: 15px;
     outline: none;
+    color: #fff;
+    font-weight: lighter;
 }
 
 .form-container form div .login-input::placeholder {
