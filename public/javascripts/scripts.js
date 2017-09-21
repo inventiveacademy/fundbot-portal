@@ -71,8 +71,24 @@ $(function() {
 
         if ($success) {
             window.location.replace("/password_sent.pug");
+         }
+         else{
+            alert("Your password does not exist!");
         }
-        else
-        alert("Your password does not exist!");
+    });
+});
+
+$(function(){
+    $('.approveButton').on('click', function(e){
+        console.log("Approve button clicked!!!");
+        e.preventDefault();
+        $.ajax({
+            url: "http://localhost:3008/applicant_details", 
+            type: "POST",
+            data:"approved",
+            success: function(result){
+                console.log("Success!!");
+            }
+        });
     });
 });

@@ -4,9 +4,10 @@ var app = express();
 var router = express.Router();
 
 /* GET home page. */
-router.post('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
     request('/sendemail', function(error, response, body) {
-        console.log('Howdy, Partner!!');
+        let applications = JSON.parse(body);
+        console.log("Is this working???")
     });
 });
 
