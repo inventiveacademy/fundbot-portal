@@ -2,12 +2,12 @@ var express = require('express');
 var request = require('request');
 var app = express();
 var router = express.Router();
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    request('http://localhost:3008/applications', function(error, response, body) {
+
+router.get('/:id', function(req, res, next) {
+    request(`http://localhost:3008/applications/${req.params.id}`, function(error, response, body) {
         let applications = JSON.parse(body);
-        res.render('applicant_update', { title: 'Applicants Update', applications });
-        console.log("Rendering Users Update Page!!!>!@")
+        console.log(applications)
+        res.render('user_update', { title: 'user update', applications, session: req.session});
     });
 });
 router.put('/', function(req, res, next){
@@ -16,6 +16,8 @@ router.put('/', function(req, res, next){
 	    console.log("Happy Update!!!")
 	});
 })
+
+
 
 
 module.exports = router;
