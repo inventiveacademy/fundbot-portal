@@ -46,6 +46,7 @@ $(function() {
         $.ajax({
             method: "POST"
             url: "http://localhost:3008/approveApplicationById/?id=" + id,
+            data: "approved",
             success: function(result) {
                 console.log("success");
             }

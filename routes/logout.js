@@ -11,11 +11,11 @@ var mid = require('../middleware');
 router.get('/', function(req, res, next) {
     request('/logout/:user', function(error, response, body) {
         console.log("Called Ron's api logout function!");
+    	req.session.applicantId = undefined;
     });
     console.log("Logout was called!!");
     console.log(req.session);
     req.session.applicantId = undefined;
    res.redirect("/login");
-    res.redirect("/login");
 });
 module.exports = router;
