@@ -7,13 +7,11 @@ var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose'); 
 var mid = require('../middleware'); 
  
+/* GET home page. */ 
 router.get('/', function(req, res, next) { 
-    request('/logout/:user', function(error, response, body) { 
-        console.log("Called Ron's api logout function!");
+    request('/approveapplication/:id', function(error, response, body) { 
+        console.log("Called Ron's api Approve applicant function!");
     }); 
-    console.log("Logout was called!!"); 
-    console.log(req.session); 
-    req.session.applicantId = undefined; 
-   res.redirect("/login"); 
+    res.redirect("/login"); 
 }); 
 module.exports = router; 

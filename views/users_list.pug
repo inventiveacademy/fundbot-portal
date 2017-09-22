@@ -1,26 +1,36 @@
 extends layout
 
 block content
-     h1.User-Admin-h1 Users/Admin
-     .search-containers
-         form.wrap.searchbar(Method="GET")
-               .searchallUsers
-                  .search
-                      input.searchallUsersbtn(type='text'  placeholder='Search for users' name='search')
-                      button.searchButtonUA(type='submit') Search
-     -var user = { applicant: '', user: '', admin: 'drake' }  
-         if user.admin      
-     .two-column-list
-         .first-column
-             .column-content
-                 h3 Users
-                 a(href="/users_create") create User
-                 p User  
-                     a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
-                     if user.admin
-                         p delete here
-         .second-column
-             .column-content
-                 h3 Admins
-                 p admin  
-                     a(href="/user_details") #{applications[0].firstname} #{applications[0].lastname}
+     .maincontainer
+         h1.User-Admin-h1 Users/Admin
+         .search-containers
+                form.wrap.searchbar(Method="GET")
+                      .searchBackgroundUser
+                         .searchuserBar
+                             input.searchTermUser.searchusers(type='text'  placeholder='Search by Last Name, First Name (lower case)' name='search')
+         .userCreateLinkDiv
+             a.userCreateLink(href="/users_create") create user
+
+         -var user = { applicant: '', user: '', admin: 'drake' }           
+             .first-column
+                 .user-tabs
+                     ul.user-tab-links
+                         div.listUsersHere
+                             a.listlink(href='#admin-tab') ADMINS
+                         div.listUsersHere
+                             a.listlink(href='#user-tab') USERS
+                     .tab-content
+                         #admin-tab
+                             ul.adminlist
+                              - for (i =0; i < applications.length; ++i)
+                                 if (applications[i].isadmin = true) 
+                                     p #{applications[i].firstname} #{applications[i].lastname} 
+                                         a.userListLink(href='user_details/'+applications[i]._id) View Details
+                         #user-tab
+                             ul.userlist
+                              - for (i =0; i < applications.length; ++i)
+                                 if (applications[i].isuser = true) 
+                                     p #{applications[i].firstname} #{applications[i].lastname} 
+                                         a.userListLink(href='user_details/'+applications[i]._id) View Details
+                                         if session.isadmin
+                                                 p delete here

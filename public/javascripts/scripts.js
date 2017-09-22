@@ -17,8 +17,6 @@ function myFunction() {
             }
         }
     }
-<<<<<<< HEAD
-=======
 }
     var email = $("#email").val();
     var data = {
@@ -27,40 +25,9 @@ function myFunction() {
         subject: 'Hello! Is this working?',
         text: 'You is Beautiful, You is Smart, You is Important'
      };
->>>>>>> users
 
-    function myFunction2() {
-        document.getElementById("myDropdown").classList.toggle("show");
-        documetn.getElementById("imgDropDown").onclick(alert("Hello!"));
-        console.log("test");
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
 
-<<<<<<< HEAD
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    }
-    $(function() {
-            $('.approvebutton').on('click', function() {
-                $.ajax({
-                    url: "http://localhost:3008/approveApplicationById/",
-                    success: function(result) {
-                        $("").html(result);
-                    }
-                });
-            });
-    })
-}
-=======
+
 
 $(function() {
     $("#reset_password").on("click", function(e) {
@@ -70,8 +37,15 @@ $(function() {
         $.ajax({
             url: "http://localhost:3008/sendemail",
             type: "POST",
-            data: email
+            dataType: "json",
+            data: JSON.stringify({
+                from: 'Shalay<smashford12@gmail.com>',
+                to: email,
+                subject: 'Hello! Is this working?',
+                text: 'You is Beautiful, You is Smart, You is Important'
+            })
         });
+
         console.log("Hello, Are you there?");
 
         if ($success) {
@@ -88,7 +62,7 @@ $(function(){
         console.log("Approve button clicked!!!");
         e.preventDefault();
         $.ajax({
-            url: "http://localhost:3008/applicant_details", 
+            url: "http://localhost:3008/applicant_details/id", 
             type: "POST",
             data:"approved",
             success: function(result){
@@ -97,4 +71,3 @@ $(function(){
         });
     });
 });
->>>>>>> users
