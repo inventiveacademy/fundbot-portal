@@ -3,42 +3,31 @@ header
      div.logo
       img.bot-logo(src="../images/robot-icon-white.svg")
       h1 FUNDBOT
-    ul#user
-      if session.isapplicant 
-        li
-         a(href="/Payment_History") PAY HISTORY
-        li
-         a(href="Application_Status") APP STATUS
-        li
-         a(href="/Payment_Configuration") PAY CONFIGURATION
-        div.dropdown#dropdown
-          .profile-icon-container#profile-icon
-           img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
-           div.dropdown-content#dropdown-content
-              a.anchor-tag( onclick="logout()" class="droplinks" href="/Login") Logout
-              a.anchor-tag(class="droplinks" href="/Profile_Management") Profile
-              a.anchor-tag(class="droplinks" href="/Account_Summary") Account
-              a.anchor-tag(class="droplinks" href="/help") Help
-      else if session.isuser || session.isadmin
-        li
-         a(href="/Applications_Overview") APPLICATIONS LIST
-        li
-         a(href="/users_list") SEARCH
-        li
-         a(href="/applicants_list") APP SEARCH
-        li
-        div.dropdown#dropdown
-           .profile-icon-container#profile-icon
+     - var user = { applicant: '', user: 'user', admin: 'admin' }
+     - var authorised = false
+      ul#user
+        if user.applicant || user.user
+          li
+           a(href="/Payment_History") PAY HISTORY
+          li
+           a(href="Application_Status") APP STATUS
+          li
+           a(href="/Payment_Configuration") PAY CONFIGURATION
+        if user.admin
+          li
+           a(href="/Applications_Overview") APPLICATIONS LIST
+          li
+           a(href="/users_list") SEARCH
+          li
+           a(href="/applicants_list") APP SEARCH
+          li
+          div.dropdown
              img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
-           div.dropdown-content#dropdown-content
-              a.anchor-tag( onclick="logout()" class="droplinks" href="/Login") Logout
-              a.anchor-tag(class="droplinks" href="/profile-management-admin") Profile
-              a.anchor-tag(class="droplinks" href="/help") Help
-if session.isadmin
-  .admin-bar
-   .admin-container
-    h2 Admin
-    img.admin-icon(src="../images/admin-icon.svg")
+             div.dropdown-content
+                a(class="droplinks" href="/Logout") LOGOUT
+                a(class="droplinks" href="/Profile_Management") PROFILE
+                a(class="droplinks" href="/Account_Summary") ACCOUNT
+                a(class="droplinks" href="/help") HELP
 
 
 

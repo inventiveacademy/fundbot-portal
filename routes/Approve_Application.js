@@ -9,11 +9,9 @@ var mid = require('../middleware');
  
 /* GET home page. */ 
 router.get('/', function(req, res, next) { 
-    request('/logout/:user', function(error, response, body) { 
-        console.log("Called Ron's api logout function!");
+    request('/approveapplication/:id', function(error, response, body) { 
+        console.log("Called Ron's api Approve applicant function!");
     }); 
-    console.log("Logout was called!!"); 
-    req.session.applicantId = undefined; 
     res.redirect("/login"); 
 }); 
 module.exports = router; 

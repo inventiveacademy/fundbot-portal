@@ -3,15 +3,15 @@ extends layout
 block content
     .user-details-layout
         .user-details
-             h3 #{applications.firstname} #{applications.lastname}
-             p User Name   | #{applications.email}
-             p First Name  | #{applications.firstname}
-             p Last Name   | #{applications.lastname}
-             p phone number| #{applications.contactphone}
-             p address     | #{applications.address}
-             p zip         | #{applications.zip}
-             p state       | #{applications.state}
-             p city        | #{applications.city}
+             h3 #{applications[0].firstname} #{applications[0].lastname}
+             p User Name   | #{applications[0].email}
+             p First Name  | #{applications[0].firstname}
+             p Last Name   | #{applications[0].lastname}
+             p phone number| #{applications[0].contactphone}
+             p address     | #{applications[0].address}
+             p zip         | #{applications[0].zip}
+             p state       | #{applications[0].state}
+             p city        | #{applications[0].city}
              a(href="/user_update") update user
         .detail-image
              img.user-details-photo.dropbtn(src="../images/your-face-here.jpg")

@@ -8,7 +8,7 @@ var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 var mongoose = require('mongoose');
 
-var Login = require('./routes/login');
+var Login = require('./routes/Login');
 var logout = require('./routes/logout');
 var loginError = require('./routes/login-error');
 var password_reset = require('./routes/password_reset');
@@ -29,6 +29,7 @@ var Profile_Management = require('./routes/Profile_Management');
 var profileManagementAdmin = require('./routes/profile-management-admin');
 var Payment_Configuration = require('./routes/Payment_Configuration');
 var Applications_Overview = require('./routes/Applications_Overview');
+var Approve_Application = require('./routes/Approve_Application');
 var help = require('./routes/help');
 
 var app = express();
@@ -87,7 +88,8 @@ app.use('/Application_Status', Application_Status);
 app.use('/Profile_Management', Profile_Management);
 app.use('/profile-management-admin', profileManagementAdmin);
 app.use('/Payment_Configuration', Payment_Configuration);
-app.use('/Applications_Overview', Applications_Overview)
+app.use('/Applications_Overview', Applications_Overview);
+app.use('/Approve_Application', Approve_Application);
 app.use('/help', help);
 
 
