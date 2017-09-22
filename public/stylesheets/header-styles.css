@@ -69,11 +69,6 @@ header ul .dropdown .profile-icon-container .admin-icon {
     height: 20px;
     margin-right: 20px;
 }
-
-/*.dropbtn {
-    border: none;
-    cursor: pointer;
-}*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -100,13 +95,9 @@ header ul .dropdown .profile-icon-container .admin-icon {
     justify-content: flex-end;
 
 }
-/*.dropdown-content a:hover {
-    
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
-}*/
+}
 
 .admin-bar {
     padding: 5px 0;

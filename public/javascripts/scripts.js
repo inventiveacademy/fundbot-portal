@@ -28,6 +28,7 @@ function myFunction() {
 
 
 
+
 $(function() {
     $("#reset_password").on("click", function(e) {
         e.preventDefault();
@@ -36,8 +37,15 @@ $(function() {
         $.ajax({
             url: "http://localhost:3008/sendemail",
             type: "POST",
-            data: email
+            dataType: "json",
+            data: JSON.stringify({
+                from: 'Shalay<smashford12@gmail.com>',
+                to: email,
+                subject: 'Hello! Is this working?',
+                text: 'You is Beautiful, You is Smart, You is Important'
+            })
         });
+
         console.log("Hello, Are you there?");
 
         if ($success) {
@@ -46,17 +54,19 @@ $(function() {
          else{
             alert("Your password does not exist!");
         }
-    }
-$(function() {
-    $('.approveButton').on('click', function(e) {
-        console.log("approve button clicked");
+    });
+});
+
+$(function(){
+    $('.approveButton').on('click', function(e){
+        console.log("Approve button clicked!!!");
         e.preventDefault();
-        var id = $("#id").val();
         $.ajax({
-            method: "POST"
-            url: "http://localhost:3008/approveApplicationById/?id=" + id,
-            success: function(result) {
-                console.log("success");
+            url: "http://localhost:3008/applicant_details/id", 
+            type: "POST",
+            data:"approved",
+            success: function(result){
+                console.log("Success!!");
             }
         });
     });
