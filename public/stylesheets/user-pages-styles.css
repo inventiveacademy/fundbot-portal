@@ -89,8 +89,11 @@
    width:150px;
 
 }
-
-
+.userCreateLink:hover{
+	color:white;
+	background-color:#1BBCB1;
+	text-decoration:none;
+}
 /* --------------- user details page --------------- */
 
 .user-details-layout {

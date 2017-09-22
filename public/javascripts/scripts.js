@@ -28,6 +28,7 @@ function myFunction() {
 
 
 
+
 $(function() {
     $("#reset_password").on("click", function(e) {
         e.preventDefault();
@@ -36,8 +37,15 @@ $(function() {
         $.ajax({
             url: "http://localhost:3008/sendemail",
             type: "POST",
-            data: email
+            dataType: "json",
+            data: JSON.stringify({
+                from: 'Shalay<smashford12@gmail.com>',
+                to: email,
+                subject: 'Hello! Is this working?',
+                text: 'You is Beautiful, You is Smart, You is Important'
+            })
         });
+
         console.log("Hello, Are you there?");
 
         if ($success) {
@@ -54,7 +62,7 @@ $(function(){
         console.log("Approve button clicked!!!");
         e.preventDefault();
         $.ajax({
-            url: "http://localhost:3008/applicant_details", 
+            url: "http://localhost:3008/applicant_details/id", 
             type: "POST",
             data:"approved",
             success: function(result){
