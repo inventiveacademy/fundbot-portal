@@ -32,7 +32,7 @@ $(function(){
         e.preventDefault();
         var id = ${application.id};
         $.ajax({
-            url: "http://localhost:3008/applicant_details/" + id, 
+            url: "http://localhost:3008/approveapplication/:id", 
             type: "POST",
             data:"Yay",
             success: function(result){
