@@ -11,7 +11,6 @@ const url = require('url');
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('Login', { title: 'Login' });
-    res.render('login', { title: 'Login' });
 });
 /* POST login page. */
 
