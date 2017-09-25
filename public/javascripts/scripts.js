@@ -26,37 +26,6 @@ function myFunction() {
         text: 'You is Beautiful, You is Smart, You is Important'
      };
 
-
-
-
-$(function() {
-    $("#reset_password").on("click", function(e) {
-        e.preventDefault();
-        console.log("hello");
-        var email = $("#email").val();
-        $.ajax({
-            url: "http://localhost:3008/sendemail",
-            type: "POST",
-            dataType: "json",
-            data: JSON.stringify({
-                from: 'Shalay<smashford12@gmail.com>',
-                to: email,
-                subject: 'Hello! Is this working?',
-                text: 'You is Beautiful, You is Smart, You is Important'
-            })
-        });
-
-        console.log("Hello, Are you there?");
-
-        if ($success) {
-            window.location.replace("/password_sent.pug");
-         }
-         else{
-            alert("Your password does not exist!");
-        }
-    });
-});
-
 $(function(){
     $('.approveButton').on('click', function(e){
         console.log("Approve button clicked!!!");
