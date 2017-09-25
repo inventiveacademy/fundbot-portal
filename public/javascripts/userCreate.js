@@ -8,7 +8,7 @@ $(function() {
         var zip = $('.zip').val();
         var addressYou = $('.addressYou').val();
         var password = $('.password').val();
-        if (firstname != '' && lastname != '') {
+        if (password != "") {
             $.ajax({
                 url: "http://localhost:3008/applications",
                 type: "POST",
@@ -27,7 +27,7 @@ $(function() {
             });
         };
     });
-    $("#form, .form-inline").submit(function(e) {
+    $("#form, .formInput").submit(function(e) {
         e.preventDefault();
     });
 });
