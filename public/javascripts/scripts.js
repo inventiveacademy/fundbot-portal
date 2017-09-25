@@ -23,15 +23,16 @@ function myFunction() {
         from: 'Shalay<smashford12@gmail.com>',
         to:email,
         subject: 'Hello! Is this working?',
-        text: 'You is Beautiful, You is Smart, You is Important'
+        text: 'You is Kind, You is Smart, You is Important'
      };
 
 $(function(){
     $('.approveButton').on('click', function(e){
         console.log("Approve button clicked!!!");
         e.preventDefault();
+        var id = ${application.id};
         $.ajax({
-            url: "http://localhost:3008/applicant_details/id", 
+            url: "http://localhost:3008/applicant_details/" + id, 
             type: "POST",
             data:"Yay",
             success: function(result){
