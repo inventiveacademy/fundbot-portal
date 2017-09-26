@@ -1,37 +1,21 @@
 
-.approveButton {
-	display: flex;
-	justify-content: center;
-}
-.applicant-details-master-container {
-    max-width: 900px;
-    margin: auto;
-}
->>>>>>> applicationoverview:public/stylesheets/applicant-details.css
-.approveButton {
-    cursor: pointer;
-    border: 1px solid #1BBCB1;
-    color: #fff;
+.approveButton{
+    display:flex;
+    justify-content:center;
     border-radius: 100px;
-    background: #1BBCB1;
-    width: 80px;
-    margin-top: 30px;
-}
-.applicant-details-master-container {
-    max-width: 900px;
-    margin: auto;
+    width: 250px;
+    font-size: .8em;
+    font-weight: lighter;
+    padding: 10px 0;
+    color: #1BBCB1;
+    margin: 5px 0 15px 0;
+    border: 1px solid #1BBCB1;
+    text-decoration-style: none;
+    transition: .5s;
+    background: none;
 }
 
-.approveButton {
-    cursor: pointer;
-    border: 1px solid #1BBCB1;
-    color: #fff;
-    border-radius: 100px;
+.approveButton:hover {
     background: #1BBCB1;
-    width: 80px;
-    margin-top: 30px;
-}
-
-.item-detail {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
+    color: #fff;
+} 

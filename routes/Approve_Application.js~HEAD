@@ -5,10 +5,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    request('http://localhost:3008/applications', function(error, response, body) {
-        let applications = JSON.parse(body);
-        res.render('help', { title: 'General Points', applications });
-    });
+   request('/approveapplication/:id', function(error, response, body){
+        console.log("Button was clicked!!");
+   });
 });
 
 

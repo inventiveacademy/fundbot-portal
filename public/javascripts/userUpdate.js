@@ -1,5 +1,5 @@
 $(function() {
-    $('.UserCbtn').on('click', function() {
+    $('.UserUbtn').on('click', function() {
         var firstname = $('.firstname').val();
         var lastname = $('.lastname').val();
         var email = $('.email').val();
@@ -10,8 +10,8 @@ $(function() {
         var password = $('.password').val();
         if (firstname != '' && lastname != '') {
             $.ajax({
-                url: "http://localhost:3008/applications",
-                type: "POST",
+                url: "http://localhost:3008/applications/:id",
+                type: "PUT",
                 datatype: "json",
                 data: { firstname, lastname,email,contactphone,city,zip,addressYou,password},
                 error: function(data) {
