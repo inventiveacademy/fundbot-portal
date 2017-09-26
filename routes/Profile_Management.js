@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
             console.log("appl ", appl);
             console.log("req.session.user", req.session.email);
             
-            res.render('Profile_Management', { title: 'Profile_Management', session: req.session, appl });
+            res.render('Profile_Management', { title: 'Profile_Management', appl , session: req.session });
         });
     }
 });
