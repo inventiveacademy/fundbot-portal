@@ -15,13 +15,22 @@ router.get('/', function(req, res, next) {
 /* POST login page. */
 
 router.post('/', function(req, res, next) {
-    if (req.body.email && req.body.password) {
-        request({ url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`, method: "POST", json:{"user": req.body.email, "pwd":req.body.password}}, function(error, response, body) {
-                let success = body;
-                let applicant;
-                console.log(body);
-                console.log(success);
-                console.log(success.user,req.body.email);
+    if (req.body.email && req.body.password) { 
+                request({  
+                    url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`, 
+            method: "POST", 
+            json: { "user": req.body.email, "pwd": req.body.password} 
+        }, function(error, response, body) { 
+            let user = body; 
+            let applicant; 
+                    req.session.isadmin = user.isadmin; 
+                    req.session.isuser = user.isuser; 
+                    req.session.isapplicant = user.isapplicant; 
+                    req.session.applicantId = user._id; 
+                    req.session.email = user.user; 
+                    req.session.firstname = user.firstname; 
+                    req.session.lastname = user.lastname; 
+                    req.session.contactphone = user.contactphone; 
 
             if (user.isadmin || user.isuser) {
                 res.redirect("/Applications_Overview");
