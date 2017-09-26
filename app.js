@@ -28,6 +28,7 @@ var Profile_Management = require('./routes/Profile_Management');
 var profileManagementAdmin = require('./routes/profile-management-admin');
 var Payment_Configuration = require('./routes/Payment_Configuration');
 var Applications_Overview = require('./routes/Applications_Overview');
+var Approve_Application = require('./routes/Approve_Application');
 var help = require('./routes/help');
 
 var app = express();
