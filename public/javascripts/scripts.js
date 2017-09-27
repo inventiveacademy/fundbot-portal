@@ -30,11 +30,10 @@ $(function(){
     $('.approveButton').on('click', function(e){
         console.log("Approve button clicked!!!");
         e.preventDefault();
-        var id = ${application.id};
         $.ajax({
-            url: "http://localhost:3008/approveapplication/:id", 
+            url: "http://localhost:3008/approveapplications/:id", 
             type: "POST",
-            data:"Yay",
+            data: "Happy Person!!",
             success: function(result){
                 console.log("Success!!");
             }
