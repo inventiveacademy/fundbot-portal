@@ -4,16 +4,17 @@ $(function() {
         var lastname = $('.lastname').val();
         var email = $('.email').val();
         var contactphone = $('.contactphone').val();
+        var state = $('.State').val();
         var city = $('.city').val();
         var zip = $('.zip').val();
-        var addressYou = $('.addressYou').val();
+        var address = $('.addressYou').val();
         var password = $('.password').val();
-        if (firstname != '' && lastname != '') {
+        if (password != "") {
             $.ajax({
                 url: "http://localhost:3008/applications",
                 type: "POST",
                 datatype: "json",
-                data: { firstname, lastname,email,contactphone,city,zip,addressYou,password},
+                data: { firstname, lastname,email,contactphone,state,city,zip,address,password},
                 error: function(data) {
                     console.log("keep working");
                     alert("nope");
@@ -27,7 +28,7 @@ $(function() {
             });
         };
     });
-    $("#form, .form-inline").submit(function(e) {
+    $("#form, .formInput").submit(function(e) {
         e.preventDefault();
     });
 });

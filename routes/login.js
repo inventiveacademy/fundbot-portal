@@ -10,28 +10,27 @@ const url = require('url');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('Login', { title: 'Login' });
-    res.render('login', { title: 'Login' });
+    res.render('login', { title: 'login' });
 });
 /* POST login page. */
 
 router.post('/', function(req, res, next) {
-            if (req.body.email && req.body.password) {
-                request({ 
-                    url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`,
-            method: "POST",
-            json: { "user": req.body.email, "pwd": req.body.password}
-        }, function(error, response, body) {
-            let user = body;
-            let applicant;
-                    req.session.isadmin = user.isadmin;
-                    req.session.isuser = user.isuser;
-                    req.session.isapplicant = user.isapplicant;
-                    req.session.applicantId = user._id;
-                    req.session.email = user.user;
-                    req.session.firstname = user.firstname;
-                    req.session.lastname = user.lastname;
-                    req.session.contactphone = user.contactphone;
+    if (req.body.email && req.body.password) { 
+                request({  
+                    url: `http://localhost:3008/login?user=${req.body.email}&pwd=${req.body.password}`, 
+            method: "POST", 
+            json: { "user": req.body.email, "pwd": req.body.password} 
+        }, function(error, response, body) { 
+            let user = body; 
+            let applicant; 
+                    req.session.isadmin = user.isadmin; 
+                    req.session.isuser = user.isuser; 
+                    req.session.isapplicant = user.isapplicant; 
+                    req.session.applicantId = user._id; 
+                    req.session.email = user.user; 
+                    req.session.firstname = user.firstname; 
+                    req.session.lastname = user.lastname; 
+                    req.session.contactphone = user.contactphone; 
 
             if (user.isadmin || user.isuser) {
                 res.redirect("/Applications_Overview");
