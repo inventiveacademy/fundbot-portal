@@ -43,7 +43,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 
 // Once the DB opens, event listener fires a success message so we don't go crazy
 db.once("open", function(){
-	console.log('The database connection is successful! 💩');
+	console.log('The database connection is successful!');
 });
 
 app.use(session({
