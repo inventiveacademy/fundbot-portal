@@ -1,20 +1,18 @@
 $(function() {
     $('.UserCbtn').on('click', function() {
+        var user = $('.username').val();
         var firstname = $('.firstname').val();
         var lastname = $('.lastname').val();
         var email = $('.email').val();
-        var contactphone = $('.contactphone').val();
-        var state = $('.State').val();
-        var city = $('.city').val();
-        var zip = $('.zip').val();
-        var address = $('.addressYou').val();
-        var password = $('.password').val();
-        if (password != "") {
+        var pwd = $('.password').val();
+        var application = { user,firstname, lastname,email,pwd,}
+        if (pwd != "") {
             $.ajax({
-                url: "http://localhost:3008/applications",
+                url: "http://localhost:3008/logins",
                 type: "POST",
-                datatype: "json",
-                data: { firstname, lastname,email,contactphone,state,city,zip,address,password},
+                data:application,
+                datatype:"json",
+                ContentType: "application/json",
                 error: function(data) {
                     console.log("keep working");
                     alert("nope");

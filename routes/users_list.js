@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
         err.status = 403;
         return next(err);
     } else {
-        request(`http://localhost:3008/applications/`, function(error, response, body) {
+        request(`http://localhost:3008/logins/`, function(error, response, body) {
             let applications = JSON.parse(body);
 
             res.render('users_list', { title: 'admins list', session: req.session, applications  });
