@@ -3,26 +3,19 @@ var request = require('request');
 var app = express();
 var router = express.Router();
 
-router.get('/:id', function(req, res, next) {
-    request(`http://localhost:3008/applications/${req.params.id}`, function(error, response, body) {
+router.get('/:user', function(req, res, next) {
+    request(`http://localhost:3008/logins/${req.params.user}`, function(error, response, body) {
         let applications = JSON.parse(body);
         console.log(applications)
         res.render('user_update', { title: 'user update', applications, session: req.session});
     });
 });
-router.put('/', function(req, res, next){
-	request('/applications/:id', function(error, response, body) {
+router.put('/:user', function(req, res, next){
+	request('/logins/:user', function(error, response, body) {
 	    let applications = JSON.parse(body);
-	    console.log("Happy Update!!!")
+	    console.log("update made")
 	});
 })
-
-router.put('/', function(req, res, next){
-	request('/applications/:id', function(error, response, body) {
-	    let applications = JSON.parse(body);
-	    console.log("Happy Update!!!")
-	});
-});
 
 
 
