@@ -26,5 +26,6 @@ block content
                li.item-detail  
                     a(href="/user_update + application.id") Update Applicant
                li.approvalButton 
+                    button.approveButton(href="/approveapplication/:id" type='submit') Approve!
+               form(action="/applicant_details" type="PUT") 
                     button.approveButton(type='submit') Approve!
-     button.approveButton(href="/Approve_Application" type='submit') Approve!!
