@@ -31,9 +31,9 @@ $(function(){
         console.log("Approve button clicked!!!");
         e.preventDefault();
         $.ajax({
-            url: "http://localhost:3008/approveapplications/:id", 
+            url: "localhost:3000/approveapplication/:id", 
             type: "POST",
-            data: "Happy Person!!",
+            data: {},
             success: function(result){
                 console.log("Success!!");
             }
