@@ -87,6 +87,7 @@ app.use('/Profile_Management', Profile_Management);
 app.use('/profile-management-admin', profileManagementAdmin);
 app.use('/Payment_Configuration', Payment_Configuration);
 app.use('/Applications_Overview', Applications_Overview);
+app.use('/Approve_Application', Approve_Application);
 app.use('/help', help);
 
 

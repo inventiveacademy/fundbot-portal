@@ -10,7 +10,7 @@ const url = require('url');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('login', { title: 'login' });
+    res.render('Login', { title: 'Login' });
 });
 /* POST login page. */
 
