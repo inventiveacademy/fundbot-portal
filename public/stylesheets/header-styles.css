@@ -19,7 +19,7 @@ header .logo {
     padding: 15px 0 12px 35px;
 }
 header .bot-logo {
-    height: 30px;
+    height: 27px;
     padding-right: 8px;
 }
 header h1 {
@@ -89,14 +89,13 @@ header ul .dropdown .profile-icon-container .admin-icon {
     text-decoration: none;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    transition-duration: .5s;
     padding: 10px 0;
     display: flex;
     justify-content: flex-end;
-
 }
-.dropdown:hover .dropdown-content {
-    display: block;
+
+.dropdown-content a:hover {
+    text-decoration: underline;
 }
 
 .admin-bar {
