@@ -1,7 +1,7 @@
 header
     a(href="/Login")
      div.logo
-      img.bot-logo(src="../images/robot-icon-white.svg")
+      img.bot-logo(src="../images/fundbot-icon-white.svg")
       h1 FUNDBOT
     ul#user
       if session.isapplicant 
@@ -29,10 +29,10 @@ header
            .profile-icon-container#profile-icon
              img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
              div.dropdown-content#dropdown-content
-                a(class="droplinks" href="/Logout") LOGOUT
-                a(class="droplinks" href="/Profile_Management") PROFILE
-                a(class="droplinks" href="/Account_Summary") ACCOUNT
-                a(class="droplinks" href="/help") HELP
+                a(class="droplinks .anchor-tag" href="/Logout") LOGOUT
+                a(class="droplinks .anchor-tag" href="/Profile_Management") PROFILE
+                a(class="droplinks .anchor-tag" href="/Account_Summary") ACCOUNT
+                a(class="droplinks .anchor-tag" href="/help") HELP
 
 
 
