@@ -5,7 +5,8 @@ $(function() {
         var lastname = $('.lastname').val();
         var email = $('.email').val();
         var pwd = $('.password').val();
-        var application = { user,firstname, lastname,email,pwd,}
+        var isuser = true;
+        var application = { user,firstname, lastname,email,pwd,isuser}
         if (pwd != "") {
             $.ajax({
                 url: "http://localhost:3008/logins",

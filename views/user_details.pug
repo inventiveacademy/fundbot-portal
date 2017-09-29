@@ -7,8 +7,8 @@ block content
              p Email       | #{applications.email}
              p First Name  | #{applications.firstname}
              p Last Name   | #{applications.lastname}
-             a.UUserBtn(href='http://localhost:3000/user_update/'+applications.user) update #{applications.firstname}
              if session.isadmin
+                 a.UUserBtn(href='http://localhost:3000/user_update/'+applications.user) update #{applications.firstname}
                  button.deleteUser.UUserBtn#deleteUser(href="http://localhost:3000/user_list" type="submit" value="/"+applications.user) delete #{applications.firstname}
         .detail-image
              img.user-details-photo.dropbtn(src="../images/your-face-here.jpg")
