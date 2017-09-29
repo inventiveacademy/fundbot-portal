@@ -8,22 +8,14 @@ block content
          .UserForm
              form#form
                .formInput
+                 input#input(type='text' class='username' placeholder='username' name='username')
+               .formInput
                  input#input(type='text' class='firstname' placeholder='First Name' name='First Name')
                .formInput
                  input#input(type='text' class='lastname' placeholder='Last Name' name='Last Name')
                .formInput
                  input#input(type='text' class='email' placeholder='Email' name='email')
                .formInput
-                 input#input(type='text' class='contactphone' placeholder='Phone Number' name='phone number')
-               .formInput
-                 input#input(type='text' class='State' placeholder='State' name='State')
-               .formInput
-                 input#input(type='text' class='city' placeholder='City' name='city')
-               .formInput
-                 input#input(type='text' class='zip' placeholder='Zip' name='zip')
-               .formInput
-                 input#input(type='text' class='address-you' placeholder='Address' name='address')
-               .formInput
-                 input#input(type='password' class='password' placeholder='Password' name='password')
+                 input#input(type='text' class='password' placeholder='password' name='password')
 
-               button.UserUbtn(type='submit') Create
+               button.UserCbtn(type='submit') Create
