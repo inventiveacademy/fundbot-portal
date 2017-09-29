@@ -6,8 +6,10 @@
 $(function() {
     $('.deleteUser').on('click', function() {
         var deleteUser = $('#deleteUser').val();
+        var Url =  "http://localhost:3008/logins/";
+        var URL = Url + deleteUser;
         $.ajax({
-            url: "http://localhost:3008/logins/:user",
+            url:URL,
             type: "DELETE",
             datatype: "json",
             data:deleteUser,

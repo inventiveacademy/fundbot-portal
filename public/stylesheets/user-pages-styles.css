@@ -126,6 +126,15 @@
     margin-left: 70%;
     margin-bottom: 20px;
 }
+.UUserBtn{
+    color: #1BBCB1;
+    padding: 6px;
+    background-color: white;
+    border: 1px solid #1BBCB1;
+    border-radius: 50px;
+    transition: 0.5s;
+
+}
 
 
 /* --------------- user update page --------------- */

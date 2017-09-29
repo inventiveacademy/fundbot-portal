@@ -7,9 +7,9 @@ block content
              p Email       | #{applications.email}
              p First Name  | #{applications.firstname}
              p Last Name   | #{applications.lastname}
-                 a(href='http://localhost:3000/user_update/'+applications.user) update #{applications.firstname}
+             a.UUserBtn(href='http://localhost:3000/user_update/'+applications.user) update #{applications.firstname}
              if session.isadmin
-                 a.deleteUser#deleteUser(type="submit" value="applications.user") delete user
+                 button.deleteUser.UUserBtn#deleteUser(type="submit" value="/"+applications.user) delete #{applications.firstname}
         .detail-image
              img.user-details-photo.dropbtn(src="../images/your-face-here.jpg")
              p needs data from V.E.F

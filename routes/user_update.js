@@ -10,11 +10,11 @@ router.get('/:user', function(req, res, next) {
         res.render('user_update', { title: 'user update', applications, session: req.session});
     });
 });
-router.put('/:user', function(req, res, next){
-	request('/logins/:user', function(error, response, body) {
-	    let applications = JSON.parse(body);
-	    console.log("update made")
-	});
-})
+// router.put('/:user', function(req, res, next){
+// 	request('/logins/:user', function(error, response, body) {
+// 	    let applications = JSON.parse(body);
+// 	    console.log("update made")
+// 	});
+// })
 
 module.exports = router;
