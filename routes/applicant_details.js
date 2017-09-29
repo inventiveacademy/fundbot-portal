@@ -13,19 +13,20 @@ router.get('/:id', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) { 
-	console.log("testing approve button!", req.body);
-	console.log(req.params);
+	console.log("Below is the request!");
     request({
     		url: `http://localhost:3008/approveapplication/${req.params.id}`, 
-            type: "PUT",            
+            type: "PUT",
+            data: "Something?",
             error: function(result){
-                console.log("Nooo💀️!!");
+                console.log("Back to work!");
             },
             success: function(result){
                 console.log("Success!!");
             }
         }); 
-    res.redirect("/Applications_Overview"); 
+    console.log("^ Above is the request!");
+    res.redirect("/Applications_Overview");
 }); 
 
 module.exports = router;
