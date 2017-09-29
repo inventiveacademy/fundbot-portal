@@ -8,8 +8,6 @@ block content
          .UserForm
              form#form
                .formInput
-                 input#input(type='text' class='username', placeholder='User Name', name='User Name' )
-               .formInput
                  input#input(type='text' class='firstname', placeholder='First Name', name='First Name' )
                .formInput
                  input#input(type='text' class='lastname' placeholder='Last Name' name='Last Name')
@@ -18,4 +16,4 @@ block content
                .formInput
                  input#input(type='password' class='password' placeholder='password' name='password')
 
-               button.UserUbtn(type='submit' href="/user_list") Update
+               button.UserUbtn(type='submit' href="http://localhost:3000/user_list" value="http://localhost:3008/logins/"+applications.user) Update
