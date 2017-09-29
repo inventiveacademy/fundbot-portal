@@ -5,9 +5,7 @@ $(function() {
         var email = $('.email').val();
         var pwd = $('.password').val();
         var application = {firstname,lastname,email,pwd}
-        var user = $('.username').val();
-        var UrlP = "http://localhost:3008/logins/"
-        var URL = UrlP + user;
+        var URL = $('.UserUbtn').val();
         $.ajax({
                 url: URL, 
                 type: "PUT",
@@ -20,7 +18,7 @@ $(function() {
                     console.dir(data);
                 },
                 success: function(data) {
-                    alert("You updated " + user + " successfully")
+                    alert("You updated " + firstname + " successfully")
                     console.log("done");
                     console.dir(data);
                 }
