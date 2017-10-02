@@ -14,8 +14,11 @@ router.get('/', function(req, res, next) {
     } else {
         request(`http://localhost:3008/applications-search?email=${req.session.email}`, function(error, response, body) {
             console.log("req.session.user", req.session.email)
+            let appl = JSON.parse(body)[0];
+            console.log("appl ", appl);
+            console.log("req.session.user", req.session.email);
 
-            res.render('profile-management-admin', { title: 'Profile Management Admin', session: req.session});
+            res.render('profile-management-admin', { title: 'Profile Management Admin',appl, session: req.session});
         });
     }
 });
