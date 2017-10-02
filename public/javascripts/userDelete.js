@@ -1,4 +1,3 @@
-// still in progress!! :/
 $(function() {
     $('.deleteUser').on('click', function() {
             var deleteUser = $('#deleteUser').val();
@@ -21,6 +20,7 @@ $(function() {
                     console.dir(data);
                 }
             });
+            window.location.href = ("http://localhost:3000/users_list");
         }
         else{
             alert("Ok then");
