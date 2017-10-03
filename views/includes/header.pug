@@ -30,9 +30,14 @@ header
              img.profile-photo.dropbtn(src="../images/sean-baier.jpeg")
              div.dropdown-content#dropdown-content
                 a(class="droplinks .anchor-tag" href="/Logout") LOGOUT
-                a(class="droplinks .anchor-tag" href="/Profile_Management") PROFILE
-                a(class="droplinks .anchor-tag" href="/Account_Summary") ACCOUNT
-                a(class="droplinks .anchor-tag" href="/help") HELP
+                if session.isadmin && session.isuser
+                  a(class="droplinks .anchor-tag" href="/Profile-Management-Admin") PROFILE
+                  a(class="droplinks .anchor-tag" href="/Account_Summary") ACCOUNT
+                  a(class="droplinks .anchor-tag" href="/help") HELP
+                else if session.isapplicant
+                  a(class="droplinks .anchor-tag" href="/Profile_Management") PROFILE
+                  a(class="droplinks .anchor-tag" href="/Account_Summary") ACCOUNT
+                  a(class="droplinks .anchor-tag" href="/help") HELP
 
 
 
