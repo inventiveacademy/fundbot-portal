@@ -140,3 +140,13 @@ display:flex;
 .randomlink {
 	padding-left:0px;
 }
+
+.List:focus .content{
+  display:block;
+}
+.content{
+  display:none;
+  margin:none;
+  float:left;
+
+}

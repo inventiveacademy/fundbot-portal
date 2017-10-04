@@ -1,0 +1,48 @@
+.header{
+	margin:auto;
+	padding:20px;
+	width:45%;
+}
+.loanHeader{
+	margin:auto;
+	width:15%;
+	margin-bottom:10px;
+}
+.loanTerms{
+	margin:auto;
+	width:75%;
+	height:500px;
+	background-color:#efecea;
+	padding:10px;
+	overflow:scroll;
+	line-height:28px;
+}
+.accept{
+	background-color:green;
+	color:black;
+	border:none;
+	margin:2px;
+	padding:10px 15px;
+	float:right;
+	border-radius:3%;
+}
+.accept:hover{
+	text-decoration: none;
+	color:#efecea;
+}
+.reject{
+	background-color:red;
+	color:black;
+	border:none;
+	margin:2px;
+	padding:10px 15px;
+	float:right;
+	border-radius:3%;
+}
+.reject:hover{
+	text-decoration: none;
+	color:#efecea;
+}
+
+#Questions{
+}
