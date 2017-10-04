@@ -1,16 +1,14 @@
-// still in progress!! :/
 $(function() {
-    $('.deleteUser').on('click', function() {
-            var deleteUser = $('#deleteUser').val();
-        if (confirm("Are you Positive you want to delete") == true) {
-            var deleteUser = $('#deleteUser').val();
-            var Url = "http://localhost:3008/logins/";
-            var URL = Url + deleteUser;
+    $('.approveButton').on('click', function() {
+        if (confirm("Are you Positive you want to Approve") == true) {
+            var approveApplicant = $('.approveButton').val();
+            var Url = "http://localhost:3008/approveapplication/";
+            var URL = Url + approveApplicant;
             $.ajax({
                 url: URL,
-                type: "DELETE",
+                type: "PUT",
                 datatype: "json",
-                data: deleteUser,
+                data:approveApplicant,
                 error: function(data) {
                     console.log("keep working");
                     alert("nope");
