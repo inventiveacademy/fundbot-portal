@@ -1,0 +1,11 @@
+.pageHeader{
+	margin:auto;
+	width:38%;
+}
+.suggestions{
+	min-width:400px;
+	min-height:200px;
+}
+.suggestions:focus{
+	outline:none;
+}
